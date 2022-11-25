@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_4edcbb236dfd51dd81727243a38df6a0" xml:lang="fr">
+<title>Répertoire de référence de C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts</title>
+<indexterm><primary>Répertoire de référence de C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts</primary></indexterm>
+<simplesect>
+    <title>Répertoires    </title>
+        <itemizedlist>
+            <listitem><para>répertoire <link linkend="_dir_cc79b86b4eb535d1d3fb3e28dc29535e">Input</link></para>
+</listitem>
+            <listitem><para>répertoire <link linkend="_dir_a72e060982e7d9aa9f2c50ad10ab3dab">Level</link></para>
+</listitem>
+            <listitem><para>répertoire <link linkend="_dir_fa3f476697b6cdd1c4200dfb5b4ca63e">Menu</link></para>
+</listitem>
+            <listitem><para>répertoire <link linkend="_dir_f341f5296257e68ffa47cc8d4a341860">Widgets</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fichiers    </title>
+        <itemizedlist>
+            <listitem><para>fichier <link linkend="__game_manager_8cs">GameManager.cs</link></para>
+</listitem>
+            <listitem><para>fichier <link linkend="__playfab_manager_8cs">PlayfabManager.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

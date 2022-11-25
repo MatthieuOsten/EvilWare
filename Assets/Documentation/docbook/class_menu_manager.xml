@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_menu_manager" xml:lang="fr">
+<title>Référence de la classe MenuManager</title>
+<indexterm><primary>MenuManager</primary></indexterm>
+<para>Graphe d&apos;héritage de MenuManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_menu_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__menu_manager_8cs_source_1l00007">7</link> du fichier <link linkend="__menu_manager_8cs_source">MenuManager.cs</link>.</para>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/<link linkend="__menu_manager_8cs">MenuManager.cs</link></section>
+</section>

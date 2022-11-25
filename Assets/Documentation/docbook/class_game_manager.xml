@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_manager" xml:lang="fr">
+<title>Référence de la classe GameManager</title>
+<indexterm><primary>GameManager</primary></indexterm>
+<para>Graphe d&apos;héritage de GameManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_game_manager_1_1_hight_score">HightScore</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_game_manager_1_1_player">Player</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Types publics    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link> </para>
+</listitem>
+            <listitem><para>enum <link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344">EnableInputManager</link> ()</para>
+
+<para>Active l&apos;input manager  </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_manager_1aa4fd8fd347398e403532fc3171989c06">DisableInputManager</link> ()</para>
+
+<para>Desactive l&apos;input manager  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_game_manager">GameManager</link> <link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_struct_game_manager_1_1_hight_score">HightScore</link> &gt; <link linkend="_class_game_manager_1a6159631ccb4b92badcb34e47e965c912">Leaderboard</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_input_three">InputThree</link> <link linkend="_class_game_manager_1aed60893865c6525844ef071d9a2479ff">Inputs</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_playfab_manager">PlayfabManager</link> <link linkend="_class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5">PlayfabManager</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_manager_1_1_player">Player</link> <link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link> <link linkend="_class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9">State</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link> <link linkend="_class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3">GetDifficulty</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0">Score</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00006">6</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des énumérations membres</title>
+<anchor xml:id="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576"/><section>
+    <title>Difficulty</title>
+<indexterm><primary>Difficulty</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>Difficulty</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">GameManager.Difficulty</link></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00025">25</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c"/><section>
+    <title>GameState</title>
+<indexterm><primary>GameState</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>GameState</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameManager.GameState</link></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00010">10</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_game_manager_1aa4fd8fd347398e403532fc3171989c06"/><section>
+    <title>DisableInputManager()</title>
+<indexterm><primary>DisableInputManager</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>DisableInputManager</secondary></indexterm>
+<para><computeroutput>void GameManager.DisableInputManager ( )</computeroutput></para><para>
+
+<para>Desactive l&apos;input manager  </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00233">233</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344"/><section>
+    <title>EnableInputManager()</title>
+<indexterm><primary>EnableInputManager</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>EnableInputManager</secondary></indexterm>
+<para><computeroutput>void GameManager.EnableInputManager ( )</computeroutput></para><para>
+
+<para>Active l&apos;input manager  </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00218">218</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3"/><section>
+    <title>GetDifficulty</title>
+<indexterm><primary>GetDifficulty</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>GetDifficulty</secondary></indexterm>
+<para><computeroutput><link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link> GameManager.GetDifficulty<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00182">182</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1aed60893865c6525844ef071d9a2479ff"/><section>
+    <title>Inputs</title>
+<indexterm><primary>Inputs</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>Inputs</secondary></indexterm>
+<para><computeroutput><link linkend="_class_input_three">InputThree</link> GameManager.Inputs<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00165">165</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e"/><section>
+    <title>Instance</title>
+<indexterm><primary>Instance</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>Instance</secondary></indexterm>
+<para><computeroutput><link linkend="_class_game_manager">GameManager</link> GameManager.Instance<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00042">42</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a6159631ccb4b92badcb34e47e965c912"/><section>
+    <title>Leaderboard</title>
+<indexterm><primary>Leaderboard</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>Leaderboard</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>&gt; GameManager.Leaderboard<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00163">163</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5"/><section>
+    <title>PlayfabManager</title>
+<indexterm><primary>PlayfabManager</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>PlayfabManager</secondary></indexterm>
+<para><computeroutput><link linkend="_class_playfab_manager">PlayfabManager</link> GameManager.PlayfabManager<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00166">166</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0"/><section>
+    <title>Score</title>
+<indexterm><primary>Score</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>Score</secondary></indexterm>
+<para><computeroutput>int GameManager.Score<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00183">183</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9"/><section>
+    <title>State</title>
+<indexterm><primary>State</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>State</secondary></indexterm>
+<para><computeroutput><link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link> GameManager.State<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00172">172</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a"/><section>
+    <title>ThePlayer</title>
+<indexterm><primary>ThePlayer</primary><secondary>GameManager</secondary></indexterm>
+<indexterm><primary>GameManager</primary><secondary>ThePlayer</secondary></indexterm>
+<para><computeroutput><link linkend="_class_game_manager_1_1_player">Player</link> GameManager.ThePlayer<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00168">168</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/<link linkend="__game_manager_8cs">GameManager.cs</link></section>
+</section>

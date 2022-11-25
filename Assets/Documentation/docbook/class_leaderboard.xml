@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_leaderboard" xml:lang="fr">
+<title>Référence de la classe Leaderboard</title>
+<indexterm><primary>Leaderboard</primary></indexterm>
+<para>Graphe d&apos;héritage de Leaderboard:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_leaderboard.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885">UpList</link> (float valueFloat)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53">DownList</link> (float valueFloat)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509">UpdateList</link> (List&lt; <link linkend="_struct_game_manager_1_1_hight_score">GameManager.HightScore</link> &gt; listHightScores)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf">CountList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__leaderboard_8cs_source_1l00006">6</link> du fichier <link linkend="__leaderboard_8cs_source">Leaderboard.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53"/><section>
+    <title>DownList()</title>
+<indexterm><primary>DownList</primary><secondary>Leaderboard</secondary></indexterm>
+<indexterm><primary>Leaderboard</primary><secondary>DownList</secondary></indexterm>
+<para><computeroutput>void Leaderboard.DownList (float valueFloat)</computeroutput></para><para>
+Définition à la ligne <link linkend="__leaderboard_8cs_source_1l00052">52</link> du fichier <link linkend="__leaderboard_8cs_source">Leaderboard.cs</link>.</para>
+</section>
+<anchor xml:id="_class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509"/><section>
+    <title>UpdateList()</title>
+<indexterm><primary>UpdateList</primary><secondary>Leaderboard</secondary></indexterm>
+<indexterm><primary>Leaderboard</primary><secondary>UpdateList</secondary></indexterm>
+<para><computeroutput>void Leaderboard.UpdateList (List&lt; <link linkend="_struct_game_manager_1_1_hight_score">GameManager.HightScore</link> &gt; listHightScores)</computeroutput></para><para>
+Définition à la ligne <link linkend="__leaderboard_8cs_source_1l00062">62</link> du fichier <link linkend="__leaderboard_8cs_source">Leaderboard.cs</link>.</para>
+</section>
+<anchor xml:id="_class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885"/><section>
+    <title>UpList()</title>
+<indexterm><primary>UpList</primary><secondary>Leaderboard</secondary></indexterm>
+<indexterm><primary>Leaderboard</primary><secondary>UpList</secondary></indexterm>
+<para><computeroutput>void Leaderboard.UpList (float valueFloat)</computeroutput></para><para>
+Définition à la ligne <link linkend="__leaderboard_8cs_source_1l00043">43</link> du fichier <link linkend="__leaderboard_8cs_source">Leaderboard.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf"/><section>
+    <title>CountList</title>
+<indexterm><primary>CountList</primary><secondary>Leaderboard</secondary></indexterm>
+<indexterm><primary>Leaderboard</primary><secondary>CountList</secondary></indexterm>
+<para><computeroutput>int Leaderboard.CountList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__leaderboard_8cs_source_1l00041">41</link> du fichier <link linkend="__leaderboard_8cs_source">Leaderboard.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/<link linkend="__leaderboard_8cs">Leaderboard.cs</link></section>
+</section>

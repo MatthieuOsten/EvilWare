@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_leaderboard" kind="class" language="C#" prot="public">
+    <compoundname>Leaderboard</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_leaderboard_1a67529c9af9546f60a69409f002e831c5" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_hight_score_object" kindref="compound">HightScoreObject</ref> &gt;</type>
+        <definition>List&lt;HightScoreObject&gt; Leaderboard._listHightScoreObject</definition>
+        <argsstring></argsstring>
+        <name>_listHightScoreObject</name>
+        <qualifiedname>Leaderboard._listHightScoreObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="34" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_leaderboard_1adb6333524d4c60245c5e8857b08f8902" prot="private" static="no" mutable="no">
+        <type>Scrollbar</type>
+        <definition>Scrollbar Leaderboard._scrollBar</definition>
+        <argsstring></argsstring>
+        <name>_scrollBar</name>
+        <qualifiedname>Leaderboard._scrollBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="36" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_leaderboard_1a54cd209929e30f0ecc46debda794dcd2" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Leaderboard._parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <qualifiedname>Leaderboard._parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="38" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_leaderboard_1ac869d9a8fc10a9850e0d60c6f1766e3b" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Leaderboard._prefab</definition>
+        <argsstring></argsstring>
+        <name>_prefab</name>
+        <qualifiedname>Leaderboard._prefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="39" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Leaderboard.CountList</definition>
+        <argsstring></argsstring>
+        <name>CountList</name>
+        <qualifiedname>Leaderboard.CountList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="41" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.UpList</definition>
+        <argsstring>(float valueFloat)</argsstring>
+        <name>UpList</name>
+        <qualifiedname>Leaderboard.UpList</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>valueFloat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="43" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.DownList</definition>
+        <argsstring>(float valueFloat)</argsstring>
+        <name>DownList</name>
+        <qualifiedname>Leaderboard.DownList</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>valueFloat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="52" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.UpdateList</definition>
+        <argsstring>(List&lt; GameManager.HightScore &gt; listHightScores)</argsstring>
+        <name>UpdateList</name>
+        <qualifiedname>Leaderboard.UpdateList</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="struct_game_manager_1_1_hight_score" kindref="compound">GameManager.HightScore</ref> &gt;</type>
+          <declname>listHightScores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="62" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="62" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_leaderboard_1aa7f0f278ebd981a06a728b4e8a1287d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.ResetList</definition>
+        <argsstring>()</argsstring>
+        <name>ResetList</name>
+        <qualifiedname>Leaderboard.ResetList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="70" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_leaderboard_1a299aeb6ce5dfb42d26225b88ffdac280" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.GenerateList</definition>
+        <argsstring>(List&lt; GameManager.HightScore &gt; listHightScores)</argsstring>
+        <name>GenerateList</name>
+        <qualifiedname>Leaderboard.GenerateList</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="struct_game_manager_1_1_hight_score" kindref="compound">GameManager.HightScore</ref> &gt;</type>
+          <declname>listHightScores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="80" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_leaderboard_1a23e427b55cd22f3e9535533408f3fcae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Leaderboard.InitialisePlayerInfo</definition>
+        <argsstring>(HightScoreObject hight, int rank, string name, int score)</argsstring>
+        <name>InitialisePlayerInfo</name>
+        <qualifiedname>Leaderboard.InitialisePlayerInfo</qualifiedname>
+        <param>
+          <type><ref refid="class_hight_score_object" kindref="compound">HightScoreObject</ref></type>
+          <declname>hight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="93" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="93" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Leaderboard</label>
+        <link refid="class_leaderboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Leaderboard</label>
+        <link refid="class_leaderboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" line="6" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs" bodystart="7" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_leaderboard_1a67529c9af9546f60a69409f002e831c5" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>_listHightScoreObject</name></member>
+      <member refid="class_leaderboard_1a54cd209929e30f0ecc46debda794dcd2" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>_parent</name></member>
+      <member refid="class_leaderboard_1ac869d9a8fc10a9850e0d60c6f1766e3b" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>_prefab</name></member>
+      <member refid="class_leaderboard_1adb6333524d4c60245c5e8857b08f8902" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>_scrollBar</name></member>
+      <member refid="class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf" prot="public" virt="non-virtual"><scope>Leaderboard</scope><name>CountList</name></member>
+      <member refid="class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53" prot="public" virt="non-virtual"><scope>Leaderboard</scope><name>DownList</name></member>
+      <member refid="class_leaderboard_1a299aeb6ce5dfb42d26225b88ffdac280" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>GenerateList</name></member>
+      <member refid="class_leaderboard_1a23e427b55cd22f3e9535533408f3fcae" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>InitialisePlayerInfo</name></member>
+      <member refid="class_leaderboard_1aa7f0f278ebd981a06a728b4e8a1287d3" prot="private" virt="non-virtual"><scope>Leaderboard</scope><name>ResetList</name></member>
+      <member refid="class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509" prot="public" virt="non-virtual"><scope>Leaderboard</scope><name>UpdateList</name></member>
+      <member refid="class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885" prot="public" virt="non-virtual"><scope>Leaderboard</scope><name>UpList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

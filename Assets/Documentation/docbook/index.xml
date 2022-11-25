@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="fr">
+    <info>
+    <title>EvilWare</title>
+    </info>
+<chapter>
+    <title>Documentation des classes</title>
+    <xi:include href="class_clock.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_input_three_1_1_default_actions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_game_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_game_manager_1_1_hight_score.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_hight_score_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interface_input_three_1_1_i_default_actions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_input_three.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_leaderboard.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_level_gladia_jump.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_level_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_menu_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_game_manager_1_1_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_playfab_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Documentation des fichiers</title>
+    <xi:include href="_game_manager_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_game_manager_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_input_three_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_input_three_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_level_gladia_jump_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_level_gladia_jump_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_level_manager_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_level_manager_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_menu_manager_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_menu_manager_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_playfab_manager_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_playfab_manager_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_clock_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_clock_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_hight_score_object_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_hight_score_object_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_leaderboard_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_leaderboard_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

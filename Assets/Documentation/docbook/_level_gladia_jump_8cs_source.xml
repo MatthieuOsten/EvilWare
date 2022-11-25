@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__level_gladia_jump_8cs_source" xml:lang="fr">
+<title>LevelGladiaJump.cs</title>
+<indexterm><primary>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs</primary></indexterm>
+Aller à la documentation de ce fichier.<programlisting linenumbering="unnumbered"><anchor xml:id="__level_gladia_jump_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Collections;
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>UnityEngine;
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00004"/>00004 
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00005"/><link linkend="_class_level_gladia_jump">00005</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_level_gladia_jump">LevelGladiaJump</link>&#32;:&#32;<link linkend="_class_level_manager">LevelManager</link>
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Start&#32;is&#32;called&#32;before&#32;the&#32;first&#32;frame&#32;update</emphasis>
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;Start()
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00009"/>00009 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_level_manager_1a73c737d14d450af89d36714cf84689d6">StartLevel</link>();
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00012"/>00012 
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Update&#32;is&#32;called&#32;once&#32;per&#32;frame</emphasis>
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;Update()
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7">UpdateLevel</link>();
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_gladia_jump_8cs_source_1l00018"/>00018 }
+</programlisting></section>

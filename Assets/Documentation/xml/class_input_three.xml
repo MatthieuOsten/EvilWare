@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_input_three" kind="class" language="C#" prot="public">
+    <compoundname>InputThree</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IInputActionCollection2</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+    <innerclass refid="struct_input_three_1_1_default_actions" prot="public">InputThree::DefaultActions</innerclass>
+    <innerclass refid="interface_input_three_1_1_i_default_actions" prot="public">InputThree::IDefaultActions</innerclass>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_input_three_1aae4ddff4750083d4eb5839c4d7a644ca" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputActionAsset</type>
+        <definition>InputActionAsset InputThree.asset</definition>
+        <argsstring></argsstring>
+        <name>asset</name>
+        <qualifiedname>InputThree.asset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="20" column="29" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>InputBinding?</type>
+        <definition>InputBinding? InputThree.bindingMask</definition>
+        <argsstring></argsstring>
+        <name>bindingMask</name>
+        <qualifiedname>InputThree.bindingMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="121" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1ae800d88cede4c5b2a3591d6703cae065" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ReadOnlyArray&lt; InputDevice &gt;?</type>
+        <definition>ReadOnlyArray&lt;InputDevice&gt;? InputThree.devices</definition>
+        <argsstring></argsstring>
+        <name>devices</name>
+        <qualifiedname>InputThree.devices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="127" column="26" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1a721b628f840b1a914fb9f4bedf0ea29a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ReadOnlyArray&lt; InputControlScheme &gt;</type>
+        <definition>ReadOnlyArray&lt;InputControlScheme&gt; InputThree.controlSchemes</definition>
+        <argsstring></argsstring>
+        <name>controlSchemes</name>
+        <qualifiedname>InputThree.controlSchemes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="133" column="26" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1acb0301842d367c7d2fc7e7f286cb4faa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; InputBinding &gt;</type>
+        <definition>IEnumerable&lt;InputBinding&gt; InputThree.bindings</definition>
+        <argsstring></argsstring>
+        <name>bindings</name>
+        <qualifiedname>InputThree.bindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="159" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1a6f14be7271cd3675650579c9dfc34d7a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_input_three_1_1_default_actions" kindref="compound">DefaultActions</ref></type>
+        <definition>DefaultActions InputThree.Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <qualifiedname>InputThree.Default</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="217" column="27" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_input_three_1ae5ddcd518f6e0735c6598d45699ab606" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputControlScheme</type>
+        <definition>InputControlScheme InputThree.DefaultScheme</definition>
+        <argsstring></argsstring>
+        <name>DefaultScheme</name>
+        <qualifiedname>InputThree.DefaultScheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="219" column="31" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="220" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_input_three_1a01937c231e014607d86120569fd7abba" prot="private" static="no" mutable="no">
+        <type>readonly InputActionMap</type>
+        <definition>readonly InputActionMap InputThree.m_Default</definition>
+        <argsstring></argsstring>
+        <name>m_Default</name>
+        <qualifiedname>InputThree.m_Default</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="171" column="37" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_three_1a0a24701243b3b9a7821839d013a6126b" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_input_three_1_1_i_default_actions" kindref="compound">IDefaultActions</ref></type>
+        <definition>IDefaultActions InputThree.m_DefaultActionsCallbackInterface</definition>
+        <argsstring></argsstring>
+        <name>m_DefaultActionsCallbackInterface</name>
+        <qualifiedname>InputThree.m_DefaultActionsCallbackInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="172" column="29" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_three_1adb6d754610482072d5c152db1031926a" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction InputThree.m_Default_InputLeft</definition>
+        <argsstring></argsstring>
+        <name>m_Default_InputLeft</name>
+        <qualifiedname>InputThree.m_Default_InputLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="173" column="34" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_three_1aae7b83652728c9747c701388f94e77d3" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction InputThree.m_Default_InputRight</definition>
+        <argsstring></argsstring>
+        <name>m_Default_InputRight</name>
+        <qualifiedname>InputThree.m_Default_InputRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="174" column="34" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_three_1afb035a99268e293434ff1664eb9b4d1b" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction InputThree.m_Default_InputEnter</definition>
+        <argsstring></argsstring>
+        <name>m_Default_InputEnter</name>
+        <qualifiedname>InputThree.m_Default_InputEnter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="175" column="34" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_three_1abacc2f27b490e7888e955e28760f8dfb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InputThree.m_DefaultSchemeIndex</definition>
+        <argsstring></argsstring>
+        <name>m_DefaultSchemeIndex</name>
+        <qualifiedname>InputThree.m_DefaultSchemeIndex</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="218" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_input_three_1aa87418529da6597f789f135aa885fb8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InputThree.InputThree</definition>
+        <argsstring>()</argsstring>
+        <name>InputThree</name>
+        <qualifiedname>InputThree.InputThree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="21" column="12" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="21" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1acde9ef40d00a2eb538da38d7d7df5b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>InputThree.Dispose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="116" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1ae84b74794775da4ec5019bd40e52cd62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InputThree.Contains</definition>
+        <argsstring>(InputAction action)</argsstring>
+        <name>Contains</name>
+        <qualifiedname>InputThree.Contains</qualifiedname>
+        <param>
+          <type>InputAction</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="135" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1aa44413083d187fc47e74ad33d67a903f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator&lt; InputAction &gt;</type>
+        <definition>IEnumerator&lt; InputAction &gt; InputThree.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <qualifiedname>InputThree.GetEnumerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="140" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1a9d6ea80dfd2d74bc0138864c586d127b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <qualifiedname>InputThree.Enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="150" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1ae715ec38890a93362ab796d830491557" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <qualifiedname>InputThree.Disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="155" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1a20b99a00ddf624186d5e1cb3b35098fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputAction</type>
+        <definition>InputAction InputThree.FindAction</definition>
+        <argsstring>(string actionNameOrId, bool throwIfNotFound=false)</argsstring>
+        <name>FindAction</name>
+        <qualifiedname>InputThree.FindAction</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>actionNameOrId</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>throwIfNotFound</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="161" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_three_1a9b78363b33a20c5eac66cf1ba3077565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InputThree.FindBinding</definition>
+        <argsstring>(InputBinding bindingMask, out InputAction action)</argsstring>
+        <name>FindBinding</name>
+        <qualifiedname>InputThree.FindBinding</qualifiedname>
+        <param>
+          <type>InputBinding</type>
+          <declname>bindingMask</declname>
+        </param>
+        <param>
+          <type>out InputAction</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="165" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="165" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_input_three_1af0ddf906e735d5f36d57a8b300280331" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator IEnumerable.</type>
+        <definition>IEnumerator IEnumerable. InputThree.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <qualifiedname>InputThree.GetEnumerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="145" column="28" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="145" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="2">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="1">
+        <label>InputThree</label>
+        <link refid="class_input_three"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="2">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="1">
+        <label>InputThree</label>
+        <link refid="class_input_three"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="18" column="15" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="19" bodyend="233"/>
+    <listofallmembers>
+      <member refid="class_input_three_1aae4ddff4750083d4eb5839c4d7a644ca" prot="public" virt="non-virtual"><scope>InputThree</scope><name>asset</name></member>
+      <member refid="class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3" prot="public" virt="non-virtual"><scope>InputThree</scope><name>bindingMask</name></member>
+      <member refid="class_input_three_1acb0301842d367c7d2fc7e7f286cb4faa" prot="public" virt="non-virtual"><scope>InputThree</scope><name>bindings</name></member>
+      <member refid="class_input_three_1ae84b74794775da4ec5019bd40e52cd62" prot="public" virt="non-virtual"><scope>InputThree</scope><name>Contains</name></member>
+      <member refid="class_input_three_1a721b628f840b1a914fb9f4bedf0ea29a" prot="public" virt="non-virtual"><scope>InputThree</scope><name>controlSchemes</name></member>
+      <member refid="class_input_three_1a6f14be7271cd3675650579c9dfc34d7a" prot="public" virt="non-virtual"><scope>InputThree</scope><name>Default</name></member>
+      <member refid="class_input_three_1ae5ddcd518f6e0735c6598d45699ab606" prot="public" virt="non-virtual"><scope>InputThree</scope><name>DefaultScheme</name></member>
+      <member refid="class_input_three_1ae800d88cede4c5b2a3591d6703cae065" prot="public" virt="non-virtual"><scope>InputThree</scope><name>devices</name></member>
+      <member refid="class_input_three_1ae715ec38890a93362ab796d830491557" prot="public" virt="non-virtual"><scope>InputThree</scope><name>Disable</name></member>
+      <member refid="class_input_three_1acde9ef40d00a2eb538da38d7d7df5b62" prot="public" virt="non-virtual"><scope>InputThree</scope><name>Dispose</name></member>
+      <member refid="class_input_three_1a9d6ea80dfd2d74bc0138864c586d127b" prot="public" virt="non-virtual"><scope>InputThree</scope><name>Enable</name></member>
+      <member refid="class_input_three_1a20b99a00ddf624186d5e1cb3b35098fe" prot="public" virt="non-virtual"><scope>InputThree</scope><name>FindAction</name></member>
+      <member refid="class_input_three_1a9b78363b33a20c5eac66cf1ba3077565" prot="public" virt="non-virtual"><scope>InputThree</scope><name>FindBinding</name></member>
+      <member refid="class_input_three_1aa44413083d187fc47e74ad33d67a903f" prot="public" virt="non-virtual"><scope>InputThree</scope><name>GetEnumerator</name></member>
+      <member refid="class_input_three_1af0ddf906e735d5f36d57a8b300280331" prot="private" virt="non-virtual"><scope>InputThree</scope><name>GetEnumerator</name></member>
+      <member refid="class_input_three_1aa87418529da6597f789f135aa885fb8c" prot="public" virt="non-virtual"><scope>InputThree</scope><name>InputThree</name></member>
+      <member refid="class_input_three_1a01937c231e014607d86120569fd7abba" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_Default</name></member>
+      <member refid="class_input_three_1afb035a99268e293434ff1664eb9b4d1b" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_Default_InputEnter</name></member>
+      <member refid="class_input_three_1adb6d754610482072d5c152db1031926a" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_Default_InputLeft</name></member>
+      <member refid="class_input_three_1aae7b83652728c9747c701388f94e77d3" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_Default_InputRight</name></member>
+      <member refid="class_input_three_1a0a24701243b3b9a7821839d013a6126b" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_DefaultActionsCallbackInterface</name></member>
+      <member refid="class_input_three_1abacc2f27b490e7888e955e28760f8dfb" prot="private" virt="non-virtual"><scope>InputThree</scope><name>m_DefaultSchemeIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

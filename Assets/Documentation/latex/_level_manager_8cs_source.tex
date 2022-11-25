@@ -1,0 +1,82 @@
+\hypertarget{_level_manager_8cs_source}{}\doxysection{Level\+Manager.\+cs}
+\label{_level_manager_8cs_source}\index{C:/Users/mat20/Desktop/GameJam\_MiniJam\#112/UnityProject\_EvilWare/Assets/Scripts/Level/LevelManager.cs@{C:/Users/mat20/Desktop/GameJam\_MiniJam\#112/UnityProject\_EvilWare/Assets/Scripts/Level/LevelManager.cs}}
+\mbox{\hyperlink{_level_manager_8cs}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEngine.SceneManagement;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00006}\mbox{\hyperlink{class_level_manager}{00006}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_level_manager}{LevelManager}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00009}00009 \textcolor{preprocessor}{    \#region SINGLETON}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00014}00014     [SerializeField] \textcolor{keyword}{private} \textcolor{keyword}{static} \mbox{\hyperlink{class_level_manager}{LevelManager}} \_instance = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00016}\mbox{\hyperlink{class_level_manager_a4e58c52b52fc7486c8f6ede86867be7b}{00016}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{class_level_manager}{LevelManager}} \mbox{\hyperlink{class_level_manager_a4e58c52b52fc7486c8f6ede86867be7b}{Instance}}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00018}00018         \textcolor{keyword}{get}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00019}00019         \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00020}00020             \textcolor{keywordflow}{if} (\_instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00021}00021             \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00022}00022                 \_instance = GameObject.FindObjectOfType<\mbox{\hyperlink{class_level_manager}{LevelManager}}>();}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00023}00023                 \textcolor{comment}{// Si vrai, l'instance va etre cree}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00024}00024                 \textcolor{keywordflow}{if} (\_instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00025}00025                 \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00026}00026                     var newObjectInstance = \textcolor{keyword}{new} GameObject();}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00027}00027                     newObjectInstance.name = typeof(\mbox{\hyperlink{class_level_manager}{LevelManager}}).ToString();}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00028}00028                     \_instance = newObjectInstance.AddComponent<\mbox{\hyperlink{class_level_manager}{LevelManager}}>();}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00029}00029                 \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00030}00030             \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00031}00031             \textcolor{keywordflow}{return} \_instance;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00032}00032         \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00033}00033     \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00035}00035 \textcolor{preprocessor}{    \#endregion}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00037}00037 \textcolor{preprocessor}{    \#region ASCESSEUR}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00038}00038 \textcolor{preprocessor}{    \#endregion}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00040}00040 \textcolor{preprocessor}{    \#region VARIABLE}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00042}00042     [Header(\textcolor{stringliteral}{"{}INPUT"{}})]}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00043}\mbox{\hyperlink{class_level_manager_a92f70689bfdf38b86d3af94a95d56306}{00043}}     [SerializeField] \textcolor{keyword}{protected} \mbox{\hyperlink{class_input_three}{InputThree}} \mbox{\hyperlink{class_level_manager_a92f70689bfdf38b86d3af94a95d56306}{\_inputs}};}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00045}00045     [Header(\textcolor{stringliteral}{"{}SCENE"{}})]}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00046}00046     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{string} \_sceneIntro;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00047}00047     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{string} \_sceneChrono;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00049}00049     [Header(\textcolor{stringliteral}{"{}Intro"{}})]}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00051}00051     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{string} \_objective;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00053}00053     [Header(\textcolor{stringliteral}{"{}CHRONO"{}})]}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00054}00054     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{float} \_timerChrono;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00055}00055     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{float} \_timeToChrono;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00057}00057 \textcolor{preprocessor}{    \#endregion}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00059}00059 \textcolor{preprocessor}{    \#region FUNCTION}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00061}\mbox{\hyperlink{class_level_manager_a73c737d14d450af89d36714cf84689d6}{00061}}     \textcolor{keyword}{protected} \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_level_manager_a73c737d14d450af89d36714cf84689d6}{StartLevel}}()}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00062}00062     \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00063}00063         SceneManager.LoadScene(\_sceneIntro, LoadSceneMode.Additive);}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00064}00064         GameManager.Instance.State = \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_a809dec58b5681fc1ebcc22eb428a914c}{GameState}}.Cinematic;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00065}00065     \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00067}\mbox{\hyperlink{class_level_manager_a9a80f6c208370ee20e04a695cf2a96a7}{00067}}     \textcolor{keyword}{protected} \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_level_manager_a9a80f6c208370ee20e04a695cf2a96a7}{UpdateLevel}}()}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00068}00068     \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00069}00069         SceneManager.LoadScene(\_sceneChrono, LoadSceneMode.Additive);}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00072}\mbox{\hyperlink{class_level_manager_a6282e12f4cfcd93c89c9662435860982}{00072}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_level_manager_a6282e12f4cfcd93c89c9662435860982}{FinishIntro}}()}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00073}00073     \{}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00074}00074         SceneManager.UnloadSceneAsync(\_sceneIntro);}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00075}00075         GameManager.Instance.State = \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_a809dec58b5681fc1ebcc22eb428a914c}{GameState}}.Ingame;}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00078}00078 \textcolor{preprocessor}{    \#endregion}}
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_level_manager_8cs_source_l00080}00080 \}}
+
+\end{DoxyCode}

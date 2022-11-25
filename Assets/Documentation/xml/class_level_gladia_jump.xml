@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_level_gladia_jump" kind="class" language="C#" prot="public">
+    <compoundname>LevelGladiaJump</compoundname>
+    <basecompoundref refid="class_level_manager" prot="public" virt="non-virtual">LevelManager</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_level_gladia_jump_1a36e4edba1553e8d411f868893472dbc1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LevelGladiaJump.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>LevelGladiaJump.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" line="8" column="10" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_gladia_jump_1a9e9512eaae028233978ec1e7909239ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LevelGladiaJump.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>LevelGladiaJump.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" line="14" column="10" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LevelGladiaJump</label>
+        <link refid="class_level_gladia_jump"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LevelManager</label>
+        <link refid="class_level_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>IDisposable</label>
+      </node>
+      <node id="5">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="4">
+        <label>InputThree</label>
+        <link refid="class_input_three"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LevelGladiaJump</label>
+        <link refid="class_level_gladia_jump"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LevelManager</label>
+        <link refid="class_level_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_inputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" line="5" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_level_manager_1a92f70689bfdf38b86d3af94a95d56306" prot="protected" virt="non-virtual"><scope>LevelGladiaJump</scope><name>_inputs</name></member>
+      <member refid="class_level_manager_1a6282e12f4cfcd93c89c9662435860982" prot="public" virt="non-virtual"><scope>LevelGladiaJump</scope><name>FinishIntro</name></member>
+      <member refid="class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b" prot="public" virt="non-virtual"><scope>LevelGladiaJump</scope><name>Instance</name></member>
+      <member refid="class_level_gladia_jump_1a36e4edba1553e8d411f868893472dbc1" prot="private" virt="non-virtual"><scope>LevelGladiaJump</scope><name>Start</name></member>
+      <member refid="class_level_manager_1a73c737d14d450af89d36714cf84689d6" prot="protected" virt="virtual"><scope>LevelGladiaJump</scope><name>StartLevel</name></member>
+      <member refid="class_level_gladia_jump_1a9e9512eaae028233978ec1e7909239ba" prot="private" virt="non-virtual"><scope>LevelGladiaJump</scope><name>Update</name></member>
+      <member refid="class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7" prot="protected" virt="virtual"><scope>LevelGladiaJump</scope><name>UpdateLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

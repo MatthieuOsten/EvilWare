@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="fr">
+  <compound refid="class_clock" kind="class"><name>Clock</name>
+    <member refid="class_clock_1a0f52c529414d20079199c19f6e0be9f0" kind="variable"><name>_actualNeedleRotation</name></member>
+    <member refid="class_clock_1a7ba70bea0c8002eb7c08649ac58d21b7" kind="variable"><name>_actualFilling</name></member>
+    <member refid="class_clock_1a52d62d341d9fa3b6aa675d82d088e0e4" kind="variable"><name>_needle</name></member>
+    <member refid="class_clock_1ae14cdc98ec74ab57bb6ff8701a4a97c7" kind="variable"><name>_imageFilling</name></member>
+    <member refid="class_clock_1a8fa2631df939ef970b50ca31a2ba73e2" kind="variable"><name>_FillingToNeedle</name></member>
+    <member refid="class_clock_1aa051b7014f87a8683eff2a093a489bb8" kind="property"><name>ActualNeedleRotation</name></member>
+    <member refid="class_clock_1aaefdd20e4f0b1de0576b50a0f18275e6" kind="property"><name>ActualFilling</name></member>
+    <member refid="class_clock_1a56c7e800fc1f0ebb8823541b9c74e55a" kind="function"><name>Update</name></member>
+    <member refid="class_clock_1a7de78e2fbcbf729fa715e80cfb66dce6" kind="function"><name>UpdateDisplay</name></member>
+  </compound>
+  <compound refid="struct_input_three_1_1_default_actions" kind="struct"><name>InputThree::DefaultActions</name>
+    <member refid="struct_input_three_1_1_default_actions_1ae31574472fd56c1dddeb4365c8a48b0b" kind="variable"><name>m_Wrapper</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a68b3be5dc1b0cdaf238d27d329d35f9a" kind="property"><name>InputLeft</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a0cdbefc12d449baf2b5f2d1dd9a499fe" kind="property"><name>InputRight</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a9b57272eeb8a951c834d1d24dbbda132" kind="property"><name>InputEnter</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1ab2ab6629608eb6062760abcbf9f3e2f7" kind="property"><name>enabled</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a3f37efe86508c5d12358d7f983330066" kind="function"><name>DefaultActions</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1ad67b07e1a4ca266df986041eddf1a863" kind="function"><name>Get</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a05a122f866abec50d233c3e4e2dea44c" kind="function"><name>Enable</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1a109bcfbef5a1cf5a4efbca20e5b47cde" kind="function"><name>Disable</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1ae39b03b36af3d1d9dabfb0312f488f5b" kind="function"><name>SetCallbacks</name></member>
+    <member refid="struct_input_three_1_1_default_actions_1ad272cda696bbce081daf35ab7b42e83e" kind="function"><name>operator InputActionMap</name></member>
+  </compound>
+  <compound refid="class_game_manager" kind="class"><name>GameManager</name>
+    <member refid="class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c" kind="enum"><name>GameState</name></member>
+    <member refid="class_game_manager_1a622d6198217a616ad5c18c0fc1788576" kind="enum"><name>Difficulty</name></member>
+    <member refid="class_game_manager_1a8cac45bedf02622598c5a723a18f21a4" kind="variable"><name>_instance</name></member>
+    <member refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" kind="property"><name>Instance</name></member>
+    <member refid="class_game_manager_1a6159631ccb4b92badcb34e47e965c912" kind="property"><name>Leaderboard</name></member>
+    <member refid="class_game_manager_1aed60893865c6525844ef071d9a2479ff" kind="property"><name>Inputs</name></member>
+    <member refid="class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5" kind="property"><name>PlayfabManager</name></member>
+    <member refid="class_game_manager_1a1566326d0df184b9d381da94f72ec77a" kind="property"><name>ThePlayer</name></member>
+    <member refid="class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9" kind="property"><name>State</name></member>
+    <member refid="class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3" kind="property"><name>GetDifficulty</name></member>
+    <member refid="class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0" kind="property"><name>Score</name></member>
+    <member refid="class_game_manager_1ad2c03e5c92c5d2a6facb6119561d224c" kind="variable"><name>_state</name></member>
+    <member refid="class_game_manager_1a0ef167521d33c1e753f1790f2c66cae5" kind="variable"><name>_actualDifficulty</name></member>
+    <member refid="class_game_manager_1ab95c6bcbf78312641a0c40115a6d7e10" kind="variable"><name>_inputManager</name></member>
+    <member refid="class_game_manager_1abbdaa9696161c1c31d22b46cd495741f" kind="variable"><name>_player</name></member>
+    <member refid="class_game_manager_1adb1e9aaa4350ea427fbe23a17d9adb28" kind="variable"><name>_playfab</name></member>
+    <member refid="class_game_manager_1a06e8cb8b67d30ae0947387d0df87f742" kind="variable"><name>_leaderboard</name></member>
+    <member refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" kind="function"><name>Awake</name></member>
+    <member refid="class_game_manager_1a5ccfacd027ad08eeb4ff1f25a7f59c98" kind="function"><name>Start</name></member>
+    <member refid="class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344" kind="function"><name>EnableInputManager</name></member>
+    <member refid="class_game_manager_1aa4fd8fd347398e403532fc3171989c06" kind="function"><name>DisableInputManager</name></member>
+  </compound>
+  <compound refid="struct_game_manager_1_1_hight_score" kind="struct"><name>GameManager::HightScore</name>
+    <member refid="struct_game_manager_1_1_hight_score_1a1d76e7fb0953e2663e24084b98c18c1f" kind="variable"><name>_name</name></member>
+    <member refid="struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c" kind="variable"><name>rank</name></member>
+    <member refid="struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674" kind="variable"><name>namePlayer</name></member>
+    <member refid="struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2" kind="variable"><name>score</name></member>
+    <member refid="struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a" kind="function"><name>HightScore</name></member>
+  </compound>
+  <compound refid="class_hight_score_object" kind="class"><name>HightScoreObject</name>
+    <member refid="class_hight_score_object_1a51ba00327e09db69c1111b8718e73e79" kind="variable"><name>imageRank</name></member>
+    <member refid="class_hight_score_object_1a1f6515a2ec556833abfa2a97eb96512b" kind="variable"><name>rank</name></member>
+    <member refid="class_hight_score_object_1afbca906dd1db27a388faa768f22a45d6" kind="variable"><name>name</name></member>
+    <member refid="class_hight_score_object_1a93bb624f85987e43f42f4baf8304e5b6" kind="variable"><name>score</name></member>
+  </compound>
+  <compound refid="interface_input_three_1_1_i_default_actions" kind="interface"><name>InputThree::IDefaultActions</name>
+    <member refid="interface_input_three_1_1_i_default_actions_1a30cbb6464c5bf5d9830d3c9e161fc738" kind="function"><name>OnInputLeft</name></member>
+    <member refid="interface_input_three_1_1_i_default_actions_1a863d732f48d716f0a32289dabb44674a" kind="function"><name>OnInputRight</name></member>
+    <member refid="interface_input_three_1_1_i_default_actions_1a842adcb16cd136b2429e123e6ddced00" kind="function"><name>OnInputEnter</name></member>
+  </compound>
+  <compound refid="class_input_three" kind="class"><name>InputThree</name>
+    <member refid="class_input_three_1aae4ddff4750083d4eb5839c4d7a644ca" kind="property"><name>asset</name></member>
+    <member refid="class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3" kind="property"><name>bindingMask</name></member>
+    <member refid="class_input_three_1ae800d88cede4c5b2a3591d6703cae065" kind="property"><name>devices</name></member>
+    <member refid="class_input_three_1a721b628f840b1a914fb9f4bedf0ea29a" kind="property"><name>controlSchemes</name></member>
+    <member refid="class_input_three_1acb0301842d367c7d2fc7e7f286cb4faa" kind="property"><name>bindings</name></member>
+    <member refid="class_input_three_1a6f14be7271cd3675650579c9dfc34d7a" kind="property"><name>Default</name></member>
+    <member refid="class_input_three_1ae5ddcd518f6e0735c6598d45699ab606" kind="property"><name>DefaultScheme</name></member>
+    <member refid="class_input_three_1a01937c231e014607d86120569fd7abba" kind="variable"><name>m_Default</name></member>
+    <member refid="class_input_three_1a0a24701243b3b9a7821839d013a6126b" kind="variable"><name>m_DefaultActionsCallbackInterface</name></member>
+    <member refid="class_input_three_1adb6d754610482072d5c152db1031926a" kind="variable"><name>m_Default_InputLeft</name></member>
+    <member refid="class_input_three_1aae7b83652728c9747c701388f94e77d3" kind="variable"><name>m_Default_InputRight</name></member>
+    <member refid="class_input_three_1afb035a99268e293434ff1664eb9b4d1b" kind="variable"><name>m_Default_InputEnter</name></member>
+    <member refid="class_input_three_1abacc2f27b490e7888e955e28760f8dfb" kind="variable"><name>m_DefaultSchemeIndex</name></member>
+    <member refid="class_input_three_1aa87418529da6597f789f135aa885fb8c" kind="function"><name>InputThree</name></member>
+    <member refid="class_input_three_1acde9ef40d00a2eb538da38d7d7df5b62" kind="function"><name>Dispose</name></member>
+    <member refid="class_input_three_1ae84b74794775da4ec5019bd40e52cd62" kind="function"><name>Contains</name></member>
+    <member refid="class_input_three_1aa44413083d187fc47e74ad33d67a903f" kind="function"><name>GetEnumerator</name></member>
+    <member refid="class_input_three_1a9d6ea80dfd2d74bc0138864c586d127b" kind="function"><name>Enable</name></member>
+    <member refid="class_input_three_1ae715ec38890a93362ab796d830491557" kind="function"><name>Disable</name></member>
+    <member refid="class_input_three_1a20b99a00ddf624186d5e1cb3b35098fe" kind="function"><name>FindAction</name></member>
+    <member refid="class_input_three_1a9b78363b33a20c5eac66cf1ba3077565" kind="function"><name>FindBinding</name></member>
+    <member refid="class_input_three_1af0ddf906e735d5f36d57a8b300280331" kind="function"><name>GetEnumerator</name></member>
+  </compound>
+  <compound refid="class_leaderboard" kind="class"><name>Leaderboard</name>
+    <member refid="class_leaderboard_1a67529c9af9546f60a69409f002e831c5" kind="variable"><name>_listHightScoreObject</name></member>
+    <member refid="class_leaderboard_1adb6333524d4c60245c5e8857b08f8902" kind="variable"><name>_scrollBar</name></member>
+    <member refid="class_leaderboard_1a54cd209929e30f0ecc46debda794dcd2" kind="variable"><name>_parent</name></member>
+    <member refid="class_leaderboard_1ac869d9a8fc10a9850e0d60c6f1766e3b" kind="variable"><name>_prefab</name></member>
+    <member refid="class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf" kind="property"><name>CountList</name></member>
+    <member refid="class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885" kind="function"><name>UpList</name></member>
+    <member refid="class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53" kind="function"><name>DownList</name></member>
+    <member refid="class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509" kind="function"><name>UpdateList</name></member>
+    <member refid="class_leaderboard_1aa7f0f278ebd981a06a728b4e8a1287d3" kind="function"><name>ResetList</name></member>
+    <member refid="class_leaderboard_1a299aeb6ce5dfb42d26225b88ffdac280" kind="function"><name>GenerateList</name></member>
+    <member refid="class_leaderboard_1a23e427b55cd22f3e9535533408f3fcae" kind="function"><name>InitialisePlayerInfo</name></member>
+  </compound>
+  <compound refid="class_level_gladia_jump" kind="class"><name>LevelGladiaJump</name>
+    <member refid="class_level_gladia_jump_1a36e4edba1553e8d411f868893472dbc1" kind="function"><name>Start</name></member>
+    <member refid="class_level_gladia_jump_1a9e9512eaae028233978ec1e7909239ba" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_level_manager" kind="class"><name>LevelManager</name>
+    <member refid="class_level_manager_1a1e68760b81bfe11cd32185f5c45051fc" kind="variable"><name>_instance</name></member>
+    <member refid="class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b" kind="property"><name>Instance</name></member>
+    <member refid="class_level_manager_1a92f70689bfdf38b86d3af94a95d56306" kind="variable"><name>_inputs</name></member>
+    <member refid="class_level_manager_1ab0fa04347c7c87d13ff819f85c15f871" kind="variable"><name>_sceneIntro</name></member>
+    <member refid="class_level_manager_1a311705da6c8619fa3984791187509c8a" kind="variable"><name>_sceneChrono</name></member>
+    <member refid="class_level_manager_1a767d744c03f8441e8d022d1e14787e41" kind="variable"><name>_objective</name></member>
+    <member refid="class_level_manager_1a8716f007ec74ff86196883e4cc747972" kind="variable"><name>_timerChrono</name></member>
+    <member refid="class_level_manager_1a7cfef3bd9d486c2e21a65a9e16ed8d9a" kind="variable"><name>_timeToChrono</name></member>
+    <member refid="class_level_manager_1a73c737d14d450af89d36714cf84689d6" kind="function"><name>StartLevel</name></member>
+    <member refid="class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7" kind="function"><name>UpdateLevel</name></member>
+    <member refid="class_level_manager_1a6282e12f4cfcd93c89c9662435860982" kind="function"><name>FinishIntro</name></member>
+  </compound>
+  <compound refid="class_menu_manager" kind="class"><name>MenuManager</name>
+    <member refid="class_menu_manager_1ae36c45400656477af5338836ca735b60" kind="enum"><name>MenuState</name></member>
+    <member refid="class_menu_manager_1ac645b4c7149b5bf46f48aa6196a34d4f" kind="variable"><name>_menuState</name></member>
+    <member refid="class_menu_manager_1a52aa84cde0ad82439b862497d14845f5" kind="variable"><name>_oldState</name></member>
+    <member refid="class_menu_manager_1ab9eb43d2a59ca5769ec5839c58ad052f" kind="variable"><name>_sceneMenu</name></member>
+    <member refid="class_menu_manager_1afbc8c1a96847480d94e9b55fd4e0eef0" kind="variable"><name>_sceneStart</name></member>
+    <member refid="class_menu_manager_1ab11998b4107c500a47106a723ddbc1a3" kind="variable"><name>_canvasMenu</name></member>
+    <member refid="class_menu_manager_1a05fffdb4dd18481ee8662bcb7ed08e2a" kind="variable"><name>_canvasCredits</name></member>
+    <member refid="class_menu_manager_1a2c2ad788feb3ebeb9241ecffa05e593d" kind="variable"><name>_inputsEnter</name></member>
+    <member refid="class_menu_manager_1aaa3fa363da074410f42d8a2f5e0073b3" kind="variable"><name>_inputsLeft</name></member>
+    <member refid="class_menu_manager_1a4c9ffc92b128513395f17e415ad120e9" kind="variable"><name>_inputsRight</name></member>
+    <member refid="class_menu_manager_1a495273e6b67ae575e4207b5f3fec109b" kind="variable"><name>_leaderboard</name></member>
+    <member refid="class_menu_manager_1ac661586da5af5b10ae55b0c2f46b5237" kind="variable"><name>_leaderboardInput</name></member>
+    <member refid="class_menu_manager_1a037f94659180c415dcb8463c6add6219" kind="variable"><name>_leaderboardPanel</name></member>
+    <member refid="class_menu_manager_1a8693c2bd014e97fb84880dadada2f10c" kind="variable"><name>_leaderboardCharged</name></member>
+    <member refid="class_menu_manager_1acb2505c398c163f5cd4bfd5d8194d469" kind="variable"><name>_scrollSpeed</name></member>
+    <member refid="class_menu_manager_1a0d1ad0f11f3ba6dfd92559583939c407" kind="variable"><name>_timer</name></member>
+    <member refid="class_menu_manager_1a64b71830aa54bb342e44839e3dcd5864" kind="variable"><name>_timeTo</name></member>
+    <member refid="class_menu_manager_1a03115bff06441995b6bc1354e2c80235" kind="property"><name>LeaderboardIsCharged</name></member>
+    <member refid="class_menu_manager_1a479846feaf36055dc2dbb44cb374f015" kind="function"><name>Start</name></member>
+    <member refid="class_menu_manager_1a10283d21bf8cb8ef01807f14067f3994" kind="function"><name>Awake</name></member>
+    <member refid="class_menu_manager_1a03b8675f75855fc897134409bd2685fe" kind="function"><name>Update</name></member>
+    <member refid="class_menu_manager_1a701c8b580ef996d2cfe6de1ff27a1d88" kind="function"><name>InputManager</name></member>
+    <member refid="class_menu_manager_1aefa78fbead788718912ad8f703ec4e82" kind="function"><name>SwitchDisplayLeaderboard</name></member>
+    <member refid="class_menu_manager_1a5e8b751a301f5f9f6637e1bbff582973" kind="function"><name>Timer</name></member>
+  </compound>
+  <compound refid="class_game_manager_1_1_player" kind="class"><name>GameManager::Player</name>
+    <member refid="class_game_manager_1_1_player_1a4c37a7c8ec46827c523c9a58bfcefdcd" kind="variable"><name>_name</name></member>
+    <member refid="class_game_manager_1_1_player_1ae4a65b0a0b132069f8134e0f2185b9b2" kind="variable"><name>_id</name></member>
+    <member refid="class_game_manager_1_1_player_1a416f455b41a1b9c50e2c84a54a6ff049" kind="variable"><name>_score</name></member>
+    <member refid="class_game_manager_1_1_player_1adcdaeebee77fc2b10b9203c1024d047d" kind="variable"><name>_isConnected</name></member>
+    <member refid="class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26" kind="property"><name>Name</name></member>
+    <member refid="class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44" kind="property"><name>ID</name></member>
+    <member refid="class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f" kind="property"><name>IsConnected</name></member>
+    <member refid="class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb" kind="property"><name>Score</name></member>
+    <member refid="class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f" kind="function"><name>Player</name></member>
+    <member refid="class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573" kind="function"><name>Player</name></member>
+    <member refid="class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea" kind="function"><name>SetName</name></member>
+    <member refid="class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649" kind="function"><name>SetID</name></member>
+    <member refid="class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b" kind="function"><name>SetConnected</name></member>
+    <member refid="class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3" kind="function"><name>SetScore</name></member>
+  </compound>
+  <compound refid="class_playfab_manager" kind="class"><name>PlayfabManager</name>
+    <member refid="class_playfab_manager_1a8f9e28ceb04095720ad5b4c3622835ea" kind="variable"><name>_nameLeaderboard</name></member>
+    <member refid="class_playfab_manager_1ab5b1549834b77c9df54274cb2b697d2b" kind="variable"><name>_leaderboardCount</name></member>
+    <member refid="class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f" kind="function"><name>Login</name></member>
+    <member refid="class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d" kind="function"><name>SendLeaderboard</name></member>
+    <member refid="class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9" kind="function"><name>GetLeaderboard</name></member>
+    <member refid="class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac" kind="function"><name>UpdateDisplayName</name></member>
+    <member refid="class_playfab_manager_1abd39151f80cd84a39b945d13d9a42dd6" kind="function"><name>OnSuccess</name></member>
+    <member refid="class_playfab_manager_1a7fc35d79ab02ef59d2cffedb6a6ede5a" kind="function"><name>OnError</name></member>
+    <member refid="class_playfab_manager_1a5047cc768360ee48918a84e9a2602461" kind="function"><name>OnLeaderboardUpdate</name></member>
+    <member refid="class_playfab_manager_1a077b4fadf41725e28f386376ced91753" kind="function"><name>OnLeaderboardGet</name></member>
+    <member refid="class_playfab_manager_1ad1d72fa70da6e39e92a38b79aa8a67a8" kind="function"><name>OnDisplayNameUpdate</name></member>
+  </compound>
+  <compound refid="namespace_play_fab" kind="namespace"><name>PlayFab</name>
+  </compound>
+  <compound refid="namespace_play_fab_1_1_client_models" kind="namespace"><name>PlayFab::ClientModels</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_t_m_pro" kind="namespace"><name>TMPro</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system" kind="namespace"><name>UnityEngine::InputSystem</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system_1_1_utilities" kind="namespace"><name>UnityEngine::InputSystem::Utilities</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_game_manager_8cs" kind="file"><name>GameManager.cs</name>
+  </compound>
+  <compound refid="_input_three_8cs" kind="file"><name>InputThree.cs</name>
+  </compound>
+  <compound refid="_level_gladia_jump_8cs" kind="file"><name>LevelGladiaJump.cs</name>
+  </compound>
+  <compound refid="_level_manager_8cs" kind="file"><name>LevelManager.cs</name>
+  </compound>
+  <compound refid="_menu_manager_8cs" kind="file"><name>MenuManager.cs</name>
+  </compound>
+  <compound refid="_playfab_manager_8cs" kind="file"><name>PlayfabManager.cs</name>
+  </compound>
+  <compound refid="_clock_8cs" kind="file"><name>Clock.cs</name>
+  </compound>
+  <compound refid="_hight_score_object_8cs" kind="file"><name>HightScoreObject.cs</name>
+  </compound>
+  <compound refid="_leaderboard_8cs" kind="file"><name>Leaderboard.cs</name>
+  </compound>
+  <compound refid="dir_cc79b86b4eb535d1d3fb3e28dc29535e" kind="dir"><name>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input</name>
+  </compound>
+  <compound refid="dir_a72e060982e7d9aa9f2c50ad10ab3dab" kind="dir"><name>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level</name>
+  </compound>
+  <compound refid="dir_fa3f476697b6cdd1c4200dfb5b4ca63e" kind="dir"><name>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu</name>
+  </compound>
+  <compound refid="dir_4edcbb236dfd51dd81727243a38df6a0" kind="dir"><name>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts</name>
+  </compound>
+  <compound refid="dir_f341f5296257e68ffa47cc8d4a341860" kind="dir"><name>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets</name>
+  </compound>
+</doxygenindex>

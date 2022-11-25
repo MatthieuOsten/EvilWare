@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="_hight_score_object_8cs" kind="file" language="C#">
+    <compoundname>HightScoreObject.cs</compoundname>
+    <innerclass refid="class_hight_score_object" prot="public">HightScoreObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">TMPro;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_hight_score_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_hight_score_object" kindref="compound">HightScoreObject</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_hight_score_object_1a51ba00327e09db69c1111b8718e73e79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Image<sp/><ref refid="class_hight_score_object_1a51ba00327e09db69c1111b8718e73e79" kindref="member">imageRank</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_hight_score_object_1a1f6515a2ec556833abfa2a97eb96512b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TextMeshProUGUI<sp/><ref refid="class_hight_score_object_1a1f6515a2ec556833abfa2a97eb96512b" kindref="member">rank</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_hight_score_object_1afbca906dd1db27a388faa768f22a45d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TextMeshProUGUI<sp/><ref refid="class_hight_score_object_1afbca906dd1db27a388faa768f22a45d6" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_hight_score_object_1a93bb624f85987e43f42f4baf8304e5b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TextMeshProUGUI<sp/><ref refid="class_hight_score_object_1a93bb624f85987e43f42f4baf8304e5b6" kindref="member">score</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs"/>
+  </compounddef>
+</doxygen>

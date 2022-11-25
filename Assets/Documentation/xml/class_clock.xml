@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_clock" kind="class" language="C#" prot="public">
+    <compoundname>Clock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_clock_1a0f52c529414d20079199c19f6e0be9f0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Clock._actualNeedleRotation</definition>
+        <argsstring></argsstring>
+        <name>_actualNeedleRotation</name>
+        <qualifiedname>Clock._actualNeedleRotation</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="12" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_clock_1a7ba70bea0c8002eb7c08649ac58d21b7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Clock._actualFilling</definition>
+        <argsstring></argsstring>
+        <name>_actualFilling</name>
+        <qualifiedname>Clock._actualFilling</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="13" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_clock_1a52d62d341d9fa3b6aa675d82d088e0e4" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Clock._needle</definition>
+        <argsstring></argsstring>
+        <name>_needle</name>
+        <qualifiedname>Clock._needle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="16" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_clock_1ae14cdc98ec74ab57bb6ff8701a4a97c7" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image Clock._imageFilling</definition>
+        <argsstring></argsstring>
+        <name>_imageFilling</name>
+        <qualifiedname>Clock._imageFilling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="17" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_clock_1a8fa2631df939ef970b50ca31a2ba73e2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Clock._FillingToNeedle</definition>
+        <argsstring></argsstring>
+        <name>_FillingToNeedle</name>
+        <qualifiedname>Clock._FillingToNeedle</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="20" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_clock_1aa051b7014f87a8683eff2a093a489bb8" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Clock.ActualNeedleRotation</definition>
+        <argsstring></argsstring>
+        <name>ActualNeedleRotation</name>
+        <qualifiedname>Clock.ActualNeedleRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="26" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_clock_1aaefdd20e4f0b1de0576b50a0f18275e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Clock.ActualFilling</definition>
+        <argsstring></argsstring>
+        <name>ActualFilling</name>
+        <qualifiedname>Clock.ActualFilling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="36" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="36" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_clock_1a56c7e800fc1f0ebb8823541b9c74e55a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Clock.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>Clock.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="62" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_clock_1a7de78e2fbcbf729fa715e80cfb66dce6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Clock.UpdateDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateDisplay</name>
+        <qualifiedname>Clock.UpdateDisplay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="71" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="71" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Clock</label>
+        <link refid="class_clock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Clock</label>
+        <link refid="class_clock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" line="6" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs" bodystart="7" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_clock_1a7ba70bea0c8002eb7c08649ac58d21b7" prot="private" virt="non-virtual"><scope>Clock</scope><name>_actualFilling</name></member>
+      <member refid="class_clock_1a0f52c529414d20079199c19f6e0be9f0" prot="private" virt="non-virtual"><scope>Clock</scope><name>_actualNeedleRotation</name></member>
+      <member refid="class_clock_1a8fa2631df939ef970b50ca31a2ba73e2" prot="private" virt="non-virtual"><scope>Clock</scope><name>_FillingToNeedle</name></member>
+      <member refid="class_clock_1ae14cdc98ec74ab57bb6ff8701a4a97c7" prot="private" virt="non-virtual"><scope>Clock</scope><name>_imageFilling</name></member>
+      <member refid="class_clock_1a52d62d341d9fa3b6aa675d82d088e0e4" prot="private" virt="non-virtual"><scope>Clock</scope><name>_needle</name></member>
+      <member refid="class_clock_1aaefdd20e4f0b1de0576b50a0f18275e6" prot="public" virt="non-virtual"><scope>Clock</scope><name>ActualFilling</name></member>
+      <member refid="class_clock_1aa051b7014f87a8683eff2a093a489bb8" prot="private" virt="non-virtual"><scope>Clock</scope><name>ActualNeedleRotation</name></member>
+      <member refid="class_clock_1a56c7e800fc1f0ebb8823541b9c74e55a" prot="private" virt="non-virtual"><scope>Clock</scope><name>Update</name></member>
+      <member refid="class_clock_1a7de78e2fbcbf729fa715e80cfb66dce6" prot="private" virt="non-virtual"><scope>Clock</scope><name>UpdateDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

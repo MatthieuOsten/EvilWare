@@ -1,0 +1,3509 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment EvilWare  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+0.1.0 \par
+}}EvilWare}
+{\comment G\'E9n\'E9r\'E9 par doxygen 1.9.5.}
+{\creatim \yr2022\mo11\dy24\hr17\min6\sec37}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt EvilWare}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 0.1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Jeudi 24 Novembre 2022 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table des mati\'E8res\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index hi\'E9rarchique\par \pard\plain 
+{\tc \v Index hi\'E9rarchique}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Hi\'E9rarchie des classes\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Cette liste d'h\'E9ritage est class\'E9e approximativement par ordre alphab\'E9tique :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+InputThree.DefaultActions\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+GameManager.HightScore\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+InputThree.IDefaultActions\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+IDisposable
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+InputThree\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+IInputActionCollection2
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+InputThree\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+MonoBehaviour
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Clock\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+GameManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+HightScoreObject\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Leaderboard\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+LevelManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADN \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+LevelGladiaJump\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+MenuManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+PlayfabManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+GameManager.Player\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index des classes\par \pard\plain 
+{\tc \v Index des classes}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Liste des classes\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Liste des classes, structures, unions et interfaces avec une br\'E8ve description :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Clock} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b InputThree.DefaultActions} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GameManager} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GameManager.HightScore} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b HightScoreObject} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b InputThree.IDefaultActions} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b InputThree} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Leaderboard} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b LevelGladiaJump} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b LevelManager} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b MenuManager} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GameManager.Player} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PlayfabManager} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index des fichiers\par \pard\plain 
+{\tc \v Index des fichiers}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Liste des fichiers\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Liste de tous les fichiers avec une br\'E8ve description :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b GameManager.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b PlayfabManager.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/{\b InputThree.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/{\b LevelGladiaJump.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/{\b LevelManager.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/{\b MenuManager.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b Clock.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b HightScoreObject.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b Leaderboard.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentation des classes{\tc \v Documentation des classes}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe Clock\par \pard\plain 
+{\tc\tcl2 \v Clock}
+{\xe \v Clock}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+Graphe d'h\'E9ritage de Clock:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_clock.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b ActualFilling}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 6} du fichier {\b Clock.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v ActualFilling\:Clock}
+{\xe \v Clock\:ActualFilling}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Clock.ActualFilling{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 36} du fichier {\b Clock.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b Clock.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la structure InputThree.DefaultActions\par \pard\plain 
+{\tc\tcl2 \v InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions}
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DefaultActions} (@{\b InputThree} wrapper)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputActionMap {\b Get} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Enable} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Disable} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetCallbacks} ({\b IDefaultActions} instance)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques statiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static implicit {\b operator InputActionMap} ({\b DefaultActions} set)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputAction {\b InputLeft}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputAction {\b InputRight}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputAction {\b InputEnter}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b enabled}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 176} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v DefaultActions\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:DefaultActions}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputThree.DefaultActions.DefaultActions (@{\b InputThree}  {\i wrapper})}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 179} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v Disable\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:Disable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.DefaultActions.Disable ()}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 185} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Enable\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:Enable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.DefaultActions.Enable ()}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 184} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Get\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:Get}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputActionMap InputThree.DefaultActions.Get ()}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 183} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v operator InputActionMap\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:operator InputActionMap}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static implicit InputThree.DefaultActions.operator InputActionMap ({\b DefaultActions}  {\i set}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 187} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v SetCallbacks\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:SetCallbacks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.DefaultActions.SetCallbacks ({\b IDefaultActions}  {\i instance})}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 188} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v enabled\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:enabled}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool InputThree.DefaultActions.enabled{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 186} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v InputEnter\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:InputEnter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputAction InputThree.DefaultActions.InputEnter{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 182} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v InputLeft\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:InputLeft}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputAction InputThree.DefaultActions.InputLeft{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 180} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v InputRight\:InputThree.DefaultActions}
+{\xe \v InputThree.DefaultActions\:InputRight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputAction InputThree.DefaultActions.InputRight{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 181} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette structure a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/{\b InputThree.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe GameManager\par \pard\plain 
+{\tc\tcl2 \v GameManager}
+{\xe \v GameManager}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+Graphe d'h\'E9ritage de GameManager:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_game_manager.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b HightScore}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Player}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Types publics\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GameState} \par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b Difficulty} \par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b EnableInputManager} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Active l'input manager  }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b DisableInputManager} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Desactive l'input manager  }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static {\b GameManager} {\b Instance}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< {\b HightScore} > {\b Leaderboard}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b InputThree} {\b Inputs}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b PlayfabManager} {\b PlayfabManager}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Player} {\b ThePlayer}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GameState} {\b State}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Difficulty} {\b GetDifficulty}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Score}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 6} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des \'E9num\'E9rations membres\par
+\pard\plain 
+{\xe \v Difficulty\:GameManager}
+{\xe \v GameManager\:Difficulty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GameManager.Difficulty}}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 25} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v GameState\:GameManager}
+{\xe \v GameManager\:GameState}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GameManager.GameState}}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 10} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v DisableInputManager\:GameManager}
+{\xe \v GameManager\:DisableInputManager}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.DisableInputManager ()}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Desactive l'input manager  }}\par
+{
+D\'E9finition \'E0 la ligne {\b 233} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v EnableInputManager\:GameManager}
+{\xe \v GameManager\:EnableInputManager}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.EnableInputManager ()}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Active l'input manager  }}\par
+{
+D\'E9finition \'E0 la ligne {\b 218} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v GetDifficulty\:GameManager}
+{\xe \v GameManager\:GetDifficulty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Difficulty} GameManager.GetDifficulty{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 182} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Inputs\:GameManager}
+{\xe \v GameManager\:Inputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b InputThree} GameManager.Inputs{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 165} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Instance\:GameManager}
+{\xe \v GameManager\:Instance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GameManager} GameManager.Instance{\f2 [static]}, {\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 42} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Leaderboard\:GameManager}
+{\xe \v GameManager\:Leaderboard}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<{\b HightScore}> GameManager.Leaderboard{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 163} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v PlayfabManager\:GameManager}
+{\xe \v GameManager\:PlayfabManager}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b PlayfabManager} GameManager.PlayfabManager{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 166} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Score\:GameManager}
+{\xe \v GameManager\:Score}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int GameManager.Score{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 183} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v State\:GameManager}
+{\xe \v GameManager\:State}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GameState} GameManager.State{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 172} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v ThePlayer\:GameManager}
+{\xe \v GameManager\:ThePlayer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Player} GameManager.ThePlayer{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 168} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b GameManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la structure GameManager.HightScore\par \pard\plain 
+{\tc\tcl2 \v GameManager.HightScore}
+{\xe \v GameManager.HightScore}
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b HightScore} (int place=-1, string name="Billy", int {\b score}=0)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Attributs publics\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b rank}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b namePlayer}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b score}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 123} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v HightScore\:GameManager.HightScore}
+{\xe \v GameManager.HightScore\:HightScore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GameManager.HightScore.HightScore (int  {\i place} = {\f2 -1}, string  {\i name} = {\f2 "Billy"}, int  {\i score} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 131} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des donn\'E9es membres\par
+\pard\plain 
+{\xe \v namePlayer\:GameManager.HightScore}
+{\xe \v GameManager.HightScore\:namePlayer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string GameManager.HightScore.namePlayer}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 128} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v rank\:GameManager.HightScore}
+{\xe \v GameManager.HightScore\:rank}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int GameManager.HightScore.rank}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 127} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v score\:GameManager.HightScore}
+{\xe \v GameManager.HightScore\:score}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int GameManager.HightScore.score}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 129} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette structure a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b GameManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe HightScoreObject\par \pard\plain 
+{\tc\tcl2 \v HightScoreObject}
+{\xe \v HightScoreObject}
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+Graphe d'h\'E9ritage de HightScoreObject:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_hight_score_object.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Attributs publics\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Image {\b imageRank}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+TextMeshProUGUI {\b rank}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+TextMeshProUGUI {\b name}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+TextMeshProUGUI {\b score}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 7} du fichier {\b HightScoreObject.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des donn\'E9es membres\par
+\pard\plain 
+{\xe \v imageRank\:HightScoreObject}
+{\xe \v HightScoreObject\:imageRank}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Image HightScoreObject.imageRank}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 9} du fichier {\b HightScoreObject.cs}.}\par
+}
+{\xe \v name\:HightScoreObject}
+{\xe \v HightScoreObject\:name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TextMeshProUGUI HightScoreObject.name}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 11} du fichier {\b HightScoreObject.cs}.}\par
+}
+{\xe \v rank\:HightScoreObject}
+{\xe \v HightScoreObject\:rank}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TextMeshProUGUI HightScoreObject.rank}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 10} du fichier {\b HightScoreObject.cs}.}\par
+}
+{\xe \v score\:HightScoreObject}
+{\xe \v HightScoreObject\:score}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TextMeshProUGUI HightScoreObject.score}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 12} du fichier {\b HightScoreObject.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b HightScoreObject.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de l'interface InputThree.IDefaultActions\par \pard\plain 
+{\tc\tcl2 \v InputThree.IDefaultActions}
+{\xe \v InputThree.IDefaultActions}
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OnInputLeft} (InputAction.CallbackContext context)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OnInputRight} (InputAction.CallbackContext context)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OnInputEnter} (InputAction.CallbackContext context)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 227} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v OnInputEnter\:InputThree.IDefaultActions}
+{\xe \v InputThree.IDefaultActions\:OnInputEnter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.IDefaultActions.OnInputEnter (InputAction.CallbackContext  {\i context})}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v OnInputLeft\:InputThree.IDefaultActions}
+{\xe \v InputThree.IDefaultActions\:OnInputLeft}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.IDefaultActions.OnInputLeft (InputAction.CallbackContext  {\i context})}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v OnInputRight\:InputThree.IDefaultActions}
+{\xe \v InputThree.IDefaultActions\:OnInputRight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.IDefaultActions.OnInputRight (InputAction.CallbackContext  {\i context})}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette interface a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/{\b InputThree.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe InputThree\par \pard\plain 
+{\tc\tcl2 \v InputThree}
+{\xe \v InputThree}
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+Graphe d'h\'E9ritage de InputThree:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_input_three.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b DefaultActions}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+interface {\b IDefaultActions}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b InputThree} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Dispose} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Contains} (InputAction action)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+IEnumerator< InputAction > {\b GetEnumerator} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Enable} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Disable} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputAction {\b FindAction} (string actionNameOrId, bool throwIfNotFound=false)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b FindBinding} (InputBinding {\b bindingMask}, out InputAction action)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputActionAsset {\b asset}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputBinding? {\b bindingMask}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ReadOnlyArray< InputDevice >? {\b devices}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ReadOnlyArray< InputControlScheme > {\b controlSchemes}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+IEnumerable< InputBinding > {\b bindings}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DefaultActions} {\b Default}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+InputControlScheme {\b DefaultScheme}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 18} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v InputThree\:InputThree}
+{\xe \v InputThree\:InputThree}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputThree.InputThree ()}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 21} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v Contains\:InputThree}
+{\xe \v InputThree\:Contains}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool InputThree.Contains (InputAction  {\i action})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 135} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Disable\:InputThree}
+{\xe \v InputThree\:Disable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.Disable ()}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 155} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Dispose\:InputThree}
+{\xe \v InputThree\:Dispose}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.Dispose ()}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 116} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Enable\:InputThree}
+{\xe \v InputThree\:Enable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void InputThree.Enable ()}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 150} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v FindAction\:InputThree}
+{\xe \v InputThree\:FindAction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputAction InputThree.FindAction (string  {\i actionNameOrId}, bool  {\i throwIfNotFound} = {\f2 false})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 161} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v FindBinding\:InputThree}
+{\xe \v InputThree\:FindBinding}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int InputThree.FindBinding (InputBinding  {\i bindingMask}, out InputAction  {\i action})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 165} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v GetEnumerator\:InputThree}
+{\xe \v InputThree\:GetEnumerator}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IEnumerator< InputAction > InputThree.GetEnumerator ()}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 140} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v asset\:InputThree}
+{\xe \v InputThree\:asset}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputActionAsset InputThree.asset{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 20} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v bindingMask\:InputThree}
+{\xe \v InputThree\:bindingMask}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputBinding? InputThree.bindingMask{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 121} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v bindings\:InputThree}
+{\xe \v InputThree\:bindings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IEnumerable<InputBinding> InputThree.bindings{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 159} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v controlSchemes\:InputThree}
+{\xe \v InputThree\:controlSchemes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ReadOnlyArray<InputControlScheme> InputThree.controlSchemes{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 133} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v Default\:InputThree}
+{\xe \v InputThree\:Default}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b DefaultActions} InputThree.Default{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 217} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v DefaultScheme\:InputThree}
+{\xe \v InputThree\:DefaultScheme}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+InputControlScheme InputThree.DefaultScheme{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 219} du fichier {\b InputThree.cs}.}\par
+}
+{\xe \v devices\:InputThree}
+{\xe \v InputThree\:devices}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ReadOnlyArray<InputDevice>? InputThree.devices{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 127} du fichier {\b InputThree.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/{\b InputThree.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe Leaderboard\par \pard\plain 
+{\tc\tcl2 \v Leaderboard}
+{\xe \v Leaderboard}
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+Graphe d'h\'E9ritage de Leaderboard:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_leaderboard.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpList} (float valueFloat)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b DownList} (float valueFloat)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpdateList} (List< {\b GameManager.HightScore} > listHightScores)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b CountList}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 6} du fichier {\b Leaderboard.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v DownList\:Leaderboard}
+{\xe \v Leaderboard\:DownList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Leaderboard.DownList (float  {\i valueFloat})}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 52} du fichier {\b Leaderboard.cs}.}\par
+}
+{\xe \v UpdateList\:Leaderboard}
+{\xe \v Leaderboard\:UpdateList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Leaderboard.UpdateList (List< {\b GameManager.HightScore} >  {\i listHightScores})}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 62} du fichier {\b Leaderboard.cs}.}\par
+}
+{\xe \v UpList\:Leaderboard}
+{\xe \v Leaderboard\:UpList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Leaderboard.UpList (float  {\i valueFloat})}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 43} du fichier {\b Leaderboard.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v CountList\:Leaderboard}
+{\xe \v Leaderboard\:CountList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Leaderboard.CountList{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 41} du fichier {\b Leaderboard.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/{\b Leaderboard.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe LevelGladiaJump\par \pard\plain 
+{\tc\tcl2 \v LevelGladiaJump}
+{\xe \v LevelGladiaJump}
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+Graphe d'h\'E9ritage de LevelGladiaJump:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_level_gladia_jump.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Membres h\'E9rit\'E9s additionnels\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 5} du fichier {\b LevelGladiaJump.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/{\b LevelGladiaJump.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe LevelManager\par \pard\plain 
+{\tc\tcl2 \v LevelManager}
+{\xe \v LevelManager}
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+Graphe d'h\'E9ritage de LevelManager:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_level_manager.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b FinishIntro} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres prot\'E9g\'E9es\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\b StartLevel} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\b UpdateLevel} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Attributs prot\'E9g\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b InputThree} {\b _inputs}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static {\b LevelManager} {\b Instance}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 6} du fichier {\b LevelManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v FinishIntro\:LevelManager}
+{\xe \v LevelManager\:FinishIntro}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void LevelManager.FinishIntro ()}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 72} du fichier {\b LevelManager.cs}.}\par
+}
+{\xe \v StartLevel\:LevelManager}
+{\xe \v LevelManager\:StartLevel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void LevelManager.StartLevel (){\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 61} du fichier {\b LevelManager.cs}.}\par
+}
+{\xe \v UpdateLevel\:LevelManager}
+{\xe \v LevelManager\:UpdateLevel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void LevelManager.UpdateLevel (){\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 67} du fichier {\b LevelManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des donn\'E9es membres\par
+\pard\plain 
+{\xe \v _inputs\:LevelManager}
+{\xe \v LevelManager\:_inputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b InputThree} LevelManager._inputs{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 43} du fichier {\b LevelManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v Instance\:LevelManager}
+{\xe \v LevelManager\:Instance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b LevelManager} LevelManager.Instance{\f2 [static]}, {\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 16} du fichier {\b LevelManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/{\b LevelManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe MenuManager\par \pard\plain 
+{\tc\tcl2 \v MenuManager}
+{\xe \v MenuManager}
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+Graphe d'h\'E9ritage de MenuManager:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_menu_manager.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 7} du fichier {\b MenuManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/{\b MenuManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe GameManager.Player\par \pard\plain 
+{\tc\tcl2 \v GameManager.Player}
+{\xe \v GameManager.Player}
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Player} (string name)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Player} (string name, string id)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetName} (string valueString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetID} (string valueString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetConnected} (bool valueBool)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetScore} (int valueInt)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Propri\'E9t\'E9s\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Name}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b ID}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b IsConnected}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Score}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 66} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v Player\:GameManager.Player}
+{\xe \v GameManager.Player\:Player}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GameManager.Player.Player (string  {\i name})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 83} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Player\:GameManager.Player}
+{\xe \v GameManager.Player\:Player}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GameManager.Player.Player (string  {\i name}, string  {\i id})}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 91} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v SetConnected\:GameManager.Player}
+{\xe \v GameManager.Player\:SetConnected}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.Player.SetConnected (bool  {\i valueBool})}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 109} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v SetID\:GameManager.Player}
+{\xe \v GameManager.Player\:SetID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.Player.SetID (string  {\i valueString})}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 104} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v SetName\:GameManager.Player}
+{\xe \v GameManager.Player\:SetName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.Player.SetName (string  {\i valueString})}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 99} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v SetScore\:GameManager.Player}
+{\xe \v GameManager.Player\:SetScore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GameManager.Player.SetScore (int  {\i valueInt})}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 114} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des propri\'E9t\'E9s\par
+\pard\plain 
+{\xe \v ID\:GameManager.Player}
+{\xe \v GameManager.Player\:ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string GameManager.Player.ID{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 79} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v IsConnected\:GameManager.Player}
+{\xe \v GameManager.Player\:IsConnected}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool GameManager.Player.IsConnected{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 80} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Name\:GameManager.Player}
+{\xe \v GameManager.Player\:Name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string GameManager.Player.Name{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 78} du fichier {\b GameManager.cs}.}\par
+}
+{\xe \v Score\:GameManager.Player}
+{\xe \v GameManager.Player\:Score}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int GameManager.Player.Score{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 81} du fichier {\b GameManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b GameManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe PlayfabManager\par \pard\plain 
+{\tc\tcl2 \v PlayfabManager}
+{\xe \v PlayfabManager}
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+Graphe d'h\'E9ritage de PlayfabManager:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_playfab_manager.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Login} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SendLeaderboard} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b GetLeaderboard} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpdateDisplayName} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+D\'E9finition \'E0 la ligne {\b 8} du fichier {\b PlayfabManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v GetLeaderboard\:PlayfabManager}
+{\xe \v PlayfabManager\:GetLeaderboard}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PlayfabManager.GetLeaderboard ()}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 105} du fichier {\b PlayfabManager.cs}.}\par
+}
+{\xe \v Login\:PlayfabManager}
+{\xe \v PlayfabManager\:Login}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PlayfabManager.Login ()}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 53} du fichier {\b PlayfabManager.cs}.}\par
+}
+{\xe \v SendLeaderboard\:PlayfabManager}
+{\xe \v PlayfabManager\:SendLeaderboard}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PlayfabManager.SendLeaderboard ()}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 82} du fichier {\b PlayfabManager.cs}.}\par
+}
+{\xe \v UpdateDisplayName\:PlayfabManager}
+{\xe \v PlayfabManager\:UpdateDisplayName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PlayfabManager.UpdateDisplayName ()}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne {\b 132} du fichier {\b PlayfabManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/{\b PlayfabManager.cs}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentation des fichiers{\tc \v Documentation des fichiers}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b GameManager}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b GameManager.Player}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b GameManager.HightScore}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+GameManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 \par
+00005 [RequireComponent(typeof(PlayfabManager))]\par
+00006 {\cf17 public} {\cf17 class }GameManager : MonoBehaviour\par
+00007 \{\par
+00008 \par
+00009 {\cf21     #region GAMESTATE}\par
+00010     {\cf17 public} {\cf17 enum} GameState\par
+00011     \{\par
+00012         Ingame,\par
+00013 \par
+00014         Menu,\par
+00015 \par
+00016         Tutorial,\par
+00017         Paused,\par
+00018 \par
+00019         Victory,\par
+00020         Gameover,\par
+00021 \par
+00022         Cinematic\par
+00023     \}\par
+00024 \par
+00025     {\cf17 public} {\cf17 enum} Difficulty\par
+00026     \{\par
+00027         Easy,\par
+00028         Normal,\par
+00029         Hard,\par
+00030         Infinity\par
+00031     \}\par
+00032 \par
+00033 {\cf21     #endregion}\par
+00034 \par
+00035 {\cf21     #region SINGLETON}\par
+00036 \par
+00040     [SerializeField] {\cf17 private} {\cf17 static} GameManager _instance = {\cf17 null};\par
+00041 \par
+00042     {\cf17 public} {\cf17 static} GameManager Instance\par
+00043     \{\par
+00044         {\cf17 get}\par
+00045         \{\par
+00046             {\cf19 if} (_instance == {\cf17 null})\par
+00047             \{\par
+00048                 _instance = GameObject.FindObjectOfType<GameManager>();\par
+00049                 {\cf20 // Si vrai, l'instance va etre cree}\par
+00050                 {\cf19 if} (_instance == {\cf17 null})\par
+00051                 \{\par
+00052                     var newObjectInstance = {\cf17 new} GameObject();\par
+00053                     newObjectInstance.name = typeof(GameManager).ToString();\par
+00054                     _instance = newObjectInstance.AddComponent<GameManager>();\par
+00055                 \}\par
+00056             \}\par
+00057             {\cf19 return} _instance;\par
+00058         \}\par
+00059     \}\par
+00060 \par
+00061 {\cf21     #endregion}\par
+00062 \par
+00063 {\cf21     #region STRUCT}\par
+00064 \par
+00065     [System.Serializable]\par
+00066     {\cf17 public} {\cf17 class }Player\par
+00067     \{\par
+00068         [Header({\cf22 "IDENTIFY"})]\par
+00069         [SerializeField] {\cf17 private} {\cf18 string} _name;\par
+00070         [SerializeField] {\cf17 private} {\cf18 string} _id;\par
+00071 \par
+00072         [Header({\cf22 "SCORE"})]\par
+00073         [SerializeField] {\cf17 private} {\cf18 int} _score;\par
+00074 \par
+00075         [Header({\cf22 "NETWORK"})]\par
+00076         [SerializeField] {\cf17 private} {\cf18 bool} _isConnected;\par
+00077 \par
+00078         {\cf17 public} {\cf18 string} Name \{ {\cf17 get} \{ {\cf19 return} _name; \} \}\par
+00079         {\cf17 public} {\cf18 string} ID \{ {\cf17 get} \{ {\cf19 return} _id; \} \}\par
+00080         {\cf17 public} {\cf18 bool} IsConnected \{ {\cf17 get} \{ {\cf19 return} _isConnected; \} \}\par
+00081         {\cf17 public} {\cf18 int} Score \{ {\cf17 get} \{ {\cf19 return} _score; \} \}\par
+00082 \par
+00083         {\cf17 public} Player({\cf18 string} name)\par
+00084         \{\par
+00085             _name = name;\par
+00086             _id = SystemInfo.deviceUniqueIdentifier;\par
+00087             _isConnected = {\cf17 false};\par
+00088             _score = 0;\par
+00089         \}\par
+00090 \par
+00091         {\cf17 public} Player({\cf18 string} name,{\cf18 string} {\cf18 id})\par
+00092         \{\par
+00093             _name = name;\par
+00094             _id = id;\par
+00095             _isConnected = {\cf17 false};\par
+00096             _score = 0;\par
+00097         \}\par
+00098 \par
+00099         {\cf17 public} {\cf18 void} SetName({\cf18 string} valueString)\par
+00100         \{\par
+00101             Debug.Log({\cf22 "Name : "} + _name + {\cf22 " Change for "} + valueString);\par
+00102             _name = valueString;\par
+00103         \}\par
+00104         {\cf17 public} {\cf18 void} SetID({\cf18 string} valueString)\par
+00105         \{\par
+00106             Debug.Log({\cf22 "ID : "} + _id + {\cf22 " Change for "} + valueString);\par
+00107             _id = valueString;\par
+00108         \}\par
+00109         {\cf17 public} {\cf18 void} SetConnected({\cf18 bool} valueBool)\par
+00110         \{\par
+00111             Debug.Log({\cf22 "IsConnected : "} + _isConnected + {\cf22 " Change for "} + valueBool);\par
+00112             _isConnected = valueBool;\par
+00113         \}\par
+00114         {\cf17 public} {\cf18 void} SetScore({\cf18 int} valueInt)\par
+00115         \{\par
+00116             Debug.Log({\cf22 "Score : "} + _score + {\cf22 " Change for "} + valueInt);\par
+00117             _score = valueInt;\par
+00118         \}\par
+00119 \par
+00120     \}\par
+00121 \par
+00122     [System.Serializable]\par
+00123     {\cf17 public} {\cf17 struct }HightScore\par
+00124     \{\par
+00125         [SerializeField] {\cf17 private} {\cf18 string} _name;\par
+00126 \par
+00127         {\cf17 public} {\cf18 int} rank;\par
+00128         {\cf17 public} {\cf18 string} namePlayer;\par
+00129         {\cf17 public} {\cf18 int} score;\par
+00130 \par
+00131         {\cf17 public} HightScore({\cf18 int} place = -1, {\cf18 string} name = {\cf22 "Billy"}, {\cf18 int} score = 0)\par
+00132         \{\par
+00133             this.rank = place;\par
+00134             this.namePlayer = name;\par
+00135             this.score = score;\par
+00136 \par
+00137             _name = rank.ToString();\par
+00138         \}\par
+00139     \}\par
+00140 \par
+00141 {\cf21     #endregion}\par
+00142 \par
+00143 {\cf21     #region VARIABLE}\par
+00144 \par
+00145     [Header({\cf22 "GAME"})]\par
+00146     [SerializeField] {\cf17 private} GameState _state;\par
+00147     [SerializeField] {\cf17 private} Difficulty _actualDifficulty = Difficulty.Easy;\par
+00148 \par
+00149     [Header({\cf22 "INPUT"})]\par
+00150     [SerializeField] {\cf17 private} InputThree _inputManager;\par
+00151 \par
+00152     [Header({\cf22 "PLAYER"})]\par
+00153     [SerializeField] {\cf17 private} Player _player;\par
+00154 \par
+00155     [Header({\cf22 "NETWORK"})]\par
+00156     [SerializeField] {\cf17 private} PlayfabManager _playfab;\par
+00157     [SerializeField] {\cf17 private} List<HightScore> _leaderboard = {\cf17 new} List<HightScore>();\par
+00158 \par
+00159 {\cf21     #endregion}\par
+00160 \par
+00161 {\cf21     #region ASCESSEUR}\par
+00162 \par
+00163     {\cf17 public} List<HightScore> Leaderboard \{ {\cf17 get} \{ {\cf19 return} _leaderboard; \} \}\par
+00164 \par
+00165     {\cf17 public} InputThree Inputs \{ {\cf17 get} \{ {\cf19 return} _inputManager; \} \}\par
+00166     {\cf17 public} PlayfabManager PlayfabManager \{ {\cf17 get} \{ {\cf19 return} _playfab; \} \}\par
+00167 \par
+00168     {\cf17 public} Player ThePlayer \{ \par
+00169         {\cf17 get} \{ {\cf19 return} _player; \} \par
+00170     \}\par
+00171 \par
+00172     {\cf17 public} GameState State\par
+00173     \{\par
+00174         {\cf17 get} \{ {\cf19 return} _state; \}\par
+00175         {\cf17 set}\par
+00176         \{\par
+00177 \par
+00178             _state = value;\par
+00179 \par
+00180         \}\par
+00181     \}\par
+00182     {\cf17 public} Difficulty GetDifficulty \{ {\cf17 get} \{ {\cf19 return} _actualDifficulty; \} \}\par
+00183     {\cf17 public} {\cf18 int} Score \{ {\cf17 get} \{ {\cf19 return} ThePlayer.Score; \} \}\par
+00184 \par
+00185 {\cf21     #endregion}\par
+00186 \par
+00187 {\cf21     #region FUNCTION UNITY}\par
+00188 \par
+00189         {\cf17 private} {\cf18 void} Awake()\par
+00190         \{\par
+00191             DontDestroyOnLoad({\cf17 this});\par
+00192 \par
+00193             _player = {\cf17 new} Player({\cf22 "Billy"});\par
+00194 \par
+00195             {\cf20 // Create playfab object for connecting game to playfab server}\par
+00196             {\cf19 if} (_playfab == {\cf17 null})\par
+00197             \{\par
+00198                 {\cf19 if} (!TryGetComponent<PlayfabManager>(out _playfab)) \{\par
+00199                     _playfab = gameObject.AddComponent<PlayfabManager>();\par
+00200                 \}\par
+00201             \}\par
+00202 \par
+00203             _playfab.Login();\par
+00204     \}\par
+00205 \par
+00206         {\cf17 private} {\cf18 void} Start()\par
+00207         \{\par
+00208             EnableInputManager();\par
+00209         \}\par
+00210 \par
+00211 {\cf21     #endregion}\par
+00212 \par
+00213 {\cf21     #region FUNCTION}\par
+00214 \par
+00218     {\cf17 public} {\cf18 void} EnableInputManager()\par
+00219     \{\par
+00220         {\cf20 // On verifie qu'il soit referencer}\par
+00221         {\cf19 if} (_inputManager == {\cf17 null}) _inputManager = {\cf17 new} InputThree();\par
+00222 \par
+00223         Debug.Log({\cf22 "Active les touches"});\par
+00224 \par
+00225         {\cf20 // On active les touches}\par
+00226         _inputManager.Default.Enable();\par
+00227         \par
+00228     \}\par
+00229 \par
+00233     {\cf17 public} {\cf18 void} DisableInputManager()\par
+00234     \{\par
+00235         {\cf20 // Verify inputManager is null also create this}\par
+00236         {\cf19 if} (_inputManager == {\cf17 null}) _inputManager = {\cf17 new} InputThree();\par
+00237 \par
+00238         Debug.Log({\cf22 "Active les touches"});\par
+00239 \par
+00240         {\cf20 // Disable all touch}\par
+00241         _inputManager.Default.Disable();\par
+00242     \}\par
+00243 \par
+00244 {\cf21     #endregion}\par
+00245 \par
+00246 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b InputThree}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b InputThree.DefaultActions}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+interface {\b InputThree.IDefaultActions}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+InputThree.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 //------------------------------------------------------------------------------}\par
+00002 {\cf20 // <auto-generated>}\par
+00003 {\cf20 //     This code was auto-generated by com.unity.inputsystem:InputActionCodeGenerator}\par
+00004 {\cf20 //     version 1.3.0}\par
+00005 {\cf20 //     from Assets/InputSystem/InputThree.inputactions}\par
+00006 {\cf20 //}\par
+00007 {\cf20 //     Changes to this file may cause incorrect behavior and will be lost if}\par
+00008 {\cf20 //     the code is regenerated.}\par
+00009 {\cf20 // </auto-generated>}\par
+00010 {\cf20 //------------------------------------------------------------------------------}\par
+00011 \par
+00012 {\cf17 using }System;\par
+00013 {\cf17 using }System.Collections;\par
+00014 {\cf17 using }System.Collections.Generic;\par
+00015 {\cf17 using }UnityEngine.InputSystem;\par
+00016 {\cf17 using }UnityEngine.InputSystem.Utilities;\par
+00017 \par
+00018 {\cf17 public} {\cf17 partial class }@InputThree : IInputActionCollection2, IDisposable\par
+00019 \{\par
+00020     {\cf17 public} InputActionAsset asset \{ {\cf17 get}; \}\par
+00021     {\cf17 public} @InputThree()\par
+00022     \{\par
+00023         asset = InputActionAsset.FromJson({\cf22 @"\{}\par
+00024 {\cf22     ""name"": ""InputThree"",}\par
+00025 {\cf22     ""maps"": [}\par
+00026 {\cf22         \{}\par
+00027 {\cf22             ""name"": ""Default"",}\par
+00028 {\cf22             ""id"": ""c3af1809-ce73-4ec4-afb4-9ed36182955f"",}\par
+00029 {\cf22             ""actions"": [}\par
+00030 {\cf22                 \{}\par
+00031 {\cf22                     ""name"": ""InputLeft"",}\par
+00032 {\cf22                     ""type"": ""Button"",}\par
+00033 {\cf22                     ""id"": ""56337991-b954-4d30-a492-087d24d1157d"",}\par
+00034 {\cf22                     ""expectedControlType"": ""Button"",}\par
+00035 {\cf22                     ""processors"": """",}\par
+00036 {\cf22                     ""interactions"": """",}\par
+00037 {\cf22                     ""initialStateCheck"": false}\par
+00038 {\cf22                 \},}\par
+00039 {\cf22                 \{}\par
+00040 {\cf22                     ""name"": ""InputRight"",}\par
+00041 {\cf22                     ""type"": ""Button"",}\par
+00042 {\cf22                     ""id"": ""a638b41d-316c-44e4-b769-416a54427ae0"",}\par
+00043 {\cf22                     ""expectedControlType"": ""Button"",}\par
+00044 {\cf22                     ""processors"": """",}\par
+00045 {\cf22                     ""interactions"": """",}\par
+00046 {\cf22                     ""initialStateCheck"": false}\par
+00047 {\cf22                 \},}\par
+00048 {\cf22                 \{}\par
+00049 {\cf22                     ""name"": ""InputEnter"",}\par
+00050 {\cf22                     ""type"": ""Button"",}\par
+00051 {\cf22                     ""id"": ""dd3ed3af-be3b-4f0b-9b3f-85474ef43d04"",}\par
+00052 {\cf22                     ""expectedControlType"": ""Button"",}\par
+00053 {\cf22                     ""processors"": """",}\par
+00054 {\cf22                     ""interactions"": """",}\par
+00055 {\cf22                     ""initialStateCheck"": false}\par
+00056 {\cf22                 \}}\par
+00057 {\cf22             ],}\par
+00058 {\cf22             ""bindings"": [}\par
+00059 {\cf22                 \{}\par
+00060 {\cf22                     ""name"": """",}\par
+00061 {\cf22                     ""id"": ""1ff29288-76f4-4bac-a3e6-8f2707817111"",}\par
+00062 {\cf22                     ""path"": ""<Keyboard>/q"",}\par
+00063 {\cf22                     ""interactions"": """",}\par
+00064 {\cf22                     ""processors"": """",}\par
+00065 {\cf22                     ""groups"": ""Default"",}\par
+00066 {\cf22                     ""action"": ""InputLeft"",}\par
+00067 {\cf22                     ""isComposite"": false,}\par
+00068 {\cf22                     ""isPartOfComposite"": false}\par
+00069 {\cf22                 \},}\par
+00070 {\cf22                 \{}\par
+00071 {\cf22                     ""name"": """",}\par
+00072 {\cf22                     ""id"": ""3731cc88-8c02-4620-968d-f1ce3dc3d30d"",}\par
+00073 {\cf22                     ""path"": ""<Keyboard>/e"",}\par
+00074 {\cf22                     ""interactions"": """",}\par
+00075 {\cf22                     ""processors"": """",}\par
+00076 {\cf22                     ""groups"": ""Default"",}\par
+00077 {\cf22                     ""action"": ""InputRight"",}\par
+00078 {\cf22                     ""isComposite"": false,}\par
+00079 {\cf22                     ""isPartOfComposite"": false}\par
+00080 {\cf22                 \},}\par
+00081 {\cf22                 \{}\par
+00082 {\cf22                     ""name"": """",}\par
+00083 {\cf22                     ""id"": ""405231c6-0ecc-4525-a37e-f4ab676998f2"",}\par
+00084 {\cf22                     ""path"": ""<Keyboard>/space"",}\par
+00085 {\cf22                     ""interactions"": """",}\par
+00086 {\cf22                     ""processors"": """",}\par
+00087 {\cf22                     ""groups"": ""Default"",}\par
+00088 {\cf22                     ""action"": ""InputEnter"",}\par
+00089 {\cf22                     ""isComposite"": false,}\par
+00090 {\cf22                     ""isPartOfComposite"": false}\par
+00091 {\cf22                 \}}\par
+00092 {\cf22             ]}\par
+00093 {\cf22         \}}\par
+00094 {\cf22     ],}\par
+00095 {\cf22     ""controlSchemes"": [}\par
+00096 {\cf22         \{}\par
+00097 {\cf22             ""name"": ""Default"",}\par
+00098 {\cf22             ""bindingGroup"": ""Default"",}\par
+00099 {\cf22             ""devices"": [}\par
+00100 {\cf22                 \{}\par
+00101 {\cf22                     ""devicePath"": ""<Keyboard>"",}\par
+00102 {\cf22                     ""isOptional"": false,}\par
+00103 {\cf22                     ""isOR"": false}\par
+00104 {\cf22                 \}}\par
+00105 {\cf22             ]}\par
+00106 {\cf22         \}}\par
+00107 {\cf22     ]}\par
+00108 {\cf22 \}"});\par
+00109         {\cf20 // Default}\par
+00110         m_Default = asset.FindActionMap({\cf22 "Default"}, throwIfNotFound: {\cf17 true});\par
+00111         m_Default_InputLeft = m_Default.FindAction({\cf22 "InputLeft"}, throwIfNotFound: {\cf17 true});\par
+00112         m_Default_InputRight = m_Default.FindAction({\cf22 "InputRight"}, throwIfNotFound: {\cf17 true});\par
+00113         m_Default_InputEnter = m_Default.FindAction({\cf22 "InputEnter"}, throwIfNotFound: {\cf17 true});\par
+00114     \}\par
+00115 \par
+00116     {\cf17 public} {\cf18 void} Dispose()\par
+00117     \{\par
+00118         UnityEngine.Object.Destroy(asset);\par
+00119     \}\par
+00120 \par
+00121     {\cf17 public} InputBinding? bindingMask\par
+00122     \{\par
+00123         {\cf17 get} => asset.bindingMask;\par
+00124         {\cf17 set} => asset.bindingMask = value;\par
+00125     \}\par
+00126 \par
+00127     {\cf17 public} ReadOnlyArray<InputDevice>? devices\par
+00128     \{\par
+00129         {\cf17 get} => asset.devices;\par
+00130         {\cf17 set} => asset.devices = value;\par
+00131     \}\par
+00132 \par
+00133     {\cf17 public} ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;\par
+00134 \par
+00135     {\cf17 public} {\cf18 bool} Contains(InputAction action)\par
+00136     \{\par
+00137         {\cf19 return} asset.Contains(action);\par
+00138     \}\par
+00139 \par
+00140     {\cf17 public} IEnumerator<InputAction> GetEnumerator()\par
+00141     \{\par
+00142         {\cf19 return} asset.GetEnumerator();\par
+00143     \}\par
+00144 \par
+00145     IEnumerator IEnumerable.GetEnumerator()\par
+00146     \{\par
+00147         {\cf19 return} GetEnumerator();\par
+00148     \}\par
+00149 \par
+00150     {\cf17 public} {\cf18 void} Enable()\par
+00151     \{\par
+00152         asset.Enable();\par
+00153     \}\par
+00154 \par
+00155     {\cf17 public} {\cf18 void} Disable()\par
+00156     \{\par
+00157         asset.Disable();\par
+00158     \}\par
+00159     {\cf17 public} IEnumerable<InputBinding> bindings => asset.bindings;\par
+00160 \par
+00161     {\cf17 public} InputAction FindAction({\cf18 string} actionNameOrId, {\cf18 bool} throwIfNotFound = {\cf17 false})\par
+00162     \{\par
+00163         {\cf19 return} asset.FindAction(actionNameOrId, throwIfNotFound);\par
+00164     \}\par
+00165     {\cf17 public} {\cf18 int} FindBinding(InputBinding bindingMask, out InputAction action)\par
+00166     \{\par
+00167         {\cf19 return} asset.FindBinding(bindingMask, out action);\par
+00168     \}\par
+00169 \par
+00170     {\cf20 // Default}\par
+00171     {\cf17 private} readonly InputActionMap m_Default;\par
+00172     {\cf17 private} IDefaultActions m_DefaultActionsCallbackInterface;\par
+00173     {\cf17 private} readonly InputAction m_Default_InputLeft;\par
+00174     {\cf17 private} readonly InputAction m_Default_InputRight;\par
+00175     {\cf17 private} readonly InputAction m_Default_InputEnter;\par
+00176     {\cf17 public} {\cf17 struct }DefaultActions\par
+00177     \{\par
+00178         {\cf17 private} @InputThree m_Wrapper;\par
+00179         {\cf17 public} DefaultActions(@InputThree wrapper) \{ m_Wrapper = wrapper; \}\par
+00180         {\cf17 public} InputAction @InputLeft => m_Wrapper.m_Default_InputLeft;\par
+00181         {\cf17 public} InputAction @InputRight => m_Wrapper.m_Default_InputRight;\par
+00182         {\cf17 public} InputAction @InputEnter => m_Wrapper.m_Default_InputEnter;\par
+00183         {\cf17 public} InputActionMap Get() \{ {\cf19 return} m_Wrapper.m_Default; \}\par
+00184         {\cf17 public} {\cf18 void} Enable() \{ Get().Enable(); \}\par
+00185         {\cf17 public} {\cf18 void} Disable() \{ Get().Disable(); \}\par
+00186         {\cf17 public} {\cf18 bool} enabled => Get().enabled;\par
+00187         {\cf17 public} {\cf17 static} implicit {\cf17 operator} InputActionMap(DefaultActions {\cf17 set}) \{ {\cf19 return} {\cf17 set}.Get(); \}\par
+00188         {\cf17 public} {\cf18 void} SetCallbacks(IDefaultActions instance)\par
+00189         \{\par
+00190             {\cf19 if} (m_Wrapper.m_DefaultActionsCallbackInterface != {\cf17 null})\par
+00191             \{\par
+00192                 @InputLeft.started -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputLeft;\par
+00193                 @InputLeft.performed -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputLeft;\par
+00194                 @InputLeft.canceled -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputLeft;\par
+00195                 @InputRight.started -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputRight;\par
+00196                 @InputRight.performed -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputRight;\par
+00197                 @InputRight.canceled -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputRight;\par
+00198                 @InputEnter.started -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputEnter;\par
+00199                 @InputEnter.performed -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputEnter;\par
+00200                 @InputEnter.canceled -= m_Wrapper.m_DefaultActionsCallbackInterface.OnInputEnter;\par
+00201             \}\par
+00202             m_Wrapper.m_DefaultActionsCallbackInterface = instance;\par
+00203             {\cf19 if} (instance != {\cf17 null})\par
+00204             \{\par
+00205                 @InputLeft.started += instance.OnInputLeft;\par
+00206                 @InputLeft.performed += instance.OnInputLeft;\par
+00207                 @InputLeft.canceled += instance.OnInputLeft;\par
+00208                 @InputRight.started += instance.OnInputRight;\par
+00209                 @InputRight.performed += instance.OnInputRight;\par
+00210                 @InputRight.canceled += instance.OnInputRight;\par
+00211                 @InputEnter.started += instance.OnInputEnter;\par
+00212                 @InputEnter.performed += instance.OnInputEnter;\par
+00213                 @InputEnter.canceled += instance.OnInputEnter;\par
+00214             \}\par
+00215         \}\par
+00216     \}\par
+00217     {\cf17 public} DefaultActions @Default => {\cf17 new} DefaultActions({\cf17 this});\par
+00218     {\cf17 private} {\cf18 int} m_DefaultSchemeIndex = -1;\par
+00219     {\cf17 public} InputControlScheme DefaultScheme\par
+00220     \{\par
+00221         {\cf17 get}\par
+00222         \{\par
+00223             {\cf19 if} (m_DefaultSchemeIndex == -1) m_DefaultSchemeIndex = asset.FindControlSchemeIndex({\cf22 "Default"});\par
+00224             {\cf19 return} asset.controlSchemes[m_DefaultSchemeIndex];\par
+00225         \}\par
+00226     \}\par
+00227     {\cf17 public} {\cf17 interface }IDefaultActions\par
+00228     \{\par
+00229         {\cf18 void} OnInputLeft(InputAction.CallbackContext context);\par
+00230         {\cf18 void} OnInputRight(InputAction.CallbackContext context);\par
+00231         {\cf18 void} OnInputEnter(InputAction.CallbackContext context);\par
+00232     \}\par
+00233 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b LevelGladiaJump}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+LevelGladiaJump.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelGladiaJump.cs}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 \par
+00005 {\cf17 public} {\cf17 class }LevelGladiaJump : LevelManager\par
+00006 \{\par
+00007     {\cf20 // Start is called before the first frame update}\par
+00008     {\cf18 void} Start()\par
+00009     \{\par
+00010         StartLevel();\par
+00011     \}\par
+00012 \par
+00013     {\cf20 // Update is called once per frame}\par
+00014     {\cf18 void} Update()\par
+00015     \{\par
+00016         UpdateLevel();\par
+00017     \}\par
+00018 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b LevelManager}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+LevelManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }UnityEngine.SceneManagement;\par
+00005 \par
+00006 {\cf17 public} {\cf17 class }LevelManager : MonoBehaviour\par
+00007 \{\par
+00008 \par
+00009 {\cf21     #region SINGLETON}\par
+00010 \par
+00014     [SerializeField] {\cf17 private} {\cf17 static} LevelManager _instance = {\cf17 null};\par
+00015 \par
+00016     {\cf17 public} {\cf17 static} LevelManager Instance\par
+00017     \{\par
+00018         {\cf17 get}\par
+00019         \{\par
+00020             {\cf19 if} (_instance == {\cf17 null})\par
+00021             \{\par
+00022                 _instance = GameObject.FindObjectOfType<LevelManager>();\par
+00023                 {\cf20 // Si vrai, l'instance va etre cree}\par
+00024                 {\cf19 if} (_instance == {\cf17 null})\par
+00025                 \{\par
+00026                     var newObjectInstance = {\cf17 new} GameObject();\par
+00027                     newObjectInstance.name = typeof(LevelManager).ToString();\par
+00028                     _instance = newObjectInstance.AddComponent<LevelManager>();\par
+00029                 \}\par
+00030             \}\par
+00031             {\cf19 return} _instance;\par
+00032         \}\par
+00033     \}\par
+00034 \par
+00035 {\cf21     #endregion}\par
+00036 \par
+00037 {\cf21     #region ASCESSEUR}\par
+00038 {\cf21     #endregion}\par
+00039 \par
+00040 {\cf21     #region VARIABLE}\par
+00041 \par
+00042     [Header({\cf22 "INPUT"})]\par
+00043     [SerializeField] {\cf17 protected} InputThree _inputs;\par
+00044 \par
+00045     [Header({\cf22 "SCENE"})]\par
+00046     [SerializeField] {\cf17 private} {\cf18 string} _sceneIntro;\par
+00047     [SerializeField] {\cf17 private} {\cf18 string} _sceneChrono;\par
+00048 \par
+00049     [Header({\cf22 "Intro"})]\par
+00051     [SerializeField] {\cf17 private} {\cf18 string} _objective;\par
+00052 \par
+00053     [Header({\cf22 "CHRONO"})]\par
+00054     [SerializeField] {\cf17 private} {\cf18 float} _timerChrono;\par
+00055     [SerializeField] {\cf17 private} {\cf18 float} _timeToChrono;\par
+00056 \par
+00057 {\cf21     #endregion}\par
+00058 \par
+00059 {\cf21     #region FUNCTION}\par
+00060 \par
+00061     {\cf17 protected} {\cf17 virtual} {\cf18 void} StartLevel()\par
+00062     \{\par
+00063         SceneManager.LoadScene(_sceneIntro, LoadSceneMode.Additive);\par
+00064         GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00065     \}\par
+00066 \par
+00067     {\cf17 protected} {\cf17 virtual} {\cf18 void} UpdateLevel()\par
+00068     \{\par
+00069         SceneManager.LoadScene(_sceneChrono, LoadSceneMode.Additive);\par
+00070     \}\par
+00071 \par
+00072     {\cf17 public} {\cf18 void} FinishIntro()\par
+00073     \{\par
+00074         SceneManager.UnloadSceneAsync(_sceneIntro);\par
+00075         GameManager.Instance.State = GameManager.GameState.Ingame;\par
+00076     \}\par
+00077 \par
+00078 {\cf21     #endregion}\par
+00079 \par
+00080 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MenuManager}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MenuManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }UnityEngine.SceneManagement;\par
+00005 {\cf17 using }TMPro;\par
+00006 \par
+00007 {\cf17 public} {\cf17 class }MenuManager : MonoBehaviour\par
+00008 \{\par
+00009 \par
+00010     {\cf17 enum} MenuState\par
+00011     \{\par
+00012         Menu,\par
+00013         Leaderboard,\par
+00014         Credits,\par
+00015 \par
+00016         Start\par
+00017     \}\par
+00018 \par
+00019 {\cf21     #region VARIABLE}\par
+00020 \par
+00021     [Header({\cf22 "STATE"})]\par
+00022     [SerializeField] {\cf17 private} MenuState _menuState = MenuState.Menu;\par
+00023     [SerializeField] {\cf17 private} MenuState _oldState = MenuState.Menu;\par
+00024 \par
+00025     [Header({\cf22 "SCENE"})]\par
+00026     [SerializeField] {\cf17 private} {\cf18 string} _sceneMenu;\par
+00027     [SerializeField] {\cf17 private} {\cf18 string} _sceneStart;\par
+00028 \par
+00029     [Header({\cf22 "CANVAS"})]\par
+00030     [SerializeField] {\cf17 private} GameObject _canvasMenu;\par
+00031     [SerializeField] {\cf17 private} GameObject _canvasCredits;\par
+00032 \par
+00033     [Header({\cf22 "INPUTS"})]\par
+00034     [SerializeField] {\cf17 private} List<TextMeshProUGUI> _inputsEnter;\par
+00035     [SerializeField] {\cf17 private} List<TextMeshProUGUI> _inputsLeft;\par
+00036     [SerializeField] {\cf17 private} List<TextMeshProUGUI> _inputsRight;\par
+00037 \par
+00038     [Header({\cf22 "LEADERBOARD"})]\par
+00039     [SerializeField] {\cf17 private} Leaderboard _leaderboard;\par
+00040     [SerializeField] {\cf17 private} GameObject _leaderboardInput;\par
+00041     [SerializeField] {\cf17 private} GameObject _leaderboardPanel;\par
+00042     [SerializeField] {\cf17 private} {\cf18 bool} _leaderboardCharged;\par
+00043 \par
+00044     [SerializeField] [Range(0.1f,1f)] {\cf17 private} {\cf18 float} _scrollSpeed;\par
+00045 \par
+00046     [Header({\cf22 "TIMER"})]\par
+00047     [SerializeField] {\cf17 private} {\cf18 float} _timer = 0;\par
+00048     [SerializeField] {\cf17 private} {\cf18 float} _timeTo = 3;\par
+00049 \par
+00050 {\cf21     #endregion}\par
+00051 \par
+00052 {\cf21     #region ASCESSEUR}\par
+00053 \par
+00054     {\cf17 private} {\cf18 bool} LeaderboardIsCharged\par
+00055     \{\par
+00056         {\cf17 get} \{ {\cf19 return} _leaderboardCharged; \}\par
+00057         {\cf17 set} \{ \par
+00058             {\cf19 if} (_leaderboardCharged == {\cf17 false} && value == {\cf17 true})\par
+00059             \{\par
+00060                 {\cf19 if} (_leaderboardInput != {\cf17 null}) \{ _leaderboardInput.SetActive({\cf17 false}); \}\par
+00061                 {\cf19 if} (_leaderboardPanel != {\cf17 null}) \{ _leaderboardPanel.SetActive({\cf17 true}); \}\par
+00062             \}\par
+00063             {\cf19 else} {\cf19 if} (_leaderboardCharged == {\cf17 true} && value == {\cf17 false})\par
+00064             \{\par
+00065                 {\cf19 if} (_leaderboardInput != {\cf17 null}) \{ _leaderboardInput.SetActive({\cf17 true}); \}\par
+00066                 {\cf19 if} (_leaderboardPanel != {\cf17 null}) \{ _leaderboardPanel.SetActive({\cf17 false}); \}\par
+00067             \}\par
+00068             {\cf19 else} {\cf19 if} (value == {\cf17 true})\par
+00069             \{\par
+00070 \par
+00071             \}\par
+00072 \par
+00073             _leaderboardCharged = value; \}\par
+00074     \}\par
+00075 \par
+00076 {\cf21     #endregion}\par
+00077 \par
+00078 {\cf21     #region FUNCTION UNITY}\par
+00079 \par
+00080     {\cf17 private} {\cf18 void} Start()\par
+00081     \{\par
+00082         GameManager.Instance.EnableInputManager();\par
+00083         GameManager.Instance.State = GameManager.GameState.Menu;\par
+00084 \par
+00085         LeaderboardIsCharged = {\cf17 false};\par
+00086         SwitchDisplayLeaderboard({\cf17 false});\par
+00087 \par
+00088         {\cf19 if} (_canvasMenu != {\cf17 null}) \{ _canvasMenu.SetActive({\cf17 true}); \}\par
+00089         {\cf19 if} (_canvasCredits != {\cf17 null}) \{ _canvasCredits.SetActive({\cf17 false}); \}\par
+00090 \par
+00091         {\cf19 if} (_leaderboardInput != {\cf17 null}) \{ _leaderboardInput.SetActive({\cf17 true}); \}\par
+00092         {\cf19 if} (_leaderboardPanel != {\cf17 null}) \{ _leaderboardPanel.SetActive({\cf17 false}); \}\par
+00093 \par
+00094         {\cf18 string} enter,left,right;\par
+00095 \par
+00096         enter = GameManager.Instance.Inputs.Default.InputEnter.bindings[0].ToDisplayString();\par
+00097         left = GameManager.Instance.Inputs.Default.InputLeft.bindings[0].ToDisplayString();\par
+00098         right = GameManager.Instance.Inputs.Default.InputRight.bindings[0].ToDisplayString();\par
+00099 \par
+00100         {\cf19 if} (Application.systemLanguage == SystemLanguage.French)\par
+00101         \{ left = {\cf22 "A"}; \}\par
+00102 \par
+00103         Debug.Log({\cf22 "Application.systemLanguage : "} + Application.systemLanguage.ToString() + {\cf22 " | SystemIsoLanguage : "} + System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName.ToString());\par
+00104 \par
+00105         {\cf19 foreach} (var text {\cf19 in} _inputsEnter)\par
+00106         \{\par
+00107             text.text = enter;\par
+00108         \}\par
+00109 \par
+00110         {\cf19 foreach} (var text {\cf19 in} _inputsLeft)\par
+00111         \{\par
+00112             text.text = left;\par
+00113         \}\par
+00114 \par
+00115         {\cf19 foreach} (var text {\cf19 in} _inputsRight)\par
+00116         \{\par
+00117             text.text = right;\par
+00118         \}\par
+00119 \par
+00120     \}\par
+00121 \par
+00122     {\cf17 private} {\cf18 void} Awake()\par
+00123     \{\par
+00124         {\cf19 if} (_sceneMenu == {\cf17 null}) \{ _sceneMenu = SceneManager.GetActiveScene().name; \}\par
+00125     \}\par
+00126 \par
+00127     {\cf18 void} Update()\par
+00128     \{\par
+00129         InputManager();\par
+00130 \par
+00131         {\cf20 // Moyen claquer au sol mais je sais pas regler le probleme autrement}\par
+00132         {\cf20 // Si le leaderboard n'est pas charger correctement le "redemarre"}\par
+00133         {\cf19 if} (_leaderboard.CountList <= 0 && _leaderboardCharged)\par
+00134         \{\par
+00135             SwitchDisplayLeaderboard({\cf17 false});\par
+00136             SwitchDisplayLeaderboard({\cf17 true});\par
+00137 \par
+00138             {\cf19 if} (_leaderboard.CountList <= 0)\par
+00139                 _leaderboardCharged = {\cf17 false};\par
+00140         \}\par
+00141 \par
+00142     \}\par
+00143 \par
+00144 {\cf21     #endregion}\par
+00145 \par
+00146 {\cf21     #region FUNCTION}\par
+00147 \par
+00148     {\cf17 private} {\cf18 void} InputManager()\par
+00149     \{\par
+00150         {\cf20 // SCENE DU MENU DU JEU}\par
+00151         {\cf19 if} (_oldState == MenuState.Menu)\par
+00152         \{\par
+00153             {\cf20 // INPUT PRESSED}\par
+00154             {\cf19 if} (GameManager.Instance.State == GameManager.GameState.Menu && GameManager.Instance.Inputs != {\cf17 null})\par
+00155             \{\par
+00156                 {\cf19 if} (GameManager.Instance.Inputs.Default.InputLeft.IsPressed())\par
+00157                 \{\par
+00158                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00159                     _menuState = MenuState.Leaderboard;\par
+00160                     _timer = _timeTo;\par
+00161                 \}\par
+00162 \par
+00163                 {\cf19 else} {\cf19 if} (GameManager.Instance.Inputs.Default.InputRight.IsPressed())\par
+00164                 \{\par
+00165                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00166                     _menuState = MenuState.Credits;\par
+00167                     _timer = _timeTo;\par
+00168                 \}\par
+00169 \par
+00170                 {\cf19 else} {\cf19 if} (GameManager.Instance.Inputs.Default.InputEnter.IsPressed())\par
+00171                 \{\par
+00172                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00173                     _menuState = MenuState.Start;\par
+00174                     _timer = _timeTo;\par
+00175                 \}\par
+00176             \}\par
+00177 \par
+00178             {\cf20 // TIMER}\par
+00179             {\cf19 if} (Timer())\par
+00180             \{\par
+00181                 {\cf19 if} (_menuState == MenuState.Leaderboard)\par
+00182                 \{\par
+00183                     SwitchDisplayLeaderboard({\cf17 true});\par
+00184                 \}\par
+00185 \par
+00186                 {\cf19 else} {\cf19 if} (_menuState == MenuState.Credits)\par
+00187                 \{\par
+00188                     {\cf19 if} (_canvasMenu != {\cf17 null}) \{ _canvasMenu.SetActive({\cf17 false}); \}\par
+00189                     {\cf19 if} (_canvasCredits != {\cf17 null}) \{ _canvasCredits.SetActive({\cf17 true}); \}\par
+00190                 \}\par
+00191 \par
+00192                 {\cf19 else} {\cf19 if} (_menuState == MenuState.Start)\par
+00193                 \{\par
+00194                     SceneManager.LoadScene(_sceneStart);\par
+00195                 \}\par
+00196 \par
+00197                 _oldState = _menuState;\par
+00198             \}\par
+00199         \}\par
+00200 \par
+00201         {\cf20 // LEADERBOARD DISPLAY}\par
+00202         {\cf19 else} {\cf19 if} (_oldState == MenuState.Leaderboard && GameManager.Instance.Inputs != {\cf17 null})\par
+00203         \{\par
+00204             {\cf20 // INPUT PRESSED}\par
+00205             {\cf19 if} (GameManager.Instance.State == GameManager.GameState.Menu)\par
+00206             \{\par
+00207                 {\cf19 if} (GameManager.Instance.Inputs.Default.InputLeft.IsPressed())\par
+00208                 \{\par
+00209                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00210                     {\cf19 if} (_leaderboard != {\cf17 null}) \{ _leaderboard.UpList(_scrollSpeed); \}\par
+00211                     _timer = _timeTo;\par
+00212                 \}\par
+00213 \par
+00214                 {\cf19 else} {\cf19 if} (GameManager.Instance.Inputs.Default.InputRight.IsPressed())\par
+00215                 \{\par
+00216                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00217                     {\cf19 if} (_leaderboard != {\cf17 null}) \{ _leaderboard.DownList(_scrollSpeed); \}\par
+00218                     _timer = _timeTo;\par
+00219                 \}\par
+00220 \par
+00221                 {\cf19 else} {\cf19 if} (GameManager.Instance.Inputs.Default.InputEnter.IsPressed())\par
+00222                 \{\par
+00223                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00224                     _menuState = MenuState.Menu;\par
+00225                     _timer = _timeTo;\par
+00226                 \}\par
+00227             \}\par
+00228 \par
+00229             {\cf20 // TIMER}\par
+00230             {\cf19 if} (Timer())\par
+00231             \{\par
+00232                 {\cf19 if} (_menuState == MenuState.Menu)\par
+00233                 \{\par
+00234                     SwitchDisplayLeaderboard({\cf17 false});\par
+00235                 \}\par
+00236 \par
+00237                 _oldState = _menuState;\par
+00238             \}\par
+00239 \par
+00240         \}\par
+00241 \par
+00242         {\cf20 // SCENE DES CREDITS DU JEU}\par
+00243         {\cf19 else} {\cf19 if} (_oldState == MenuState.Credits)\par
+00244         \{\par
+00245             {\cf20 // INPUT PRESSED}\par
+00246             {\cf19 if} (GameManager.Instance.State == GameManager.GameState.Menu && GameManager.Instance.Inputs != {\cf17 null})\par
+00247             \{\par
+00248                 {\cf19 if} (GameManager.Instance.Inputs.Default.InputRight.IsPressed())\par
+00249                 \{\par
+00250                     GameManager.Instance.State = GameManager.GameState.Cinematic;\par
+00251                     _menuState = MenuState.Menu;\par
+00252                     _timer = _timeTo;\par
+00253                 \}\par
+00254             \}\par
+00255 \par
+00256             {\cf20 // TIMER}\par
+00257             {\cf19 if} (Timer())\par
+00258             \{\par
+00259                 {\cf19 if} (_menuState == MenuState.Menu)\par
+00260                 \{\par
+00261 \par
+00262                     {\cf19 if} (_canvasMenu != {\cf17 null}) \{ _canvasMenu.SetActive({\cf17 true}); \}\par
+00263                     {\cf19 if} (_canvasCredits != {\cf17 null}) \{ _canvasCredits.SetActive({\cf17 false}); \}\par
+00264 \par
+00265                 \}\par
+00266 \par
+00267                 _oldState = _menuState;\par
+00268             \}\par
+00269 \par
+00270         \}\par
+00271     \}\par
+00272 \par
+00273     {\cf17 private} {\cf18 void} SwitchDisplayLeaderboard({\cf18 bool} valueBool)\par
+00274     \{\par
+00275 \par
+00276         LeaderboardIsCharged = valueBool;\par
+00277 \par
+00278         {\cf19 if} (valueBool && _leaderboard != {\cf17 null}) \{\par
+00279             _leaderboard.UpdateList(GameManager.Instance.Leaderboard); \par
+00280         \}\par
+00281 \par
+00282         GameManager.Instance.State = GameManager.GameState.Menu;\par
+00283     \}\par
+00284 \par
+00285     {\cf17 private} {\cf18 bool} Timer()\par
+00286     \{\par
+00287         {\cf19 if} (_timer > 0)\par
+00288         \{\par
+00289             _timer -= Time.deltaTime;\par
+00290             {\cf19 if} (_timer == 0) \{ _timer -= 1; \}\par
+00291 \par
+00292             {\cf19 return} {\cf17 false};\par
+00293         \}\par
+00294         {\cf19 else} {\cf19 if} (_timer < 0)\par
+00295         \{\par
+00296             GameManager.Instance.State = GameManager.GameState.Menu;\par
+00297             _timer = 0;\par
+00298             {\cf19 return} {\cf17 true};\par
+00299         \}\par
+00300         {\cf19 else}\par
+00301         \{\par
+00302             {\cf19 return} {\cf17 false};\par
+00303         \}\par
+00304     \}\par
+00305 \par
+00306 {\cf21     #endregion}\par
+00307 \par
+00308 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PlayfabManager}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PlayfabManager.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }PlayFab;\par
+00005 {\cf17 using }PlayFab.ClientModels;\par
+00006 \par
+00007 [System.Serializable]\par
+00008 {\cf17 public} {\cf17 class }PlayfabManager : MonoBehaviour\par
+00009 \{\par
+00010 \par
+00011 {\cf21 #if UNITY_EDITOR}\par
+00012 \par
+00013     [Header({\cf22 "DEBUG"})]\par
+00014     [SerializeField] {\cf17 private} {\cf18 bool} _debugLogin;\par
+00015     [SerializeField] {\cf17 private} {\cf18 bool} _debugUpdateName;\par
+00016     [SerializeField] {\cf17 private} {\cf18 bool} _debugAddHigscore;\par
+00017     [SerializeField] {\cf17 private} {\cf18 bool} _debugUpdateLeaderboard;\par
+00018 \par
+00019     {\cf17 private} {\cf18 void} OnValidate()\par
+00020     \{\par
+00021         {\cf19 if} (_debugLogin)\par
+00022         \{\par
+00023             _debugLogin = {\cf17 false};\par
+00024             Login();\par
+00025         \}\par
+00026 \par
+00027         {\cf19 if} (_debugUpdateName)\par
+00028         \{\par
+00029             _debugUpdateName = {\cf17 false};\par
+00030             UpdateDisplayName();\par
+00031         \}\par
+00032 \par
+00033         {\cf19 if} (_debugAddHigscore)\par
+00034         \{\par
+00035             _debugAddHigscore = {\cf17 false};\par
+00036             SendLeaderboard();\par
+00037         \}\par
+00038 \par
+00039         {\cf19 if} (_debugUpdateLeaderboard)\par
+00040         \{\par
+00041             _debugUpdateLeaderboard = {\cf17 false};\par
+00042             GetLeaderboard();\par
+00043         \}\par
+00044     \}\par
+00045 \par
+00046 \par
+00047 {\cf21 #endif}\par
+00048 \par
+00049     [SerializeField] {\cf17 private} {\cf18 string} _nameLeaderboard = {\cf22 "Score"};\par
+00050     [SerializeField] [Range(1,100)] {\cf17 private} {\cf18 int} _leaderboardCount = 20;\par
+00051 \par
+00052     {\cf20 // ------ LOGIN ------}\par
+00053     {\cf17 public} {\cf18 void} Login()\par
+00054     \{\par
+00055         var request = {\cf17 new} LoginWithCustomIDRequest\par
+00056         \{\par
+00057             CustomId = SystemInfo.deviceUniqueIdentifier,\par
+00058             CreateAccount = {\cf17 true},\par
+00059         \};\par
+00060 \par
+00061         GameManager.Instance.ThePlayer.SetID(request.CustomId);\par
+00062 \par
+00063         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);\par
+00064     \}\par
+00065 \par
+00066     {\cf17 private} {\cf18 void} OnSuccess(LoginResult result)\par
+00067     \{\par
+00068         GameManager.Instance.ThePlayer.SetConnected({\cf17 true});\par
+00069 \par
+00070         Debug.Log({\cf22 "Successful login/account create !"});\par
+00071     \}\par
+00072 \par
+00073     {\cf17 private} {\cf18 void} OnError(PlayFabError error)\par
+00074     \{\par
+00075         GameManager.Instance.ThePlayer.SetConnected({\cf17 false});\par
+00076 \par
+00077         Debug.LogWarning({\cf22 "Error while logging in/creating account!"});\par
+00078         Debug.Log(error.GenerateErrorReport());\par
+00079     \}\par
+00080 \par
+00081     {\cf20 // ------ LEADERBOARD ------}\par
+00082     {\cf17 public} {\cf18 void} SendLeaderboard()\par
+00083     \{\par
+00084         var request = {\cf17 new} UpdatePlayerStatisticsRequest\par
+00085         \{\par
+00086             Statistics = {\cf17 new} List<StatisticUpdate>\par
+00087             \{\par
+00088                 {\cf17 new} StatisticUpdate\par
+00089                 \{\par
+00090                     StatisticName = _nameLeaderboard,\par
+00091                     Value = GameManager.Instance.ThePlayer.Score\par
+00092                 \}\par
+00093             \}\par
+00094         \};\par
+00095         PlayFabClientAPI.UpdatePlayerStatistics(request, OnLeaderboardUpdate, OnError);\par
+00096     \}\par
+00097 \par
+00098     {\cf17 private} {\cf18 void} OnLeaderboardUpdate(UpdatePlayerStatisticsResult result)\par
+00099     \{\par
+00100         GameManager.Instance.ThePlayer.SetConnected({\cf17 true});\par
+00101 \par
+00102         Debug.Log({\cf22 "Successfull leaderboard sent"});\par
+00103     \}\par
+00104 \par
+00105     {\cf17 public} {\cf18 void} GetLeaderboard()\par
+00106     \{\par
+00107         var request = {\cf17 new} GetLeaderboardRequest\par
+00108         \{\par
+00109             StatisticName = _nameLeaderboard,\par
+00110             StartPosition = 0,\par
+00111             MaxResultsCount = _leaderboardCount\par
+00112         \};\par
+00113         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);\par
+00114     \}\par
+00115 \par
+00116     {\cf17 private} {\cf18 void} OnLeaderboardGet(GetLeaderboardResult result)\par
+00117     \{\par
+00118         GameManager.Instance.ThePlayer.SetConnected({\cf17 true});\par
+00119 \par
+00120         GameManager.Instance.Leaderboard.Clear();\par
+00121 \par
+00122         {\cf19 foreach} (var item {\cf19 in} result.Leaderboard)\par
+00123         \{\par
+00124             Debug.Log( {\cf23 '|'} + item.Position + {\cf22 "| "} + item.PlayFabId + {\cf22 " | Score : "} + item.StatValue);\par
+00125 \par
+00126             GameManager.Instance.Leaderboard.Add({\cf17 new} GameManager.HightScore(item.Position,item.DisplayName,item.StatValue));\par
+00127 \par
+00128         \}\par
+00129     \}\par
+00130 \par
+00131     {\cf20 // ------ NAME ------}\par
+00132     {\cf17 public} {\cf18 void} UpdateDisplayName()\par
+00133     \{\par
+00134         var request = {\cf17 new} UpdateUserTitleDisplayNameRequest\par
+00135         \{\par
+00136             DisplayName = GameManager.Instance.ThePlayer.Name\par
+00137         \};\par
+00138         PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnDisplayNameUpdate, OnError);\par
+00139     \}\par
+00140 \par
+00141     {\cf17 private} {\cf18 void} OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult result)\par
+00142     \{\par
+00143         GameManager.Instance.ThePlayer.SetConnected({\cf17 true});\par
+00144 \par
+00145         Debug.Log({\cf22 "Successfull display name updated"});\par
+00146     \}\par
+00147 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Clock}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Clock.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Clock.cs}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }UnityEngine.UI;\par
+00005 \par
+00006 {\cf17 public} {\cf17 class }Clock : MonoBehaviour\par
+00007 \{\par
+00008 \par
+00009 {\cf21     #region VARIABLE}\par
+00010 \par
+00011     [Header({\cf22 "FILLING"})]\par
+00012     [SerializeField] [Range(0, 360)] {\cf17 private} {\cf18 float} _actualNeedleRotation = 0;\par
+00013     [SerializeField] [Range(0, 1)] {\cf17 private} {\cf18 float} _actualFilling = 0;\par
+00014 \par
+00015     [Header({\cf22 "DISPLAY"})]\par
+00016     [SerializeField] {\cf17 private} Transform _needle;\par
+00017     [SerializeField] {\cf17 private} Image _imageFilling;\par
+00018 \par
+00019     [Header({\cf22 "DEBUG"})]\par
+00020     [SerializeField] {\cf17 private} {\cf18 bool} _FillingToNeedle = {\cf17 true};\par
+00021 \par
+00022 {\cf21     #endregion}\par
+00023 \par
+00024 {\cf21     #region ASCESSEUR}\par
+00025 \par
+00026     {\cf17 private} {\cf18 float} ActualNeedleRotation \{ \par
+00027         {\cf17 get} \{ {\cf19 return} _actualNeedleRotation; \}\par
+00028         {\cf17 set}\par
+00029         \{\par
+00030             {\cf19 if} (value > 360) \{ _actualNeedleRotation = 0; \}\par
+00031             {\cf19 else} {\cf19 if} (value < 0) \{ _actualNeedleRotation = 0; \}\par
+00032             {\cf19 else} \{ _actualNeedleRotation = value; \}\par
+00033         \}\par
+00034     \}\par
+00035 \par
+00036     {\cf17 public} {\cf18 float} ActualFilling \{ \par
+00037         {\cf17 get} \{ {\cf19 return} _actualFilling; \} \par
+00038         {\cf17 set} \{ \par
+00039             {\cf19 if} (value > 1) \{ _actualFilling = 1; \}\par
+00040             {\cf19 else} {\cf19 if} (value < 0) \{ _actualFilling = 0; \}\par
+00041             {\cf19 else} \{ _actualFilling = value; \}\par
+00042 \par
+00043             {\cf19 if} (_FillingToNeedle) \{ ActualNeedleRotation = ActualFilling * 360; \}\par
+00044         \} \par
+00045     \}\par
+00046 \par
+00047 {\cf21     #endregion}\par
+00048 \par
+00049 {\cf21     #region EDITOR}\par
+00050 {\cf21 #if UNITY_EDITOR}\par
+00051 \par
+00052     {\cf17 private} {\cf18 void} OnValidate()\par
+00053     \{\par
+00054         UpdateDisplay();\par
+00055     \}\par
+00056 \par
+00057 {\cf21 #endif}\par
+00058 {\cf21     #endregion}\par
+00059 \par
+00060 {\cf21     #region FUNCTION UNITY}\par
+00061 \par
+00062     {\cf17 private} {\cf18 void} Update()\par
+00063     \{\par
+00064         UpdateDisplay();\par
+00065     \}\par
+00066 \par
+00067 {\cf21     #endregion}\par
+00068 \par
+00069 {\cf21     #region FUNCTION}\par
+00070 \par
+00071     {\cf17 private} {\cf18 void} UpdateDisplay()\par
+00072     \{\par
+00073 \par
+00074         ActualFilling = ActualFilling;\par
+00075 \par
+00076         {\cf19 if} (_imageFilling.fillClockwise) \{ _needle.eulerAngles = {\cf17 new} Vector3(_needle.eulerAngles.x, _needle.eulerAngles.y, ActualNeedleRotation); \}\par
+00077         {\cf19 else} \{ _needle.eulerAngles = {\cf17 new} Vector3(_needle.eulerAngles.x, _needle.eulerAngles.y, -ActualNeedleRotation); \}\par
+00078 \par
+00079         _imageFilling.fillAmount = ActualFilling;\par
+00080     \}\par
+00081 \par
+00082 {\cf21     #endregion}\par
+00083 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b HightScoreObject}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+HightScoreObject.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/HightScoreObject.cs}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }TMPro;\par
+00005 {\cf17 using }UnityEngine.UI;\par
+00006 \par
+00007 {\cf17 public} {\cf17 class }HightScoreObject : MonoBehaviour\par
+00008 \{\par
+00009     {\cf17 public} Image imageRank;\par
+00010     {\cf17 public} TextMeshProUGUI rank;\par
+00011     {\cf17 public} TextMeshProUGUI name;\par
+00012     {\cf17 public} TextMeshProUGUI score;\par
+00013 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Leaderboard}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Leaderboard.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs}
+{\xe \v C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+Aller \'E0 la documentation de ce fichier.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }UnityEngine.UI;\par
+00005 \par
+00006 {\cf17 public} {\cf17 class }Leaderboard : MonoBehaviour\par
+00007 \{\par
+00008 \par
+00009 {\cf21 #if UNITY_EDITOR}\par
+00010 \par
+00011     [SerializeField] {\cf17 private} {\cf18 bool} _debugCreateContent;\par
+00012     [SerializeField] {\cf17 private} {\cf18 int} _debugNbrObject;\par
+00013 \par
+00014     {\cf17 private} {\cf18 void} OnValidate()\par
+00015     \{\par
+00016         {\cf19 if} (_debugCreateContent)\par
+00017         \{\par
+00018             _debugCreateContent = {\cf17 false};\par
+00019 \par
+00020             List<GameManager.HightScore> list = {\cf17 new} List<GameManager.HightScore>();\par
+00021             {\cf19 for} ({\cf18 int} i = 0; i < _debugNbrObject; i++)\par
+00022             \{\par
+00023                 GameManager.HightScore hight = {\cf17 new} GameManager.HightScore();\par
+00024                 list.Add(hight);\par
+00025             \}\par
+00026 \par
+00027             GenerateList(list);\par
+00028 \par
+00029         \}\par
+00030     \}\par
+00031 \par
+00032 {\cf21 #endif}\par
+00033 \par
+00034     [SerializeField] {\cf17 private} List<HightScoreObject> _listHightScoreObject;\par
+00035 \par
+00036     [SerializeField] {\cf17 private} Scrollbar _scrollBar;\par
+00037 \par
+00038     [SerializeField] {\cf17 private} Transform _parent;\par
+00039     [SerializeField] {\cf17 private} GameObject _prefab;\par
+00040 \par
+00041     {\cf17 public} {\cf18 int} CountList \{ {\cf17 get} \{ {\cf19 return} _listHightScoreObject.Count; \} \}\par
+00042 \par
+00043     {\cf17 public} {\cf18 void} UpList({\cf18 float} valueFloat)\par
+00044     \{\par
+00045         {\cf18 float} checkValue = _scrollBar.value += valueFloat;\par
+00046 \par
+00047         {\cf19 if} (checkValue < 0) \{ _scrollBar.value = 0; \}\par
+00048         {\cf19 if} (checkValue > 1) \{ _scrollBar.value = 1; \}\par
+00049         {\cf19 else} \{ _scrollBar.value = checkValue; \}\par
+00050     \}\par
+00051 \par
+00052     {\cf17 public} {\cf18 void} DownList({\cf18 float} valueFloat)\par
+00053     \{\par
+00054         {\cf18 float} checkValue = _scrollBar.value -= valueFloat;\par
+00055 \par
+00056         {\cf19 if} (checkValue < 0 ) \{ _scrollBar.value = 0; \}\par
+00057         {\cf19 if} (checkValue > 1) \{ _scrollBar.value = 1; \}\par
+00058         {\cf19 else} \{ _scrollBar.value = checkValue; \}\par
+00059 \par
+00060     \}\par
+00061 \par
+00062     {\cf17 public} {\cf18 void} UpdateList(List<GameManager.HightScore> listHightScores)\par
+00063     \{\par
+00064         ResetList();\par
+00065 \par
+00066         GameManager.Instance.PlayfabManager.GetLeaderboard();\par
+00067         GenerateList(listHightScores);\par
+00068     \}\par
+00069 \par
+00070     {\cf17 private} {\cf18 void} ResetList()\par
+00071     \{\par
+00072         {\cf19 foreach} (var item {\cf19 in} _listHightScoreObject)\par
+00073         \{\par
+00074             Destroy(item.gameObject);\par
+00075         \}\par
+00076 \par
+00077         _listHightScoreObject.Clear();\par
+00078     \}\par
+00079 \par
+00080     {\cf17 private} {\cf18 void} GenerateList(List<GameManager.HightScore> listHightScores)\par
+00081     \{\par
+00082         {\cf19 foreach} (var item {\cf19 in} listHightScores)\par
+00083         \{\par
+00084             HightScoreObject hight;\par
+00085             hight = Instantiate<GameObject>(_prefab,_parent).GetComponent<HightScoreObject>();\par
+00086             _listHightScoreObject.Add(hight);\par
+00087 \par
+00088             InitialisePlayerInfo(hight, item.rank, item.namePlayer, item.score);\par
+00089 \par
+00090         \}\par
+00091     \}\par
+00092 \par
+00093     {\cf17 private} {\cf18 void} InitialisePlayerInfo(HightScoreObject hight, {\cf18 int} rank, {\cf18 string} name, {\cf18 int} score) \par
+00094     \{\par
+00095         {\cf19 if}      (rank == 1)\par
+00096         \{\par
+00097             hight.imageRank.color = Color.yellow;\par
+00098         \}\par
+00099         {\cf19 else} {\cf19 if} (rank == 2)\par
+00100         \{\par
+00101             hight.imageRank.color = Color.grey;\par
+00102         \}\par
+00103         {\cf19 else} {\cf19 if} (rank == 3)\par
+00104         \{\par
+00105             hight.imageRank.color = Color.red;\par
+00106         \}\par
+00107         {\cf19 else}\par
+00108         \{\par
+00109             hight.imageRank.color = Color.blue;\par
+00110         \}\par
+00111 \par
+00112         hight.rank.text = rank.ToString();\par
+00113         hight.name.text = name;\par
+00114         hight.score.text = score.ToString();\par
+00115 \par
+00116     \}\par
+00117 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

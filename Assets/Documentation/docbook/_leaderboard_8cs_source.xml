@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__leaderboard_8cs_source" xml:lang="fr">
+<title>Leaderboard.cs</title>
+<indexterm><primary>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/Leaderboard.cs</primary></indexterm>
+Aller à la documentation de ce fichier.<programlisting linenumbering="unnumbered"><anchor xml:id="__leaderboard_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Collections;
+<anchor xml:id="__leaderboard_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__leaderboard_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>UnityEngine;
+<anchor xml:id="__leaderboard_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>UnityEngine.UI;
+<anchor xml:id="__leaderboard_8cs_source_1l00005"/>00005 
+<anchor xml:id="__leaderboard_8cs_source_1l00006"/><link linkend="_class_leaderboard">00006</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_leaderboard">Leaderboard</link>&#32;:&#32;MonoBehaviour
+<anchor xml:id="__leaderboard_8cs_source_1l00007"/>00007 {
+<anchor xml:id="__leaderboard_8cs_source_1l00008"/>00008 
+<anchor xml:id="__leaderboard_8cs_source_1l00009"/>00009 <emphasis role="preprocessor">#if&#32;UNITY_EDITOR</emphasis>
+<anchor xml:id="__leaderboard_8cs_source_1l00010"/>00010 
+<anchor xml:id="__leaderboard_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_debugCreateContent;
+<anchor xml:id="__leaderboard_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;_debugNbrObject;
+<anchor xml:id="__leaderboard_8cs_source_1l00013"/>00013 
+<anchor xml:id="__leaderboard_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnValidate()
+<anchor xml:id="__leaderboard_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_debugCreateContent)
+<anchor xml:id="__leaderboard_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_debugCreateContent&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__leaderboard_8cs_source_1l00019"/>00019 
+<anchor xml:id="__leaderboard_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>&gt;&#32;list&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>&gt;();
+<anchor xml:id="__leaderboard_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;_debugNbrObject;&#32;i++)
+<anchor xml:id="__leaderboard_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_struct_game_manager_1_1_hight_score">GameManager.HightScore</link>&#32;hight&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>();
+<anchor xml:id="__leaderboard_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;list.Add(hight);
+<anchor xml:id="__leaderboard_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00026"/>00026 
+<anchor xml:id="__leaderboard_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GenerateList(list);
+<anchor xml:id="__leaderboard_8cs_source_1l00028"/>00028 
+<anchor xml:id="__leaderboard_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00031"/>00031 
+<anchor xml:id="__leaderboard_8cs_source_1l00032"/>00032 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="__leaderboard_8cs_source_1l00033"/>00033 
+<anchor xml:id="__leaderboard_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;List&lt;HightScoreObject&gt;&#32;_listHightScoreObject;
+<anchor xml:id="__leaderboard_8cs_source_1l00035"/>00035 
+<anchor xml:id="__leaderboard_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;Scrollbar&#32;_scrollBar;
+<anchor xml:id="__leaderboard_8cs_source_1l00037"/>00037 
+<anchor xml:id="__leaderboard_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;Transform&#32;_parent;
+<anchor xml:id="__leaderboard_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;GameObject&#32;_prefab;
+<anchor xml:id="__leaderboard_8cs_source_1l00040"/>00040 
+<anchor xml:id="__leaderboard_8cs_source_1l00041"/><link linkend="_class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf">00041</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_leaderboard_1a99b3c8099d4130c82688bea302de8dbf">CountList</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_listHightScoreObject.Count;&#32;}&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00042"/>00042 
+<anchor xml:id="__leaderboard_8cs_source_1l00043"/><link linkend="_class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885">00043</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_leaderboard_1ac87fe2e32de1432bebc335eb463f9885">UpList</link>(<emphasis role="keywordtype">float</emphasis>&#32;valueFloat)
+<anchor xml:id="__leaderboard_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;checkValue&#32;=&#32;_scrollBar.value&#32;+=&#32;valueFloat;
+<anchor xml:id="__leaderboard_8cs_source_1l00046"/>00046 
+<anchor xml:id="__leaderboard_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(checkValue&#32;&lt;&#32;0)&#32;{&#32;_scrollBar.value&#32;=&#32;0;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(checkValue&#32;&gt;&#32;1)&#32;{&#32;_scrollBar.value&#32;=&#32;1;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{&#32;_scrollBar.value&#32;=&#32;checkValue;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00051"/>00051 
+<anchor xml:id="__leaderboard_8cs_source_1l00052"/><link linkend="_class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53">00052</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_leaderboard_1a53a6e2debf9a956634e3494a38c49b53">DownList</link>(<emphasis role="keywordtype">float</emphasis>&#32;valueFloat)
+<anchor xml:id="__leaderboard_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;checkValue&#32;=&#32;_scrollBar.value&#32;-=&#32;valueFloat;
+<anchor xml:id="__leaderboard_8cs_source_1l00055"/>00055 
+<anchor xml:id="__leaderboard_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(checkValue&#32;&lt;&#32;0&#32;)&#32;{&#32;_scrollBar.value&#32;=&#32;0;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(checkValue&#32;&gt;&#32;1)&#32;{&#32;_scrollBar.value&#32;=&#32;1;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{&#32;_scrollBar.value&#32;=&#32;checkValue;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00059"/>00059 
+<anchor xml:id="__leaderboard_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00061"/>00061 
+<anchor xml:id="__leaderboard_8cs_source_1l00062"/><link linkend="_class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_leaderboard_1ad4b33681a8541310fafe7dd0508fa509">UpdateList</link>(List&lt;GameManager.HightScore&gt;&#32;listHightScores)
+<anchor xml:id="__leaderboard_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ResetList();
+<anchor xml:id="__leaderboard_8cs_source_1l00065"/>00065 
+<anchor xml:id="__leaderboard_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5">PlayfabManager</link>.<link linkend="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9">GetLeaderboard</link>();
+<anchor xml:id="__leaderboard_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GenerateList(listHightScores);
+<anchor xml:id="__leaderboard_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00069"/>00069 
+<anchor xml:id="__leaderboard_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;ResetList()
+<anchor xml:id="__leaderboard_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;item&#32;<emphasis role="keywordflow">in</emphasis>&#32;_listHightScoreObject)
+<anchor xml:id="__leaderboard_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Destroy(item.gameObject);
+<anchor xml:id="__leaderboard_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00076"/>00076 
+<anchor xml:id="__leaderboard_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_listHightScoreObject.Clear();
+<anchor xml:id="__leaderboard_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00079"/>00079 
+<anchor xml:id="__leaderboard_8cs_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;GenerateList(List&lt;GameManager.HightScore&gt;&#32;listHightScores)
+<anchor xml:id="__leaderboard_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;item&#32;<emphasis role="keywordflow">in</emphasis>&#32;listHightScores)
+<anchor xml:id="__leaderboard_8cs_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_hight_score_object">HightScoreObject</link>&#32;hight;
+<anchor xml:id="__leaderboard_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight&#32;=&#32;Instantiate&lt;GameObject&gt;(_prefab,_parent).GetComponent&lt;<link linkend="_class_hight_score_object">HightScoreObject</link>&gt;();
+<anchor xml:id="__leaderboard_8cs_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_listHightScoreObject.Add(hight);
+<anchor xml:id="__leaderboard_8cs_source_1l00087"/>00087 
+<anchor xml:id="__leaderboard_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InitialisePlayerInfo(hight,&#32;item.rank,&#32;item.namePlayer,&#32;item.score);
+<anchor xml:id="__leaderboard_8cs_source_1l00089"/>00089 
+<anchor xml:id="__leaderboard_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00092"/>00092 
+<anchor xml:id="__leaderboard_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;InitialisePlayerInfo(<link linkend="_class_hight_score_object">HightScoreObject</link>&#32;hight,&#32;<emphasis role="keywordtype">int</emphasis>&#32;rank,&#32;<emphasis role="keywordtype">string</emphasis>&#32;name,&#32;<emphasis role="keywordtype">int</emphasis>&#32;score)&#32;
+<anchor xml:id="__leaderboard_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;&#32;&#32;&#32;&#32;&#32;(rank&#32;==&#32;1)
+<anchor xml:id="__leaderboard_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.imageRank.color&#32;=&#32;Color.yellow;
+<anchor xml:id="__leaderboard_8cs_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(rank&#32;==&#32;2)
+<anchor xml:id="__leaderboard_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.imageRank.color&#32;=&#32;Color.grey;
+<anchor xml:id="__leaderboard_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(rank&#32;==&#32;3)
+<anchor xml:id="__leaderboard_8cs_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.imageRank.color&#32;=&#32;Color.red;
+<anchor xml:id="__leaderboard_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__leaderboard_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__leaderboard_8cs_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.imageRank.color&#32;=&#32;Color.blue;
+<anchor xml:id="__leaderboard_8cs_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00111"/>00111 
+<anchor xml:id="__leaderboard_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.rank.text&#32;=&#32;rank.ToString();
+<anchor xml:id="__leaderboard_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.name.text&#32;=&#32;name;
+<anchor xml:id="__leaderboard_8cs_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hight.score.text&#32;=&#32;score.ToString();
+<anchor xml:id="__leaderboard_8cs_source_1l00115"/>00115 
+<anchor xml:id="__leaderboard_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__leaderboard_8cs_source_1l00117"/>00117 }
+</programlisting></section>

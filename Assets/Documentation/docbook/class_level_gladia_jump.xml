@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_level_gladia_jump" xml:lang="fr">
+<title>Référence de la classe LevelGladiaJump</title>
+<indexterm><primary>LevelGladiaJump</primary></indexterm>
+<para>Graphe d&apos;héritage de LevelGladiaJump:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_level_gladia_jump.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Membres hérités additionnels    </title>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__level_gladia_jump_8cs_source_1l00005">5</link> du fichier <link linkend="__level_gladia_jump_8cs_source">LevelGladiaJump.cs</link>.</para>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/<link linkend="__level_gladia_jump_8cs">LevelGladiaJump.cs</link></section>
+</section>

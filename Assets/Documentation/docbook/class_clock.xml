@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_clock" xml:lang="fr">
+<title>Référence de la classe Clock</title>
+<indexterm><primary>Clock</primary></indexterm>
+<para>Graphe d&apos;héritage de Clock:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_clock.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_clock_1aaefdd20e4f0b1de0576b50a0f18275e6">ActualFilling</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__clock_8cs_source_1l00006">6</link> du fichier <link linkend="__clock_8cs_source">Clock.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_clock_1aaefdd20e4f0b1de0576b50a0f18275e6"/><section>
+    <title>ActualFilling</title>
+<indexterm><primary>ActualFilling</primary><secondary>Clock</secondary></indexterm>
+<indexterm><primary>Clock</primary><secondary>ActualFilling</secondary></indexterm>
+<para><computeroutput>float Clock.ActualFilling<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__clock_8cs_source_1l00036">36</link> du fichier <link linkend="__clock_8cs_source">Clock.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/<link linkend="__clock_8cs">Clock.cs</link></section>
+</section>

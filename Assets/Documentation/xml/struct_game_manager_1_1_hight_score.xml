@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="struct_game_manager_1_1_hight_score" kind="struct" language="C#" prot="public">
+    <compoundname>GameManager::HightScore</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_game_manager_1_1_hight_score_1a1d76e7fb0953e2663e24084b98c18c1f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.HightScore._name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>GameManager.HightScore._name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="125" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.HightScore.rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <qualifiedname>GameManager.HightScore.rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="127" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.HightScore.namePlayer</definition>
+        <argsstring></argsstring>
+        <name>namePlayer</name>
+        <qualifiedname>GameManager.HightScore.namePlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="128" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.HightScore.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>GameManager.HightScore.score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="129" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GameManager.HightScore.HightScore</definition>
+        <argsstring>(int place=-1, string name=&quot;Billy&quot;, int score=0)</argsstring>
+        <name>HightScore</name>
+        <qualifiedname>GameManager.HightScore.HightScore</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>place</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+          <defval>&quot;Billy&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="131" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="131" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="123" column="11" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="124" bodyend="139"/>
+    <listofallmembers>
+      <member refid="struct_game_manager_1_1_hight_score_1a1d76e7fb0953e2663e24084b98c18c1f" prot="private" virt="non-virtual"><scope>GameManager::HightScore</scope><name>_name</name></member>
+      <member refid="struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a" prot="public" virt="non-virtual"><scope>GameManager::HightScore</scope><name>HightScore</name></member>
+      <member refid="struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674" prot="public" virt="non-virtual"><scope>GameManager::HightScore</scope><name>namePlayer</name></member>
+      <member refid="struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c" prot="public" virt="non-virtual"><scope>GameManager::HightScore</scope><name>rank</name></member>
+      <member refid="struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2" prot="public" virt="non-virtual"><scope>GameManager::HightScore</scope><name>score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

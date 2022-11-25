@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="interface_input_three_1_1_i_default_actions" kind="interface" language="C#" prot="public">
+    <compoundname>InputThree::IDefaultActions</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_input_three_1_1_i_default_actions_1a30cbb6464c5bf5d9830d3c9e161fc738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.IDefaultActions.OnInputLeft</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnInputLeft</name>
+        <qualifiedname>InputThree.IDefaultActions.OnInputLeft</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="229" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_input_three_1_1_i_default_actions_1a863d732f48d716f0a32289dabb44674a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.IDefaultActions.OnInputRight</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnInputRight</name>
+        <qualifiedname>InputThree.IDefaultActions.OnInputRight</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="230" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_input_three_1_1_i_default_actions_1a842adcb16cd136b2429e123e6ddced00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputThree.IDefaultActions.OnInputEnter</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnInputEnter</name>
+        <qualifiedname>InputThree.IDefaultActions.OnInputEnter</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="231" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" line="227" column="22" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/InputThree.cs" bodystart="228" bodyend="232"/>
+    <listofallmembers>
+      <member refid="interface_input_three_1_1_i_default_actions_1a842adcb16cd136b2429e123e6ddced00" prot="public" virt="non-virtual"><scope>InputThree::IDefaultActions</scope><name>OnInputEnter</name></member>
+      <member refid="interface_input_three_1_1_i_default_actions_1a30cbb6464c5bf5d9830d3c9e161fc738" prot="public" virt="non-virtual"><scope>InputThree::IDefaultActions</scope><name>OnInputLeft</name></member>
+      <member refid="interface_input_three_1_1_i_default_actions_1a863d732f48d716f0a32289dabb44674a" prot="public" virt="non-virtual"><scope>InputThree::IDefaultActions</scope><name>OnInputRight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

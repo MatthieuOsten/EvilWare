@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_input_three" xml:lang="fr">
+<title>Référence de la classe InputThree</title>
+<indexterm><primary>InputThree</primary></indexterm>
+<para>Graphe d&apos;héritage de InputThree:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_input_three.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_input_three_1_1_default_actions">DefaultActions</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_input_three_1_1_i_default_actions">IDefaultActions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_input_three_1aa87418529da6597f789f135aa885fb8c">InputThree</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_input_three_1acde9ef40d00a2eb538da38d7d7df5b62">Dispose</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_input_three_1ae84b74794775da4ec5019bd40e52cd62">Contains</link> (InputAction action)</para>
+</listitem>
+            <listitem><para>IEnumerator&lt; InputAction &gt; <link linkend="_class_input_three_1aa44413083d187fc47e74ad33d67a903f">GetEnumerator</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_input_three_1a9d6ea80dfd2d74bc0138864c586d127b">Enable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_input_three_1ae715ec38890a93362ab796d830491557">Disable</link> ()</para>
+</listitem>
+            <listitem><para>InputAction <link linkend="_class_input_three_1a20b99a00ddf624186d5e1cb3b35098fe">FindAction</link> (string actionNameOrId, bool throwIfNotFound=false)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_input_three_1a9b78363b33a20c5eac66cf1ba3077565">FindBinding</link> (InputBinding <link linkend="_class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3">bindingMask</link>, out InputAction action)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>InputActionAsset <link linkend="_class_input_three_1aae4ddff4750083d4eb5839c4d7a644ca">asset</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>InputBinding? <link linkend="_class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3">bindingMask</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>ReadOnlyArray&lt; InputDevice &gt;? <link linkend="_class_input_three_1ae800d88cede4c5b2a3591d6703cae065">devices</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>ReadOnlyArray&lt; InputControlScheme &gt; <link linkend="_class_input_three_1a721b628f840b1a914fb9f4bedf0ea29a">controlSchemes</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>IEnumerable&lt; InputBinding &gt; <link linkend="_class_input_three_1acb0301842d367c7d2fc7e7f286cb4faa">bindings</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_struct_input_three_1_1_default_actions">DefaultActions</link> <link linkend="_class_input_three_1a6f14be7271cd3675650579c9dfc34d7a">Default</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>InputControlScheme <link linkend="_class_input_three_1ae5ddcd518f6e0735c6598d45699ab606">DefaultScheme</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00018">18</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_class_input_three_1aa87418529da6597f789f135aa885fb8c"/><section>
+    <title>InputThree()</title>
+<indexterm><primary>InputThree</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>InputThree</secondary></indexterm>
+<para><computeroutput>InputThree.InputThree ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00021">21</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_input_three_1ae84b74794775da4ec5019bd40e52cd62"/><section>
+    <title>Contains()</title>
+<indexterm><primary>Contains</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>Contains</secondary></indexterm>
+<para><computeroutput>bool InputThree.Contains (InputAction action)</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00135">135</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1ae715ec38890a93362ab796d830491557"/><section>
+    <title>Disable()</title>
+<indexterm><primary>Disable</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>Disable</secondary></indexterm>
+<para><computeroutput>void InputThree.Disable ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00155">155</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1acde9ef40d00a2eb538da38d7d7df5b62"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>void InputThree.Dispose ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00116">116</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a9d6ea80dfd2d74bc0138864c586d127b"/><section>
+    <title>Enable()</title>
+<indexterm><primary>Enable</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>Enable</secondary></indexterm>
+<para><computeroutput>void InputThree.Enable ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00150">150</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a20b99a00ddf624186d5e1cb3b35098fe"/><section>
+    <title>FindAction()</title>
+<indexterm><primary>FindAction</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>FindAction</secondary></indexterm>
+<para><computeroutput>InputAction InputThree.FindAction (string actionNameOrId, bool throwIfNotFound = <computeroutput>false</computeroutput>
+)</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00161">161</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a9b78363b33a20c5eac66cf1ba3077565"/><section>
+    <title>FindBinding()</title>
+<indexterm><primary>FindBinding</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>FindBinding</secondary></indexterm>
+<para><computeroutput>int InputThree.FindBinding (InputBinding bindingMask, out InputAction action)</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00165">165</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1aa44413083d187fc47e74ad33d67a903f"/><section>
+    <title>GetEnumerator()</title>
+<indexterm><primary>GetEnumerator</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>GetEnumerator</secondary></indexterm>
+<para><computeroutput>IEnumerator&lt; InputAction &gt; InputThree.GetEnumerator ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00140">140</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_input_three_1aae4ddff4750083d4eb5839c4d7a644ca"/><section>
+    <title>asset</title>
+<indexterm><primary>asset</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>asset</secondary></indexterm>
+<para><computeroutput>InputActionAsset InputThree.asset<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00020">20</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a7727cce6ba11d340bb3868875ab3e2d3"/><section>
+    <title>bindingMask</title>
+<indexterm><primary>bindingMask</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>bindingMask</secondary></indexterm>
+<para><computeroutput>InputBinding? InputThree.bindingMask<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00121">121</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1acb0301842d367c7d2fc7e7f286cb4faa"/><section>
+    <title>bindings</title>
+<indexterm><primary>bindings</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>bindings</secondary></indexterm>
+<para><computeroutput>IEnumerable&lt;InputBinding&gt; InputThree.bindings<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00159">159</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a721b628f840b1a914fb9f4bedf0ea29a"/><section>
+    <title>controlSchemes</title>
+<indexterm><primary>controlSchemes</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>controlSchemes</secondary></indexterm>
+<para><computeroutput>ReadOnlyArray&lt;InputControlScheme&gt; InputThree.controlSchemes<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00133">133</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1a6f14be7271cd3675650579c9dfc34d7a"/><section>
+    <title>Default</title>
+<indexterm><primary>Default</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>Default</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_input_three_1_1_default_actions">DefaultActions</link> InputThree.Default<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00217">217</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1ae5ddcd518f6e0735c6598d45699ab606"/><section>
+    <title>DefaultScheme</title>
+<indexterm><primary>DefaultScheme</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>DefaultScheme</secondary></indexterm>
+<para><computeroutput>InputControlScheme InputThree.DefaultScheme<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00219">219</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_class_input_three_1ae800d88cede4c5b2a3591d6703cae065"/><section>
+    <title>devices</title>
+<indexterm><primary>devices</primary><secondary>InputThree</secondary></indexterm>
+<indexterm><primary>InputThree</primary><secondary>devices</secondary></indexterm>
+<para><computeroutput>ReadOnlyArray&lt;InputDevice&gt;? InputThree.devices<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00127">127</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/<link linkend="__input_three_8cs">InputThree.cs</link></section>
+</section>

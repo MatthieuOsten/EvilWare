@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__playfab_manager_8cs_source" xml:lang="fr">
+<title>PlayfabManager.cs</title>
+<indexterm><primary>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs</primary></indexterm>
+Aller à la documentation de ce fichier.<programlisting linenumbering="unnumbered"><anchor xml:id="__playfab_manager_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Collections;
+<anchor xml:id="__playfab_manager_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__playfab_manager_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>UnityEngine;
+<anchor xml:id="__playfab_manager_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>PlayFab;
+<anchor xml:id="__playfab_manager_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>PlayFab.ClientModels;
+<anchor xml:id="__playfab_manager_8cs_source_1l00006"/>00006 
+<anchor xml:id="__playfab_manager_8cs_source_1l00007"/>00007 [System.Serializable]
+<anchor xml:id="__playfab_manager_8cs_source_1l00008"/><link linkend="_class_playfab_manager">00008</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_playfab_manager">PlayfabManager</link>&#32;:&#32;MonoBehaviour
+<anchor xml:id="__playfab_manager_8cs_source_1l00009"/>00009 {
+<anchor xml:id="__playfab_manager_8cs_source_1l00010"/>00010 
+<anchor xml:id="__playfab_manager_8cs_source_1l00011"/>00011 <emphasis role="preprocessor">#if&#32;UNITY_EDITOR</emphasis>
+<anchor xml:id="__playfab_manager_8cs_source_1l00012"/>00012 
+<anchor xml:id="__playfab_manager_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;DEBUG&quot;</emphasis>)]
+<anchor xml:id="__playfab_manager_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_debugLogin;
+<anchor xml:id="__playfab_manager_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_debugUpdateName;
+<anchor xml:id="__playfab_manager_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_debugAddHigscore;
+<anchor xml:id="__playfab_manager_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_debugUpdateLeaderboard;
+<anchor xml:id="__playfab_manager_8cs_source_1l00018"/>00018 
+<anchor xml:id="__playfab_manager_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnValidate()
+<anchor xml:id="__playfab_manager_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_debugLogin)
+<anchor xml:id="__playfab_manager_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_debugLogin&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__playfab_manager_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f">Login</link>();
+<anchor xml:id="__playfab_manager_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00026"/>00026 
+<anchor xml:id="__playfab_manager_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_debugUpdateName)
+<anchor xml:id="__playfab_manager_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_debugUpdateName&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__playfab_manager_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac">UpdateDisplayName</link>();
+<anchor xml:id="__playfab_manager_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00032"/>00032 
+<anchor xml:id="__playfab_manager_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_debugAddHigscore)
+<anchor xml:id="__playfab_manager_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_debugAddHigscore&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__playfab_manager_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d">SendLeaderboard</link>();
+<anchor xml:id="__playfab_manager_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00038"/>00038 
+<anchor xml:id="__playfab_manager_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_debugUpdateLeaderboard)
+<anchor xml:id="__playfab_manager_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_debugUpdateLeaderboard&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__playfab_manager_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9">GetLeaderboard</link>();
+<anchor xml:id="__playfab_manager_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00045"/>00045 
+<anchor xml:id="__playfab_manager_8cs_source_1l00046"/>00046 
+<anchor xml:id="__playfab_manager_8cs_source_1l00047"/>00047 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="__playfab_manager_8cs_source_1l00048"/>00048 
+<anchor xml:id="__playfab_manager_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_nameLeaderboard&#32;=&#32;<emphasis role="stringliteral">&quot;Score&quot;</emphasis>;
+<anchor xml:id="__playfab_manager_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;[SerializeField]&#32;[Range(1,100)]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;_leaderboardCount&#32;=&#32;20;
+<anchor xml:id="__playfab_manager_8cs_source_1l00051"/>00051 
+<anchor xml:id="__playfab_manager_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;------&#32;LOGIN&#32;------</emphasis>
+<anchor xml:id="__playfab_manager_8cs_source_1l00053"/><link linkend="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f">00053</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f">Login</link>()
+<anchor xml:id="__playfab_manager_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;request&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;LoginWithCustomIDRequest
+<anchor xml:id="__playfab_manager_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CustomId&#32;=&#32;SystemInfo.deviceUniqueIdentifier,
+<anchor xml:id="__playfab_manager_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CreateAccount&#32;=&#32;<emphasis role="keyword">true</emphasis>,
+<anchor xml:id="__playfab_manager_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+<anchor xml:id="__playfab_manager_8cs_source_1l00060"/>00060 
+<anchor xml:id="__playfab_manager_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649">SetID</link>(request.CustomId);
+<anchor xml:id="__playfab_manager_8cs_source_1l00062"/>00062 
+<anchor xml:id="__playfab_manager_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PlayFabClientAPI.LoginWithCustomID(request,&#32;OnSuccess,&#32;OnError);
+<anchor xml:id="__playfab_manager_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00065"/>00065 
+<anchor xml:id="__playfab_manager_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnSuccess(LoginResult&#32;result)
+<anchor xml:id="__playfab_manager_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00069"/>00069 
+<anchor xml:id="__playfab_manager_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Successful&#32;login/account&#32;create&#32;!&quot;</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00072"/>00072 
+<anchor xml:id="__playfab_manager_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnError(PlayFabError&#32;error)
+<anchor xml:id="__playfab_manager_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00076"/>00076 
+<anchor xml:id="__playfab_manager_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.LogWarning(<emphasis role="stringliteral">&quot;Error&#32;while&#32;logging&#32;in/creating&#32;account!&quot;</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(error.GenerateErrorReport());
+<anchor xml:id="__playfab_manager_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00080"/>00080 
+<anchor xml:id="__playfab_manager_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;------&#32;LEADERBOARD&#32;------</emphasis>
+<anchor xml:id="__playfab_manager_8cs_source_1l00082"/><link linkend="_class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d">00082</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d">SendLeaderboard</link>()
+<anchor xml:id="__playfab_manager_8cs_source_1l00083"/>00083 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;request&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;UpdatePlayerStatisticsRequest
+<anchor xml:id="__playfab_manager_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Statistics&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;StatisticUpdate&gt;
+<anchor xml:id="__playfab_manager_8cs_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">new</emphasis>&#32;StatisticUpdate
+<anchor xml:id="__playfab_manager_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StatisticName&#32;=&#32;_nameLeaderboard,
+<anchor xml:id="__playfab_manager_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Value&#32;=&#32;GameManager.Instance.ThePlayer.Score
+<anchor xml:id="__playfab_manager_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+<anchor xml:id="__playfab_manager_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PlayFabClientAPI.UpdatePlayerStatistics(request,&#32;OnLeaderboardUpdate,&#32;OnError);
+<anchor xml:id="__playfab_manager_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00097"/>00097 
+<anchor xml:id="__playfab_manager_8cs_source_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnLeaderboardUpdate(UpdatePlayerStatisticsResult&#32;result)
+<anchor xml:id="__playfab_manager_8cs_source_1l00099"/>00099 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00101"/>00101 
+<anchor xml:id="__playfab_manager_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Successfull&#32;leaderboard&#32;sent&quot;</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00103"/>00103 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00104"/>00104 
+<anchor xml:id="__playfab_manager_8cs_source_1l00105"/><link linkend="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9">00105</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9">GetLeaderboard</link>()
+<anchor xml:id="__playfab_manager_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;request&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;GetLeaderboardRequest
+<anchor xml:id="__playfab_manager_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StatisticName&#32;=&#32;_nameLeaderboard,
+<anchor xml:id="__playfab_manager_8cs_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StartPosition&#32;=&#32;0,
+<anchor xml:id="__playfab_manager_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MaxResultsCount&#32;=&#32;_leaderboardCount
+<anchor xml:id="__playfab_manager_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+<anchor xml:id="__playfab_manager_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PlayFabClientAPI.GetLeaderboard(request,&#32;OnLeaderboardGet,&#32;OnError);
+<anchor xml:id="__playfab_manager_8cs_source_1l00114"/>00114 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00115"/>00115 
+<anchor xml:id="__playfab_manager_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnLeaderboardGet(GetLeaderboardResult&#32;result)
+<anchor xml:id="__playfab_manager_8cs_source_1l00117"/>00117 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00119"/>00119 
+<anchor xml:id="__playfab_manager_8cs_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a6159631ccb4b92badcb34e47e965c912">Leaderboard</link>.Clear();
+<anchor xml:id="__playfab_manager_8cs_source_1l00121"/>00121 
+<anchor xml:id="__playfab_manager_8cs_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;item&#32;<emphasis role="keywordflow">in</emphasis>&#32;result.Leaderboard)
+<anchor xml:id="__playfab_manager_8cs_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(&#32;<emphasis role="charliteral">&apos;|&apos;</emphasis>&#32;+&#32;item.Position&#32;+&#32;<emphasis role="stringliteral">&quot;|&#32;&quot;</emphasis>&#32;+&#32;item.PlayFabId&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;|&#32;Score&#32;:&#32;&quot;</emphasis>&#32;+&#32;item.StatValue);
+<anchor xml:id="__playfab_manager_8cs_source_1l00125"/>00125 
+<anchor xml:id="__playfab_manager_8cs_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a6159631ccb4b92badcb34e47e965c912">Leaderboard</link>.Add(<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>(item.Position,item.DisplayName,item.StatValue));
+<anchor xml:id="__playfab_manager_8cs_source_1l00127"/>00127 
+<anchor xml:id="__playfab_manager_8cs_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00129"/>00129 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00130"/>00130 
+<anchor xml:id="__playfab_manager_8cs_source_1l00131"/>00131 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;------&#32;NAME&#32;------</emphasis>
+<anchor xml:id="__playfab_manager_8cs_source_1l00132"/><link linkend="_class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac">00132</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac">UpdateDisplayName</link>()
+<anchor xml:id="__playfab_manager_8cs_source_1l00133"/>00133 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;request&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;UpdateUserTitleDisplayNameRequest
+<anchor xml:id="__playfab_manager_8cs_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DisplayName&#32;=&#32;GameManager.Instance.ThePlayer.Name
+<anchor xml:id="__playfab_manager_8cs_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+<anchor xml:id="__playfab_manager_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PlayFabClientAPI.UpdateUserTitleDisplayName(request,&#32;OnDisplayNameUpdate,&#32;OnError);
+<anchor xml:id="__playfab_manager_8cs_source_1l00139"/>00139 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00140"/>00140 
+<anchor xml:id="__playfab_manager_8cs_source_1l00141"/>00141 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult&#32;result)
+<anchor xml:id="__playfab_manager_8cs_source_1l00142"/>00142 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__playfab_manager_8cs_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>.<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00144"/>00144 
+<anchor xml:id="__playfab_manager_8cs_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Successfull&#32;display&#32;name&#32;updated&quot;</emphasis>);
+<anchor xml:id="__playfab_manager_8cs_source_1l00146"/>00146 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__playfab_manager_8cs_source_1l00147"/>00147 }
+</programlisting></section>

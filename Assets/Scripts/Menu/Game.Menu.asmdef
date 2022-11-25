@@ -1,0 +1,21 @@
+{
+    "name": "Game.Menu",
+    "rootNamespace": "",
+    "references": [
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:1fde0b5609ca51344a7e42a976f4df39",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:f9e31486b87ace8499fded7565977272",
+        "GUID:dbf3f36dd8b7a6d4dbfe1a0b857ebc50",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

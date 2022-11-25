@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_input_three_1_1_default_actions" xml:lang="fr">
+<title>Référence de la structure InputThree.DefaultActions</title>
+<indexterm><primary>InputThree.DefaultActions</primary></indexterm>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_input_three_1_1_default_actions_1a3f37efe86508c5d12358d7f983330066">DefaultActions</link> (@<link linkend="_class_input_three">InputThree</link> wrapper)</para>
+</listitem>
+            <listitem><para>InputActionMap <link linkend="_struct_input_three_1_1_default_actions_1ad67b07e1a4ca266df986041eddf1a863">Get</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_input_three_1_1_default_actions_1a05a122f866abec50d233c3e4e2dea44c">Enable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_input_three_1_1_default_actions_1a109bcfbef5a1cf5a4efbca20e5b47cde">Disable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_input_three_1_1_default_actions_1ae39b03b36af3d1d9dabfb0312f488f5b">SetCallbacks</link> (<link linkend="_interface_input_three_1_1_i_default_actions">IDefaultActions</link> instance)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fonctions membres publiques statiques    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_struct_input_three_1_1_default_actions_1ad272cda696bbce081daf35ab7b42e83e">operator InputActionMap</link> (<link linkend="_struct_input_three_1_1_default_actions">DefaultActions</link> set)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>InputAction <link linkend="_struct_input_three_1_1_default_actions_1a68b3be5dc1b0cdaf238d27d329d35f9a">InputLeft</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>InputAction <link linkend="_struct_input_three_1_1_default_actions_1a0cdbefc12d449baf2b5f2d1dd9a499fe">InputRight</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>InputAction <link linkend="_struct_input_three_1_1_default_actions_1a9b57272eeb8a951c834d1d24dbbda132">InputEnter</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_input_three_1_1_default_actions_1ab2ab6629608eb6062760abcbf9f3e2f7">enabled</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00176">176</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a3f37efe86508c5d12358d7f983330066"/><section>
+    <title>DefaultActions()</title>
+<indexterm><primary>DefaultActions</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>DefaultActions</secondary></indexterm>
+<para><computeroutput>InputThree.DefaultActions.DefaultActions (@<link linkend="_class_input_three">InputThree</link> wrapper)</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00179">179</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a109bcfbef5a1cf5a4efbca20e5b47cde"/><section>
+    <title>Disable()</title>
+<indexterm><primary>Disable</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>Disable</secondary></indexterm>
+<para><computeroutput>void InputThree.DefaultActions.Disable ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00185">185</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a05a122f866abec50d233c3e4e2dea44c"/><section>
+    <title>Enable()</title>
+<indexterm><primary>Enable</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>Enable</secondary></indexterm>
+<para><computeroutput>void InputThree.DefaultActions.Enable ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00184">184</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1ad67b07e1a4ca266df986041eddf1a863"/><section>
+    <title>Get()</title>
+<indexterm><primary>Get</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>Get</secondary></indexterm>
+<para><computeroutput>InputActionMap InputThree.DefaultActions.Get ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00183">183</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1ad272cda696bbce081daf35ab7b42e83e"/><section>
+    <title>operator InputActionMap()</title>
+<indexterm><primary>operator InputActionMap</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>operator InputActionMap</secondary></indexterm>
+<para><computeroutput>static implicit InputThree.DefaultActions.operator InputActionMap (<link linkend="_struct_input_three_1_1_default_actions">DefaultActions</link> set)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00187">187</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1ae39b03b36af3d1d9dabfb0312f488f5b"/><section>
+    <title>SetCallbacks()</title>
+<indexterm><primary>SetCallbacks</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>SetCallbacks</secondary></indexterm>
+<para><computeroutput>void InputThree.DefaultActions.SetCallbacks (<link linkend="_interface_input_three_1_1_i_default_actions">IDefaultActions</link> instance)</computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00188">188</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1ab2ab6629608eb6062760abcbf9f3e2f7"/><section>
+    <title>enabled</title>
+<indexterm><primary>enabled</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>enabled</secondary></indexterm>
+<para><computeroutput>bool InputThree.DefaultActions.enabled<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00186">186</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a9b57272eeb8a951c834d1d24dbbda132"/><section>
+    <title>InputEnter</title>
+<indexterm><primary>InputEnter</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>InputEnter</secondary></indexterm>
+<para><computeroutput>InputAction InputThree.DefaultActions.InputEnter<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00182">182</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a68b3be5dc1b0cdaf238d27d329d35f9a"/><section>
+    <title>InputLeft</title>
+<indexterm><primary>InputLeft</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>InputLeft</secondary></indexterm>
+<para><computeroutput>InputAction InputThree.DefaultActions.InputLeft<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00180">180</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_input_three_1_1_default_actions_1a0cdbefc12d449baf2b5f2d1dd9a499fe"/><section>
+    <title>InputRight</title>
+<indexterm><primary>InputRight</primary><secondary>InputThree.DefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.DefaultActions</primary><secondary>InputRight</secondary></indexterm>
+<para><computeroutput>InputAction InputThree.DefaultActions.InputRight<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00181">181</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<para>
+La documentation de cette structure a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/<link linkend="__input_three_8cs">InputThree.cs</link></section>
+</section>

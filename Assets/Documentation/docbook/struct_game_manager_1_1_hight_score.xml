@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_game_manager_1_1_hight_score" xml:lang="fr">
+<title>Référence de la structure GameManager.HightScore</title>
+<indexterm><primary>GameManager.HightScore</primary></indexterm>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a">HightScore</link> (int place=-1, string name=&quot;Billy&quot;, int <link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">score</link>=0)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Attributs publics    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c">rank</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674">namePlayer</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">score</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00123">123</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a"/><section>
+    <title>HightScore()</title>
+<indexterm><primary>HightScore</primary><secondary>GameManager.HightScore</secondary></indexterm>
+<indexterm><primary>GameManager.HightScore</primary><secondary>HightScore</secondary></indexterm>
+<para><computeroutput>GameManager.HightScore.HightScore (int place = <computeroutput>-1</computeroutput>
+, string name = <computeroutput>&quot;Billy&quot;</computeroutput>
+, int score = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00131">131</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des données membres</title>
+<anchor xml:id="_struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674"/><section>
+    <title>namePlayer</title>
+<indexterm><primary>namePlayer</primary><secondary>GameManager.HightScore</secondary></indexterm>
+<indexterm><primary>GameManager.HightScore</primary><secondary>namePlayer</secondary></indexterm>
+<para><computeroutput>string GameManager.HightScore.namePlayer</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00128">128</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c"/><section>
+    <title>rank</title>
+<indexterm><primary>rank</primary><secondary>GameManager.HightScore</secondary></indexterm>
+<indexterm><primary>GameManager.HightScore</primary><secondary>rank</secondary></indexterm>
+<para><computeroutput>int GameManager.HightScore.rank</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00127">127</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2"/><section>
+    <title>score</title>
+<indexterm><primary>score</primary><secondary>GameManager.HightScore</secondary></indexterm>
+<indexterm><primary>GameManager.HightScore</primary><secondary>score</secondary></indexterm>
+<para><computeroutput>int GameManager.HightScore.score</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00129">129</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<para>
+La documentation de cette structure a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/<link linkend="__game_manager_8cs">GameManager.cs</link></section>
+</section>

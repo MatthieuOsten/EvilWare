@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_manager_1_1_player" xml:lang="fr">
+<title>Référence de la classe GameManager.Player</title>
+<indexterm><primary>GameManager.Player</primary></indexterm>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f">Player</link> (string name)</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573">Player</link> (string name, string id)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea">SetName</link> (string valueString)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649">SetID</link> (string valueString)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link> (bool valueBool)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3">SetScore</link> (int valueInt)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44">ID</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f">IsConnected</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb">Score</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00066">66</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f"/><section>
+    <title>Player()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>GameManager.Player.Player (string name)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00083">83</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573"/><section>
+    <title>Player()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>GameManager.Player.Player (string name, string id)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00091">91</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b"/><section>
+    <title>SetConnected()</title>
+<indexterm><primary>SetConnected</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>SetConnected</secondary></indexterm>
+<para><computeroutput>void GameManager.Player.SetConnected (bool valueBool)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00109">109</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649"/><section>
+    <title>SetID()</title>
+<indexterm><primary>SetID</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>SetID</secondary></indexterm>
+<para><computeroutput>void GameManager.Player.SetID (string valueString)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00104">104</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea"/><section>
+    <title>SetName()</title>
+<indexterm><primary>SetName</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>SetName</secondary></indexterm>
+<para><computeroutput>void GameManager.Player.SetName (string valueString)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00099">99</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3"/><section>
+    <title>SetScore()</title>
+<indexterm><primary>SetScore</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>SetScore</secondary></indexterm>
+<para><computeroutput>void GameManager.Player.SetScore (int valueInt)</computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00114">114</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44"/><section>
+    <title>ID</title>
+<indexterm><primary>ID</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>ID</secondary></indexterm>
+<para><computeroutput>string GameManager.Player.ID<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00079">79</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f"/><section>
+    <title>IsConnected</title>
+<indexterm><primary>IsConnected</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>IsConnected</secondary></indexterm>
+<para><computeroutput>bool GameManager.Player.IsConnected<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00080">80</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string GameManager.Player.Name<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00078">78</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb"/><section>
+    <title>Score</title>
+<indexterm><primary>Score</primary><secondary>GameManager.Player</secondary></indexterm>
+<indexterm><primary>GameManager.Player</primary><secondary>Score</secondary></indexterm>
+<para><computeroutput>int GameManager.Player.Score<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__game_manager_8cs_source_1l00081">81</link> du fichier <link linkend="__game_manager_8cs_source">GameManager.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/<link linkend="__game_manager_8cs">GameManager.cs</link></section>
+</section>

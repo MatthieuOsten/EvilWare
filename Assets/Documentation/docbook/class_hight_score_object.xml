@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_hight_score_object" xml:lang="fr">
+<title>Référence de la classe HightScoreObject</title>
+<indexterm><primary>HightScoreObject</primary></indexterm>
+<para>Graphe d&apos;héritage de HightScoreObject:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_hight_score_object.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Attributs publics    </title>
+        <itemizedlist>
+            <listitem><para>Image <link linkend="_class_hight_score_object_1a51ba00327e09db69c1111b8718e73e79">imageRank</link></para>
+</listitem>
+            <listitem><para>TextMeshProUGUI <link linkend="_class_hight_score_object_1a1f6515a2ec556833abfa2a97eb96512b">rank</link></para>
+</listitem>
+            <listitem><para>TextMeshProUGUI <link linkend="_class_hight_score_object_1afbca906dd1db27a388faa768f22a45d6">name</link></para>
+</listitem>
+            <listitem><para>TextMeshProUGUI <link linkend="_class_hight_score_object_1a93bb624f85987e43f42f4baf8304e5b6">score</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__hight_score_object_8cs_source_1l00007">7</link> du fichier <link linkend="__hight_score_object_8cs_source">HightScoreObject.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des données membres</title>
+<anchor xml:id="_class_hight_score_object_1a51ba00327e09db69c1111b8718e73e79"/><section>
+    <title>imageRank</title>
+<indexterm><primary>imageRank</primary><secondary>HightScoreObject</secondary></indexterm>
+<indexterm><primary>HightScoreObject</primary><secondary>imageRank</secondary></indexterm>
+<para><computeroutput>Image HightScoreObject.imageRank</computeroutput></para><para>
+Définition à la ligne <link linkend="__hight_score_object_8cs_source_1l00009">9</link> du fichier <link linkend="__hight_score_object_8cs_source">HightScoreObject.cs</link>.</para>
+</section>
+<anchor xml:id="_class_hight_score_object_1afbca906dd1db27a388faa768f22a45d6"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>HightScoreObject</secondary></indexterm>
+<indexterm><primary>HightScoreObject</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>TextMeshProUGUI HightScoreObject.name</computeroutput></para><para>
+Définition à la ligne <link linkend="__hight_score_object_8cs_source_1l00011">11</link> du fichier <link linkend="__hight_score_object_8cs_source">HightScoreObject.cs</link>.</para>
+</section>
+<anchor xml:id="_class_hight_score_object_1a1f6515a2ec556833abfa2a97eb96512b"/><section>
+    <title>rank</title>
+<indexterm><primary>rank</primary><secondary>HightScoreObject</secondary></indexterm>
+<indexterm><primary>HightScoreObject</primary><secondary>rank</secondary></indexterm>
+<para><computeroutput>TextMeshProUGUI HightScoreObject.rank</computeroutput></para><para>
+Définition à la ligne <link linkend="__hight_score_object_8cs_source_1l00010">10</link> du fichier <link linkend="__hight_score_object_8cs_source">HightScoreObject.cs</link>.</para>
+</section>
+<anchor xml:id="_class_hight_score_object_1a93bb624f85987e43f42f4baf8304e5b6"/><section>
+    <title>score</title>
+<indexterm><primary>score</primary><secondary>HightScoreObject</secondary></indexterm>
+<indexterm><primary>HightScoreObject</primary><secondary>score</secondary></indexterm>
+<para><computeroutput>TextMeshProUGUI HightScoreObject.score</computeroutput></para><para>
+Définition à la ligne <link linkend="__hight_score_object_8cs_source_1l00012">12</link> du fichier <link linkend="__hight_score_object_8cs_source">HightScoreObject.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Widgets/<link linkend="__hight_score_object_8cs">HightScoreObject.cs</link></section>
+</section>

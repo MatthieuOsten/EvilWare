@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_game_manager_1_1_player" kind="class" language="C#" prot="public">
+    <compoundname>GameManager::Player</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_manager_1_1_player_1a4c37a7c8ec46827c523c9a58bfcefdcd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.Player._name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>GameManager.Player._name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="69" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1_1_player_1ae4a65b0a0b132069f8134e0f2185b9b2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.Player._id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <qualifiedname>GameManager.Player._id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="70" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1_1_player_1a416f455b41a1b9c50e2c84a54a6ff049" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.Player._score</definition>
+        <argsstring></argsstring>
+        <name>_score</name>
+        <qualifiedname>GameManager.Player._score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="73" column="22" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1_1_player_1adcdaeebee77fc2b10b9203c1024d047d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameManager.Player._isConnected</definition>
+        <argsstring></argsstring>
+        <name>_isConnected</name>
+        <qualifiedname>GameManager.Player._isConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="76" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GameManager.Player.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>GameManager.Player.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="78" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GameManager.Player.ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>GameManager.Player.ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="79" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool GameManager.Player.IsConnected</definition>
+        <argsstring></argsstring>
+        <name>IsConnected</name>
+        <qualifiedname>GameManager.Player.IsConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="80" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int GameManager.Player.Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <qualifiedname>GameManager.Player.Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="81" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GameManager.Player.Player</definition>
+        <argsstring>(string name)</argsstring>
+        <name>Player</name>
+        <qualifiedname>GameManager.Player.Player</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="83" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GameManager.Player.Player</definition>
+        <argsstring>(string name, string id)</argsstring>
+        <name>Player</name>
+        <qualifiedname>GameManager.Player.Player</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="91" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Player.SetName</definition>
+        <argsstring>(string valueString)</argsstring>
+        <name>SetName</name>
+        <qualifiedname>GameManager.Player.SetName</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>valueString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="99" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Player.SetID</definition>
+        <argsstring>(string valueString)</argsstring>
+        <name>SetID</name>
+        <qualifiedname>GameManager.Player.SetID</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>valueString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="104" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Player.SetConnected</definition>
+        <argsstring>(bool valueBool)</argsstring>
+        <name>SetConnected</name>
+        <qualifiedname>GameManager.Player.SetConnected</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>valueBool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="109" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Player.SetScore</definition>
+        <argsstring>(int valueInt)</argsstring>
+        <name>SetScore</name>
+        <qualifiedname>GameManager.Player.SetScore</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>valueInt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="114" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="114" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="66" column="11" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="67" bodyend="120"/>
+    <listofallmembers>
+      <member refid="class_game_manager_1_1_player_1ae4a65b0a0b132069f8134e0f2185b9b2" prot="private" virt="non-virtual"><scope>GameManager::Player</scope><name>_id</name></member>
+      <member refid="class_game_manager_1_1_player_1adcdaeebee77fc2b10b9203c1024d047d" prot="private" virt="non-virtual"><scope>GameManager::Player</scope><name>_isConnected</name></member>
+      <member refid="class_game_manager_1_1_player_1a4c37a7c8ec46827c523c9a58bfcefdcd" prot="private" virt="non-virtual"><scope>GameManager::Player</scope><name>_name</name></member>
+      <member refid="class_game_manager_1_1_player_1a416f455b41a1b9c50e2c84a54a6ff049" prot="private" virt="non-virtual"><scope>GameManager::Player</scope><name>_score</name></member>
+      <member refid="class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>ID</name></member>
+      <member refid="class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>IsConnected</name></member>
+      <member refid="class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>Name</name></member>
+      <member refid="class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>Player</name></member>
+      <member refid="class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>Player</name></member>
+      <member refid="class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>Score</name></member>
+      <member refid="class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>SetConnected</name></member>
+      <member refid="class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>SetID</name></member>
+      <member refid="class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>SetName</name></member>
+      <member refid="class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3" prot="public" virt="non-virtual"><scope>GameManager::Player</scope><name>SetScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

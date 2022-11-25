@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_game_manager" kind="class" language="C#" prot="public">
+    <compoundname>GameManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="struct_game_manager_1_1_hight_score" prot="public">GameManager::HightScore</innerclass>
+    <innerclass refid="class_game_manager_1_1_player" prot="public">GameManager::Player</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GameState</name>
+        <qualifiedname>GameManager.GameState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="10" column="11" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="11" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_game_manager_1a622d6198217a616ad5c18c0fc1788576" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Difficulty</name>
+        <qualifiedname>GameManager.Difficulty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="25" column="11" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_game_manager_1a8cac45bedf02622598c5a723a18f21a4" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_game_manager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager._instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>GameManager._instance</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Force a avoir qu&apos;un seul <ref refid="class_level_manager" kindref="compound">LevelManager</ref>  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="40" column="33" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_game_manager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>GameManager.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="42" column="31" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="43" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a6159631ccb4b92badcb34e47e965c912" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="struct_game_manager_1_1_hight_score" kindref="compound">HightScore</ref> &gt;</type>
+        <definition>List&lt;HightScore&gt; GameManager.Leaderboard</definition>
+        <argsstring></argsstring>
+        <name>Leaderboard</name>
+        <qualifiedname>GameManager.Leaderboard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="163" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1aed60893865c6525844ef071d9a2479ff" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_input_three" kindref="compound">InputThree</ref></type>
+        <definition>InputThree GameManager.Inputs</definition>
+        <argsstring></argsstring>
+        <name>Inputs</name>
+        <qualifiedname>GameManager.Inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="165" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_playfab_manager" kindref="compound">PlayfabManager</ref></type>
+        <definition>PlayfabManager GameManager.PlayfabManager</definition>
+        <argsstring></argsstring>
+        <name>PlayfabManager</name>
+        <qualifiedname>GameManager.PlayfabManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="166" column="27" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a1566326d0df184b9d381da94f72ec77a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_game_manager_1_1_player" kindref="compound">Player</ref></type>
+        <definition>Player GameManager.ThePlayer</definition>
+        <argsstring></argsstring>
+        <name>ThePlayer</name>
+        <qualifiedname>GameManager.ThePlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="168" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c" kindref="member">GameState</ref></type>
+        <definition>GameState GameManager.State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>GameManager.State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="172" column="22" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="173" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_game_manager_1a622d6198217a616ad5c18c0fc1788576" kindref="member">Difficulty</ref></type>
+        <definition>Difficulty GameManager.GetDifficulty</definition>
+        <argsstring></argsstring>
+        <name>GetDifficulty</name>
+        <qualifiedname>GameManager.GetDifficulty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="182" column="23" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int GameManager.Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <qualifiedname>GameManager.Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="183" column="16" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="183" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_manager_1ad2c03e5c92c5d2a6facb6119561d224c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c" kindref="member">GameState</ref></type>
+        <definition>GameState GameManager._state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <qualifiedname>GameManager._state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="146" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a0ef167521d33c1e753f1790f2c66cae5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_game_manager_1a622d6198217a616ad5c18c0fc1788576" kindref="member">Difficulty</ref></type>
+        <definition>Difficulty GameManager._actualDifficulty</definition>
+        <argsstring></argsstring>
+        <name>_actualDifficulty</name>
+        <qualifiedname>GameManager._actualDifficulty</qualifiedname>
+        <initializer>= Difficulty.Easy</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="147" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1ab95c6bcbf78312641a0c40115a6d7e10" prot="private" static="no" mutable="no">
+        <type><ref refid="class_input_three" kindref="compound">InputThree</ref></type>
+        <definition>InputThree GameManager._inputManager</definition>
+        <argsstring></argsstring>
+        <name>_inputManager</name>
+        <qualifiedname>GameManager._inputManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="150" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1abbdaa9696161c1c31d22b46cd495741f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_game_manager_1_1_player" kindref="compound">Player</ref></type>
+        <definition>Player GameManager._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>GameManager._player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="153" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1adb1e9aaa4350ea427fbe23a17d9adb28" prot="private" static="no" mutable="no">
+        <type><ref refid="class_playfab_manager" kindref="compound">PlayfabManager</ref></type>
+        <definition>PlayfabManager GameManager._playfab</definition>
+        <argsstring></argsstring>
+        <name>_playfab</name>
+        <qualifiedname>GameManager._playfab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="156" column="29" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a06e8cb8b67d30ae0947387d0df87f742" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_game_manager_1_1_hight_score" kindref="compound">HightScore</ref> &gt;</type>
+        <definition>List&lt;HightScore&gt; GameManager._leaderboard</definition>
+        <argsstring></argsstring>
+        <name>_leaderboard</name>
+        <qualifiedname>GameManager._leaderboard</qualifiedname>
+        <initializer>= new List&lt;<ref refid="struct_game_manager_1_1_hight_score" kindref="compound">HightScore</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="157" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>GameManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="189" column="22" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="189" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a5ccfacd027ad08eeb4ff1f25a7f59c98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>GameManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="206" column="22" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="206" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.EnableInputManager</definition>
+        <argsstring>()</argsstring>
+        <name>EnableInputManager</name>
+        <qualifiedname>GameManager.EnableInputManager</qualifiedname>
+        <briefdescription>
+<para>Active l&apos;input manager  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="218" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="218" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1aa4fd8fd347398e403532fc3171989c06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.DisableInputManager</definition>
+        <argsstring>()</argsstring>
+        <name>DisableInputManager</name>
+        <qualifiedname>GameManager.DisableInputManager</qualifiedname>
+        <briefdescription>
+<para>Desactive l&apos;input manager  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="233" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="233" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" line="6" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs" bodystart="7" bodyend="246"/>
+    <listofallmembers>
+      <member refid="class_game_manager_1a0ef167521d33c1e753f1790f2c66cae5" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_actualDifficulty</name></member>
+      <member refid="class_game_manager_1ab95c6bcbf78312641a0c40115a6d7e10" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_inputManager</name></member>
+      <member refid="class_game_manager_1a8cac45bedf02622598c5a723a18f21a4" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_instance</name></member>
+      <member refid="class_game_manager_1a06e8cb8b67d30ae0947387d0df87f742" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_leaderboard</name></member>
+      <member refid="class_game_manager_1abbdaa9696161c1c31d22b46cd495741f" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_player</name></member>
+      <member refid="class_game_manager_1adb1e9aaa4350ea427fbe23a17d9adb28" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_playfab</name></member>
+      <member refid="class_game_manager_1ad2c03e5c92c5d2a6facb6119561d224c" prot="private" virt="non-virtual"><scope>GameManager</scope><name>_state</name></member>
+      <member refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Awake</name></member>
+      <member refid="class_game_manager_1a622d6198217a616ad5c18c0fc1788576" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Difficulty</name></member>
+      <member refid="class_game_manager_1aa4fd8fd347398e403532fc3171989c06" prot="public" virt="non-virtual"><scope>GameManager</scope><name>DisableInputManager</name></member>
+      <member refid="class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344" prot="public" virt="non-virtual"><scope>GameManager</scope><name>EnableInputManager</name></member>
+      <member refid="class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c" prot="public" virt="non-virtual"><scope>GameManager</scope><name>GameState</name></member>
+      <member refid="class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3" prot="public" virt="non-virtual"><scope>GameManager</scope><name>GetDifficulty</name></member>
+      <member refid="class_game_manager_1aed60893865c6525844ef071d9a2479ff" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Inputs</name></member>
+      <member refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Instance</name></member>
+      <member refid="class_game_manager_1a6159631ccb4b92badcb34e47e965c912" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Leaderboard</name></member>
+      <member refid="class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5" prot="public" virt="non-virtual"><scope>GameManager</scope><name>PlayfabManager</name></member>
+      <member refid="class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Score</name></member>
+      <member refid="class_game_manager_1a5ccfacd027ad08eeb4ff1f25a7f59c98" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Start</name></member>
+      <member refid="class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9" prot="public" virt="non-virtual"><scope>GameManager</scope><name>State</name></member>
+      <member refid="class_game_manager_1a1566326d0df184b9d381da94f72ec77a" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ThePlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

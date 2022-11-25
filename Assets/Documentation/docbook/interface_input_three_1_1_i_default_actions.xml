@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_input_three_1_1_i_default_actions" xml:lang="fr">
+<title>Référence de l&apos;interface InputThree.IDefaultActions</title>
+<indexterm><primary>InputThree.IDefaultActions</primary></indexterm>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_input_three_1_1_i_default_actions_1a30cbb6464c5bf5d9830d3c9e161fc738">OnInputLeft</link> (InputAction.CallbackContext context)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_input_three_1_1_i_default_actions_1a863d732f48d716f0a32289dabb44674a">OnInputRight</link> (InputAction.CallbackContext context)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_input_three_1_1_i_default_actions_1a842adcb16cd136b2429e123e6ddced00">OnInputEnter</link> (InputAction.CallbackContext context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__input_three_8cs_source_1l00227">227</link> du fichier <link linkend="__input_three_8cs_source">InputThree.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_interface_input_three_1_1_i_default_actions_1a842adcb16cd136b2429e123e6ddced00"/><section>
+    <title>OnInputEnter()</title>
+<indexterm><primary>OnInputEnter</primary><secondary>InputThree.IDefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.IDefaultActions</primary><secondary>OnInputEnter</secondary></indexterm>
+<para><computeroutput>void InputThree.IDefaultActions.OnInputEnter (InputAction.CallbackContext context)</computeroutput></para></section>
+<anchor xml:id="_interface_input_three_1_1_i_default_actions_1a30cbb6464c5bf5d9830d3c9e161fc738"/><section>
+    <title>OnInputLeft()</title>
+<indexterm><primary>OnInputLeft</primary><secondary>InputThree.IDefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.IDefaultActions</primary><secondary>OnInputLeft</secondary></indexterm>
+<para><computeroutput>void InputThree.IDefaultActions.OnInputLeft (InputAction.CallbackContext context)</computeroutput></para></section>
+<anchor xml:id="_interface_input_three_1_1_i_default_actions_1a863d732f48d716f0a32289dabb44674a"/><section>
+    <title>OnInputRight()</title>
+<indexterm><primary>OnInputRight</primary><secondary>InputThree.IDefaultActions</secondary></indexterm>
+<indexterm><primary>InputThree.IDefaultActions</primary><secondary>OnInputRight</secondary></indexterm>
+<para><computeroutput>void InputThree.IDefaultActions.OnInputRight (InputAction.CallbackContext context)</computeroutput></para></section>
+<para>
+La documentation de cette interface a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Input/<link linkend="__input_three_8cs">InputThree.cs</link></section>
+</section>

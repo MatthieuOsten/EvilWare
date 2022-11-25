@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_level_manager" xml:lang="fr">
+<title>Référence de la classe LevelManager</title>
+<indexterm><primary>LevelManager</primary></indexterm>
+<para>Graphe d&apos;héritage de LevelManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_level_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_level_manager_1a6282e12f4cfcd93c89c9662435860982">FinishIntro</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fonctions membres protégées    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_level_manager_1a73c737d14d450af89d36714cf84689d6">StartLevel</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7">UpdateLevel</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Attributs protégés    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_input_three">InputThree</link> <link linkend="_class_level_manager_1a92f70689bfdf38b86d3af94a95d56306">_inputs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Propriétés    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_level_manager">LevelManager</link> <link linkend="_class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b">Instance</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00006">6</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_level_manager_1a6282e12f4cfcd93c89c9662435860982"/><section>
+    <title>FinishIntro()</title>
+<indexterm><primary>FinishIntro</primary><secondary>LevelManager</secondary></indexterm>
+<indexterm><primary>LevelManager</primary><secondary>FinishIntro</secondary></indexterm>
+<para><computeroutput>void LevelManager.FinishIntro ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00072">72</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_level_manager_1a73c737d14d450af89d36714cf84689d6"/><section>
+    <title>StartLevel()</title>
+<indexterm><primary>StartLevel</primary><secondary>LevelManager</secondary></indexterm>
+<indexterm><primary>LevelManager</primary><secondary>StartLevel</secondary></indexterm>
+<para><computeroutput>virtual void LevelManager.StartLevel ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00061">61</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7"/><section>
+    <title>UpdateLevel()</title>
+<indexterm><primary>UpdateLevel</primary><secondary>LevelManager</secondary></indexterm>
+<indexterm><primary>LevelManager</primary><secondary>UpdateLevel</secondary></indexterm>
+<para><computeroutput>virtual void LevelManager.UpdateLevel ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00067">67</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des données membres</title>
+<anchor xml:id="_class_level_manager_1a92f70689bfdf38b86d3af94a95d56306"/><section>
+    <title>_inputs</title>
+<indexterm><primary>_inputs</primary><secondary>LevelManager</secondary></indexterm>
+<indexterm><primary>LevelManager</primary><secondary>_inputs</secondary></indexterm>
+<para><computeroutput><link linkend="_class_input_three">InputThree</link> LevelManager._inputs<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00043">43</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Documentation des propriétés</title>
+<anchor xml:id="_class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b"/><section>
+    <title>Instance</title>
+<indexterm><primary>Instance</primary><secondary>LevelManager</secondary></indexterm>
+<indexterm><primary>LevelManager</primary><secondary>Instance</secondary></indexterm>
+<para><computeroutput><link linkend="_class_level_manager">LevelManager</link> LevelManager.Instance<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__level_manager_8cs_source_1l00016">16</link> du fichier <link linkend="__level_manager_8cs_source">LevelManager.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/<link linkend="__level_manager_8cs">LevelManager.cs</link></section>
+</section>

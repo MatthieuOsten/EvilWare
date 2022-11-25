@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_manager_8cs_source" xml:lang="fr">
+<title>GameManager.cs</title>
+<indexterm><primary>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/GameManager.cs</primary></indexterm>
+Aller à la documentation de ce fichier.<programlisting linenumbering="unnumbered"><anchor xml:id="__game_manager_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Collections;
+<anchor xml:id="__game_manager_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__game_manager_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>UnityEngine;
+<anchor xml:id="__game_manager_8cs_source_1l00004"/>00004 
+<anchor xml:id="__game_manager_8cs_source_1l00005"/>00005 [RequireComponent(typeof(<link linkend="_class_playfab_manager">PlayfabManager</link>))]
+<anchor xml:id="__game_manager_8cs_source_1l00006"/><link linkend="_class_game_manager">00006</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_game_manager">GameManager</link>&#32;:&#32;MonoBehaviour
+<anchor xml:id="__game_manager_8cs_source_1l00007"/>00007 {
+<anchor xml:id="__game_manager_8cs_source_1l00008"/>00008 
+<anchor xml:id="__game_manager_8cs_source_1l00009"/>00009 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;GAMESTATE</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00010"/><link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">00010</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link>
+<anchor xml:id="__game_manager_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Ingame,
+<anchor xml:id="__game_manager_8cs_source_1l00013"/>00013 
+<anchor xml:id="__game_manager_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu,
+<anchor xml:id="__game_manager_8cs_source_1l00015"/>00015 
+<anchor xml:id="__game_manager_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tutorial,
+<anchor xml:id="__game_manager_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Paused,
+<anchor xml:id="__game_manager_8cs_source_1l00018"/>00018 
+<anchor xml:id="__game_manager_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Victory,
+<anchor xml:id="__game_manager_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Gameover,
+<anchor xml:id="__game_manager_8cs_source_1l00021"/>00021 
+<anchor xml:id="__game_manager_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Cinematic
+<anchor xml:id="__game_manager_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00024"/>00024 
+<anchor xml:id="__game_manager_8cs_source_1l00025"/><link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link>
+<anchor xml:id="__game_manager_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Easy,
+<anchor xml:id="__game_manager_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Normal,
+<anchor xml:id="__game_manager_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Hard,
+<anchor xml:id="__game_manager_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Infinity
+<anchor xml:id="__game_manager_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00032"/>00032 
+<anchor xml:id="__game_manager_8cs_source_1l00033"/>00033 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00034"/>00034 
+<anchor xml:id="__game_manager_8cs_source_1l00035"/>00035 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;SINGLETON</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00036"/>00036 
+<anchor xml:id="__game_manager_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_game_manager">GameManager</link>&#32;_instance&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__game_manager_8cs_source_1l00041"/>00041 
+<anchor xml:id="__game_manager_8cs_source_1l00042"/><link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">00042</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_game_manager">GameManager</link>&#32;<link linkend="_class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e">Instance</link>
+<anchor xml:id="__game_manager_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_instance&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__game_manager_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_instance&#32;=&#32;GameObject.FindObjectOfType&lt;<link linkend="_class_game_manager">GameManager</link>&gt;();
+<anchor xml:id="__game_manager_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Si&#32;vrai,&#32;l&apos;instance&#32;va&#32;etre&#32;cree</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_instance&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__game_manager_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;newObjectInstance&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;GameObject();
+<anchor xml:id="__game_manager_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;newObjectInstance.name&#32;=&#32;typeof(<link linkend="_class_game_manager">GameManager</link>).ToString();
+<anchor xml:id="__game_manager_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_instance&#32;=&#32;newObjectInstance.AddComponent&lt;<link linkend="_class_game_manager">GameManager</link>&gt;();
+<anchor xml:id="__game_manager_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;_instance;
+<anchor xml:id="__game_manager_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00060"/>00060 
+<anchor xml:id="__game_manager_8cs_source_1l00061"/>00061 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00062"/>00062 
+<anchor xml:id="__game_manager_8cs_source_1l00063"/>00063 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;STRUCT</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00064"/>00064 
+<anchor xml:id="__game_manager_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;[System.Serializable]
+<anchor xml:id="__game_manager_8cs_source_1l00066"/><link linkend="_class_game_manager_1_1_player">00066</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_game_manager_1_1_player">Player</link>
+<anchor xml:id="__game_manager_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;IDENTIFY&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_name;
+<anchor xml:id="__game_manager_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_id;
+<anchor xml:id="__game_manager_8cs_source_1l00071"/>00071 
+<anchor xml:id="__game_manager_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;SCORE&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;_score;
+<anchor xml:id="__game_manager_8cs_source_1l00074"/>00074 
+<anchor xml:id="__game_manager_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;NETWORK&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;_isConnected;
+<anchor xml:id="__game_manager_8cs_source_1l00077"/>00077 
+<anchor xml:id="__game_manager_8cs_source_1l00078"/><link linkend="_class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26">00078</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1a7f7e6f518acad347960d71c7979b2b26">Name</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_name;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00079"/><link linkend="_class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44">00079</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1a747246a9b6eb36c89236ada3f3891a44">ID</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_id;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00080"/><link linkend="_class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f">00080</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1aab48e8894e03fc4ae9576bd57893617f">IsConnected</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_isConnected;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00081"/><link linkend="_class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb">00081</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb">Score</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_score;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00082"/>00082 
+<anchor xml:id="__game_manager_8cs_source_1l00083"/><link linkend="_class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f">00083</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1a995460e75178fbf83cd7d2cb3f38f95f">Player</link>(<emphasis role="keywordtype">string</emphasis>&#32;name)
+<anchor xml:id="__game_manager_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_name&#32;=&#32;name;
+<anchor xml:id="__game_manager_8cs_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_id&#32;=&#32;SystemInfo.deviceUniqueIdentifier;
+<anchor xml:id="__game_manager_8cs_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isConnected&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_manager_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_score&#32;=&#32;0;
+<anchor xml:id="__game_manager_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00090"/>00090 
+<anchor xml:id="__game_manager_8cs_source_1l00091"/><link linkend="_class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573">00091</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1abdf902a243ad0421a0a37342ba442573">Player</link>(<emphasis role="keywordtype">string</emphasis>&#32;name,<emphasis role="keywordtype">string</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>)
+<anchor xml:id="__game_manager_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_name&#32;=&#32;name;
+<anchor xml:id="__game_manager_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_id&#32;=&#32;id;
+<anchor xml:id="__game_manager_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isConnected&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_manager_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_score&#32;=&#32;0;
+<anchor xml:id="__game_manager_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00098"/>00098 
+<anchor xml:id="__game_manager_8cs_source_1l00099"/><link linkend="_class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea">00099</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1a93b1000aa3086440f5a1fa80f6e957ea">SetName</link>(<emphasis role="keywordtype">string</emphasis>&#32;valueString)
+<anchor xml:id="__game_manager_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Name&#32;:&#32;&quot;</emphasis>&#32;+&#32;_name&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;Change&#32;for&#32;&quot;</emphasis>&#32;+&#32;valueString);
+<anchor xml:id="__game_manager_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_name&#32;=&#32;valueString;
+<anchor xml:id="__game_manager_8cs_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00104"/><link linkend="_class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649">00104</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1abdb2ab752368677ea68753b273561649">SetID</link>(<emphasis role="keywordtype">string</emphasis>&#32;valueString)
+<anchor xml:id="__game_manager_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;ID&#32;:&#32;&quot;</emphasis>&#32;+&#32;_id&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;Change&#32;for&#32;&quot;</emphasis>&#32;+&#32;valueString);
+<anchor xml:id="__game_manager_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_id&#32;=&#32;valueString;
+<anchor xml:id="__game_manager_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00109"/><link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">00109</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1a291f4ca12accaf6fb6025d429c50e19b">SetConnected</link>(<emphasis role="keywordtype">bool</emphasis>&#32;valueBool)
+<anchor xml:id="__game_manager_8cs_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;IsConnected&#32;:&#32;&quot;</emphasis>&#32;+&#32;_isConnected&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;Change&#32;for&#32;&quot;</emphasis>&#32;+&#32;valueBool);
+<anchor xml:id="__game_manager_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isConnected&#32;=&#32;valueBool;
+<anchor xml:id="__game_manager_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00114"/><link linkend="_class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3">00114</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1_1_player_1ac13d81f9e3998d25db2f4f366f81d5b3">SetScore</link>(<emphasis role="keywordtype">int</emphasis>&#32;valueInt)
+<anchor xml:id="__game_manager_8cs_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Score&#32;:&#32;&quot;</emphasis>&#32;+&#32;_score&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;Change&#32;for&#32;&quot;</emphasis>&#32;+&#32;valueInt);
+<anchor xml:id="__game_manager_8cs_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_score&#32;=&#32;valueInt;
+<anchor xml:id="__game_manager_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00119"/>00119 
+<anchor xml:id="__game_manager_8cs_source_1l00120"/>00120 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00121"/>00121 
+<anchor xml:id="__game_manager_8cs_source_1l00122"/>00122 &#32;&#32;&#32;&#32;[System.Serializable]
+<anchor xml:id="__game_manager_8cs_source_1l00123"/><link linkend="_struct_game_manager_1_1_hight_score">00123</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_game_manager_1_1_hight_score">HightScore</link>
+<anchor xml:id="__game_manager_8cs_source_1l00124"/>00124 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00125"/>00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_name;
+<anchor xml:id="__game_manager_8cs_source_1l00126"/>00126 
+<anchor xml:id="__game_manager_8cs_source_1l00127"/><link linkend="_struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c">00127</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c">rank</link>;
+<anchor xml:id="__game_manager_8cs_source_1l00128"/><link linkend="_struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674">00128</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_struct_game_manager_1_1_hight_score_1a70f73f2ee255311c57d65d13a440f674">namePlayer</link>;
+<anchor xml:id="__game_manager_8cs_source_1l00129"/><link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">00129</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">score</link>;
+<anchor xml:id="__game_manager_8cs_source_1l00130"/>00130 
+<anchor xml:id="__game_manager_8cs_source_1l00131"/><link linkend="_struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a">00131</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_struct_game_manager_1_1_hight_score_1a5a32851013a66760bf849c857055a31a">HightScore</link>(<emphasis role="keywordtype">int</emphasis>&#32;place&#32;=&#32;-1,&#32;<emphasis role="keywordtype">string</emphasis>&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;Billy&quot;</emphasis>,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">score</link>&#32;=&#32;0)
+<anchor xml:id="__game_manager_8cs_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.rank&#32;=&#32;place;
+<anchor xml:id="__game_manager_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.namePlayer&#32;=&#32;name;
+<anchor xml:id="__game_manager_8cs_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.score&#32;=&#32;<link linkend="_struct_game_manager_1_1_hight_score_1ad9cb22238a62cfa540ac2d8ed6e01be2">score</link>;
+<anchor xml:id="__game_manager_8cs_source_1l00136"/>00136 
+<anchor xml:id="__game_manager_8cs_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_name&#32;=&#32;<link linkend="_struct_game_manager_1_1_hight_score_1a710014b760389460ecffea3075fe7d9c">rank</link>.ToString();
+<anchor xml:id="__game_manager_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00139"/>00139 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00140"/>00140 
+<anchor xml:id="__game_manager_8cs_source_1l00141"/>00141 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00142"/>00142 
+<anchor xml:id="__game_manager_8cs_source_1l00143"/>00143 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;VARIABLE</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00144"/>00144 
+<anchor xml:id="__game_manager_8cs_source_1l00145"/>00145 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;GAME&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00146"/>00146 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link>&#32;_state;
+<anchor xml:id="__game_manager_8cs_source_1l00147"/>00147 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link>&#32;_actualDifficulty&#32;=&#32;<link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link>.Easy;
+<anchor xml:id="__game_manager_8cs_source_1l00148"/>00148 
+<anchor xml:id="__game_manager_8cs_source_1l00149"/>00149 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;INPUT&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_input_three">InputThree</link>&#32;_inputManager;
+<anchor xml:id="__game_manager_8cs_source_1l00151"/>00151 
+<anchor xml:id="__game_manager_8cs_source_1l00152"/>00152 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;PLAYER&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00153"/>00153 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;Player&#32;_player;
+<anchor xml:id="__game_manager_8cs_source_1l00154"/>00154 
+<anchor xml:id="__game_manager_8cs_source_1l00155"/>00155 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;NETWORK&quot;</emphasis>)]
+<anchor xml:id="__game_manager_8cs_source_1l00156"/>00156 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_playfab_manager">PlayfabManager</link>&#32;_playfab;
+<anchor xml:id="__game_manager_8cs_source_1l00157"/>00157 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;List&lt;HightScore&gt;&#32;_leaderboard&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;HightScore&gt;();
+<anchor xml:id="__game_manager_8cs_source_1l00158"/>00158 
+<anchor xml:id="__game_manager_8cs_source_1l00159"/>00159 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00160"/>00160 
+<anchor xml:id="__game_manager_8cs_source_1l00161"/>00161 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;ASCESSEUR</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00162"/>00162 
+<anchor xml:id="__game_manager_8cs_source_1l00163"/><link linkend="_class_game_manager_1a6159631ccb4b92badcb34e47e965c912">00163</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;HightScore&gt;&#32;<link linkend="_class_leaderboard">Leaderboard</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_leaderboard;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00164"/>00164 
+<anchor xml:id="__game_manager_8cs_source_1l00165"/><link linkend="_class_game_manager_1aed60893865c6525844ef071d9a2479ff">00165</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_input_three">InputThree</link>&#32;<link linkend="_class_game_manager_1aed60893865c6525844ef071d9a2479ff">Inputs</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_inputManager;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00166"/><link linkend="_class_game_manager_1a8936b1b1e066d9e4d2c78197d2a81ef5">00166</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_playfab_manager">PlayfabManager</link>&#32;<link linkend="_class_playfab_manager">PlayfabManager</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_playfab;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00167"/>00167 
+<anchor xml:id="__game_manager_8cs_source_1l00168"/><link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">00168</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_game_manager_1_1_player">Player</link>&#32;<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>&#32;{&#32;
+<anchor xml:id="__game_manager_8cs_source_1l00169"/>00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_player;&#32;}&#32;
+<anchor xml:id="__game_manager_8cs_source_1l00170"/>00170 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00171"/>00171 
+<anchor xml:id="__game_manager_8cs_source_1l00172"/><link linkend="_class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9">00172</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link>&#32;<link linkend="_class_game_manager_1ab81528de75ceeb2b5deccdcb711283d9">State</link>
+<anchor xml:id="__game_manager_8cs_source_1l00173"/>00173 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00174"/>00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_state;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00175"/>00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00177"/>00177 
+<anchor xml:id="__game_manager_8cs_source_1l00178"/>00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_state&#32;=&#32;value;
+<anchor xml:id="__game_manager_8cs_source_1l00179"/>00179 
+<anchor xml:id="__game_manager_8cs_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00181"/>00181 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00182"/><link linkend="_class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3">00182</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_game_manager_1a622d6198217a616ad5c18c0fc1788576">Difficulty</link>&#32;<link linkend="_class_game_manager_1a4f7271ce53a832aac55a2e567e253bd3">GetDifficulty</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;_actualDifficulty;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00183"/><link linkend="_class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0">00183</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_manager_1a77a552c74394d1e18c0bb2893bd27cb0">Score</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_game_manager_1a1566326d0df184b9d381da94f72ec77a">ThePlayer</link>.<link linkend="_class_game_manager_1_1_player_1ae76b6d3b85c7c9bad41d59d9da111bbb">Score</link>;&#32;}&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00184"/>00184 
+<anchor xml:id="__game_manager_8cs_source_1l00185"/>00185 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00186"/>00186 
+<anchor xml:id="__game_manager_8cs_source_1l00187"/>00187 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;FUNCTION&#32;UNITY</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00188"/>00188 
+<anchor xml:id="__game_manager_8cs_source_1l00189"/>00189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Awake()
+<anchor xml:id="__game_manager_8cs_source_1l00190"/>00190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00191"/>00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DontDestroyOnLoad(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="__game_manager_8cs_source_1l00192"/>00192 
+<anchor xml:id="__game_manager_8cs_source_1l00193"/>00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_player&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Player(<emphasis role="stringliteral">&quot;Billy&quot;</emphasis>);
+<anchor xml:id="__game_manager_8cs_source_1l00194"/>00194 
+<anchor xml:id="__game_manager_8cs_source_1l00195"/>00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Create&#32;playfab&#32;object&#32;for&#32;connecting&#32;game&#32;to&#32;playfab&#32;server</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00196"/>00196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_playfab&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__game_manager_8cs_source_1l00197"/>00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00198"/>00198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!TryGetComponent&lt;PlayfabManager&gt;(out&#32;_playfab))&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00199"/>00199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_playfab&#32;=&#32;gameObject.AddComponent&lt;<link linkend="_class_playfab_manager">PlayfabManager</link>&gt;();
+<anchor xml:id="__game_manager_8cs_source_1l00200"/>00200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00201"/>00201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00202"/>00202 
+<anchor xml:id="__game_manager_8cs_source_1l00203"/>00203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_playfab.<link linkend="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f">Login</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00204"/>00204 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00205"/>00205 
+<anchor xml:id="__game_manager_8cs_source_1l00206"/>00206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Start()
+<anchor xml:id="__game_manager_8cs_source_1l00207"/>00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00208"/>00208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344">EnableInputManager</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00209"/>00209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00210"/>00210 
+<anchor xml:id="__game_manager_8cs_source_1l00211"/>00211 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00212"/>00212 
+<anchor xml:id="__game_manager_8cs_source_1l00213"/>00213 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;FUNCTION</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00214"/>00214 
+<anchor xml:id="__game_manager_8cs_source_1l00218"/><link linkend="_class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344">00218</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1a068c43872c7b9165bfd1c4a1fb6a0344">EnableInputManager</link>()
+<anchor xml:id="__game_manager_8cs_source_1l00219"/>00219 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00220"/>00220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;On&#32;verifie&#32;qu&apos;il&#32;soit&#32;referencer</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00221"/>00221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_inputManager&#32;==&#32;<emphasis role="keyword">null</emphasis>)&#32;_inputManager&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_input_three">InputThree</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00222"/>00222 
+<anchor xml:id="__game_manager_8cs_source_1l00223"/>00223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Active&#32;les&#32;touches&quot;</emphasis>);
+<anchor xml:id="__game_manager_8cs_source_1l00224"/>00224 
+<anchor xml:id="__game_manager_8cs_source_1l00225"/>00225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;On&#32;active&#32;les&#32;touches</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00226"/>00226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_inputManager.<link linkend="_class_input_three_1a6f14be7271cd3675650579c9dfc34d7a">Default</link>.<link linkend="_struct_input_three_1_1_default_actions_1a05a122f866abec50d233c3e4e2dea44c">Enable</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00227"/>00227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__game_manager_8cs_source_1l00228"/>00228 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00229"/>00229 
+<anchor xml:id="__game_manager_8cs_source_1l00233"/><link linkend="_class_game_manager_1aa4fd8fd347398e403532fc3171989c06">00233</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_manager_1aa4fd8fd347398e403532fc3171989c06">DisableInputManager</link>()
+<anchor xml:id="__game_manager_8cs_source_1l00234"/>00234 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_manager_8cs_source_1l00235"/>00235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Verify&#32;inputManager&#32;is&#32;null&#32;also&#32;create&#32;this</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00236"/>00236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_inputManager&#32;==&#32;<emphasis role="keyword">null</emphasis>)&#32;_inputManager&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_input_three">InputThree</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00237"/>00237 
+<anchor xml:id="__game_manager_8cs_source_1l00238"/>00238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Debug.Log(<emphasis role="stringliteral">&quot;Active&#32;les&#32;touches&quot;</emphasis>);
+<anchor xml:id="__game_manager_8cs_source_1l00239"/>00239 
+<anchor xml:id="__game_manager_8cs_source_1l00240"/>00240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Disable&#32;all&#32;touch</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00241"/>00241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_inputManager.<link linkend="_class_input_three_1a6f14be7271cd3675650579c9dfc34d7a">Default</link>.<link linkend="_struct_input_three_1_1_default_actions_1a109bcfbef5a1cf5a4efbca20e5b47cde">Disable</link>();
+<anchor xml:id="__game_manager_8cs_source_1l00242"/>00242 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_manager_8cs_source_1l00243"/>00243 
+<anchor xml:id="__game_manager_8cs_source_1l00244"/>00244 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__game_manager_8cs_source_1l00245"/>00245 
+<anchor xml:id="__game_manager_8cs_source_1l00246"/>00246 }
+</programlisting></section>

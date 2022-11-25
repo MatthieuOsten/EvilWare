@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_menu_manager" kind="class" language="C#" prot="public">
+    <compoundname>MenuManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_menu_manager_1ae36c45400656477af5338836ca735b60" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>MenuState</name>
+        <qualifiedname>MenuManager.MenuState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="10" column="5" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="11" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_manager_1ac645b4c7149b5bf46f48aa6196a34d4f" prot="private" static="no" mutable="no">
+        <type>MenuState</type>
+        <definition>MenuState MenuManager._menuState</definition>
+        <argsstring></argsstring>
+        <name>_menuState</name>
+        <qualifiedname>MenuManager._menuState</qualifiedname>
+        <initializer>= MenuState.Menu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="22" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a52aa84cde0ad82439b862497d14845f5" prot="private" static="no" mutable="no">
+        <type>MenuState</type>
+        <definition>MenuState MenuManager._oldState</definition>
+        <argsstring></argsstring>
+        <name>_oldState</name>
+        <qualifiedname>MenuManager._oldState</qualifiedname>
+        <initializer>= MenuState.Menu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="23" column="24" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1ab9eb43d2a59ca5769ec5839c58ad052f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MenuManager._sceneMenu</definition>
+        <argsstring></argsstring>
+        <name>_sceneMenu</name>
+        <qualifiedname>MenuManager._sceneMenu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="26" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1afbc8c1a96847480d94e9b55fd4e0eef0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MenuManager._sceneStart</definition>
+        <argsstring></argsstring>
+        <name>_sceneStart</name>
+        <qualifiedname>MenuManager._sceneStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="27" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1ab11998b4107c500a47106a723ddbc1a3" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MenuManager._canvasMenu</definition>
+        <argsstring></argsstring>
+        <name>_canvasMenu</name>
+        <qualifiedname>MenuManager._canvasMenu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="30" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a05fffdb4dd18481ee8662bcb7ed08e2a" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MenuManager._canvasCredits</definition>
+        <argsstring></argsstring>
+        <name>_canvasCredits</name>
+        <qualifiedname>MenuManager._canvasCredits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="31" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a2c2ad788feb3ebeb9241ecffa05e593d" prot="private" static="no" mutable="no">
+        <type>List&lt; TextMeshProUGUI &gt;</type>
+        <definition>List&lt;TextMeshProUGUI&gt; MenuManager._inputsEnter</definition>
+        <argsstring></argsstring>
+        <name>_inputsEnter</name>
+        <qualifiedname>MenuManager._inputsEnter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="34" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1aaa3fa363da074410f42d8a2f5e0073b3" prot="private" static="no" mutable="no">
+        <type>List&lt; TextMeshProUGUI &gt;</type>
+        <definition>List&lt;TextMeshProUGUI&gt; MenuManager._inputsLeft</definition>
+        <argsstring></argsstring>
+        <name>_inputsLeft</name>
+        <qualifiedname>MenuManager._inputsLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="35" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a4c9ffc92b128513395f17e415ad120e9" prot="private" static="no" mutable="no">
+        <type>List&lt; TextMeshProUGUI &gt;</type>
+        <definition>List&lt;TextMeshProUGUI&gt; MenuManager._inputsRight</definition>
+        <argsstring></argsstring>
+        <name>_inputsRight</name>
+        <qualifiedname>MenuManager._inputsRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="36" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a495273e6b67ae575e4207b5f3fec109b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_leaderboard" kindref="compound">Leaderboard</ref></type>
+        <definition>Leaderboard MenuManager._leaderboard</definition>
+        <argsstring></argsstring>
+        <name>_leaderboard</name>
+        <qualifiedname>MenuManager._leaderboard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="39" column="26" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1ac661586da5af5b10ae55b0c2f46b5237" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MenuManager._leaderboardInput</definition>
+        <argsstring></argsstring>
+        <name>_leaderboardInput</name>
+        <qualifiedname>MenuManager._leaderboardInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="40" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a037f94659180c415dcb8463c6add6219" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MenuManager._leaderboardPanel</definition>
+        <argsstring></argsstring>
+        <name>_leaderboardPanel</name>
+        <qualifiedname>MenuManager._leaderboardPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="41" column="25" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a8693c2bd014e97fb84880dadada2f10c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuManager._leaderboardCharged</definition>
+        <argsstring></argsstring>
+        <name>_leaderboardCharged</name>
+        <qualifiedname>MenuManager._leaderboardCharged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="42" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1acb2505c398c163f5cd4bfd5d8194d469" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MenuManager._scrollSpeed</definition>
+        <argsstring></argsstring>
+        <name>_scrollSpeed</name>
+        <qualifiedname>MenuManager._scrollSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="44" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a0d1ad0f11f3ba6dfd92559583939c407" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MenuManager._timer</definition>
+        <argsstring></argsstring>
+        <name>_timer</name>
+        <qualifiedname>MenuManager._timer</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="47" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a64b71830aa54bb342e44839e3dcd5864" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MenuManager._timeTo</definition>
+        <argsstring></argsstring>
+        <name>_timeTo</name>
+        <qualifiedname>MenuManager._timeTo</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="48" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_menu_manager_1a03115bff06441995b6bc1354e2c80235" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool MenuManager.LeaderboardIsCharged</definition>
+        <argsstring></argsstring>
+        <name>LeaderboardIsCharged</name>
+        <qualifiedname>MenuManager.LeaderboardIsCharged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="54" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="55" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_menu_manager_1a479846feaf36055dc2dbb44cb374f015" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>MenuManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="80" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="80" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1a10283d21bf8cb8ef01807f14067f3994" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>MenuManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="122" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1a03b8675f75855fc897134409bd2685fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>MenuManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="127" column="10" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="127" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1a701c8b580ef996d2cfe6de1ff27a1d88" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuManager.InputManager</definition>
+        <argsstring>()</argsstring>
+        <name>InputManager</name>
+        <qualifiedname>MenuManager.InputManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="148" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="148" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1aefa78fbead788718912ad8f703ec4e82" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuManager.SwitchDisplayLeaderboard</definition>
+        <argsstring>(bool valueBool)</argsstring>
+        <name>SwitchDisplayLeaderboard</name>
+        <qualifiedname>MenuManager.SwitchDisplayLeaderboard</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>valueBool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="273" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="273" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1a5e8b751a301f5f9f6637e1bbff582973" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MenuManager.Timer</definition>
+        <argsstring>()</argsstring>
+        <name>Timer</name>
+        <qualifiedname>MenuManager.Timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="285" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="285" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MenuManager</label>
+        <link refid="class_menu_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MenuManager</label>
+        <link refid="class_menu_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" line="7" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Menu/MenuManager.cs" bodystart="8" bodyend="308"/>
+    <listofallmembers>
+      <member refid="class_menu_manager_1a05fffdb4dd18481ee8662bcb7ed08e2a" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_canvasCredits</name></member>
+      <member refid="class_menu_manager_1ab11998b4107c500a47106a723ddbc1a3" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_canvasMenu</name></member>
+      <member refid="class_menu_manager_1a2c2ad788feb3ebeb9241ecffa05e593d" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_inputsEnter</name></member>
+      <member refid="class_menu_manager_1aaa3fa363da074410f42d8a2f5e0073b3" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_inputsLeft</name></member>
+      <member refid="class_menu_manager_1a4c9ffc92b128513395f17e415ad120e9" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_inputsRight</name></member>
+      <member refid="class_menu_manager_1a495273e6b67ae575e4207b5f3fec109b" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_leaderboard</name></member>
+      <member refid="class_menu_manager_1a8693c2bd014e97fb84880dadada2f10c" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_leaderboardCharged</name></member>
+      <member refid="class_menu_manager_1ac661586da5af5b10ae55b0c2f46b5237" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_leaderboardInput</name></member>
+      <member refid="class_menu_manager_1a037f94659180c415dcb8463c6add6219" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_leaderboardPanel</name></member>
+      <member refid="class_menu_manager_1ac645b4c7149b5bf46f48aa6196a34d4f" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_menuState</name></member>
+      <member refid="class_menu_manager_1a52aa84cde0ad82439b862497d14845f5" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_oldState</name></member>
+      <member refid="class_menu_manager_1ab9eb43d2a59ca5769ec5839c58ad052f" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_sceneMenu</name></member>
+      <member refid="class_menu_manager_1afbc8c1a96847480d94e9b55fd4e0eef0" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_sceneStart</name></member>
+      <member refid="class_menu_manager_1acb2505c398c163f5cd4bfd5d8194d469" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_scrollSpeed</name></member>
+      <member refid="class_menu_manager_1a0d1ad0f11f3ba6dfd92559583939c407" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_timer</name></member>
+      <member refid="class_menu_manager_1a64b71830aa54bb342e44839e3dcd5864" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>_timeTo</name></member>
+      <member refid="class_menu_manager_1a10283d21bf8cb8ef01807f14067f3994" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>Awake</name></member>
+      <member refid="class_menu_manager_1a701c8b580ef996d2cfe6de1ff27a1d88" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>InputManager</name></member>
+      <member refid="class_menu_manager_1a03115bff06441995b6bc1354e2c80235" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>LeaderboardIsCharged</name></member>
+      <member refid="class_menu_manager_1ae36c45400656477af5338836ca735b60" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>MenuState</name></member>
+      <member refid="class_menu_manager_1a479846feaf36055dc2dbb44cb374f015" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>Start</name></member>
+      <member refid="class_menu_manager_1aefa78fbead788718912ad8f703ec4e82" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>SwitchDisplayLeaderboard</name></member>
+      <member refid="class_menu_manager_1a5e8b751a301f5f9f6637e1bbff582973" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>Timer</name></member>
+      <member refid="class_menu_manager_1a03b8675f75855fc897134409bd2685fe" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

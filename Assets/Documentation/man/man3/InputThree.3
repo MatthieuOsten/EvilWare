@@ -1,0 +1,146 @@
+.TH "InputThree" 3 "Jeudi 24 Novembre 2022" "Version 0.1.0" "EvilWare" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InputThree
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de IInputActionCollection2, et IDisposable\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDefaultActions\fP"
+.br
+.ti -1c
+.RI "interface \fBIDefaultActions\fP"
+.br
+.in -1c
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBInputThree\fP ()"
+.br
+.ti -1c
+.RI "void \fBDispose\fP ()"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (InputAction action)"
+.br
+.ti -1c
+.RI "IEnumerator< InputAction > \fBGetEnumerator\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnable\fP ()"
+.br
+.ti -1c
+.RI "void \fBDisable\fP ()"
+.br
+.ti -1c
+.RI "InputAction \fBFindAction\fP (string actionNameOrId, bool throwIfNotFound=false)"
+.br
+.ti -1c
+.RI "int \fBFindBinding\fP (InputBinding \fBbindingMask\fP, out InputAction action)"
+.br
+.in -1c
+.SS "Propriétés"
+
+.in +1c
+.ti -1c
+.RI "InputActionAsset \fBasset\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "InputBinding? \fBbindingMask\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyArray< InputDevice >? \fBdevices\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyArray< InputControlScheme > \fBcontrolSchemes\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "IEnumerable< InputBinding > \fBbindings\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBDefaultActions\fP \fBDefault\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "InputControlScheme \fBDefaultScheme\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne \fB18\fP du fichier \fBInputThree\&.cs\fP\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "InputThree\&.InputThree ()"
+
+.PP
+Définition à la ligne \fB21\fP du fichier \fBInputThree\&.cs\fP\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "bool InputThree\&.Contains (InputAction action)"
+
+.PP
+Définition à la ligne \fB135\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "void InputThree\&.Disable ()"
+
+.PP
+Définition à la ligne \fB155\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "void InputThree\&.Dispose ()"
+
+.PP
+Définition à la ligne \fB116\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "void InputThree\&.Enable ()"
+
+.PP
+Définition à la ligne \fB150\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "InputAction InputThree\&.FindAction (string actionNameOrId, bool throwIfNotFound = \fCfalse\fP)"
+
+.PP
+Définition à la ligne \fB161\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "int InputThree\&.FindBinding (InputBinding bindingMask, out InputAction action)"
+
+.PP
+Définition à la ligne \fB165\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "IEnumerator< InputAction > InputThree\&.GetEnumerator ()"
+
+.PP
+Définition à la ligne \fB140\fP du fichier \fBInputThree\&.cs\fP\&.
+.SH "Documentation des propriétés"
+.PP 
+.SS "InputActionAsset InputThree\&.asset\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB20\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "InputBinding? InputThree\&.bindingMask\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Définition à la ligne \fB121\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "IEnumerable<InputBinding> InputThree\&.bindings\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB159\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "ReadOnlyArray<InputControlScheme> InputThree\&.controlSchemes\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB133\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "\fBDefaultActions\fP InputThree\&.Default\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB217\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "InputControlScheme InputThree\&.DefaultScheme\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB219\fP du fichier \fBInputThree\&.cs\fP\&.
+.SS "ReadOnlyArray<InputDevice>? InputThree\&.devices\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Définition à la ligne \fB127\fP du fichier \fBInputThree\&.cs\fP\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour EvilWare à partir du code source\&.

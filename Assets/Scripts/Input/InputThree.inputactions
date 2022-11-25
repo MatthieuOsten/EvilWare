@@ -1,0 +1,86 @@
+{
+    "name": "InputThree",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "c3af1809-ce73-4ec4-afb4-9ed36182955f",
+            "actions": [
+                {
+                    "name": "InputLeft",
+                    "type": "Button",
+                    "id": "56337991-b954-4d30-a492-087d24d1157d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InputRight",
+                    "type": "Button",
+                    "id": "a638b41d-316c-44e4-b769-416a54427ae0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InputEnter",
+                    "type": "Button",
+                    "id": "dd3ed3af-be3b-4f0b-9b3f-85474ef43d04",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1ff29288-76f4-4bac-a3e6-8f2707817111",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Default",
+                    "action": "InputLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3731cc88-8c02-4620-968d-f1ce3dc3d30d",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Default",
+                    "action": "InputRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "405231c6-0ecc-4525-a37e-f4ab676998f2",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Default",
+                    "action": "InputEnter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Default",
+            "bindingGroup": "Default",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

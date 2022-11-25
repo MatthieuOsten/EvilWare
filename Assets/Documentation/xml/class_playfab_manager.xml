@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_playfab_manager" kind="class" language="C#" prot="public">
+    <compoundname>PlayfabManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_playfab_manager_1a8f9e28ceb04095720ad5b4c3622835ea" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayfabManager._nameLeaderboard</definition>
+        <argsstring></argsstring>
+        <name>_nameLeaderboard</name>
+        <qualifiedname>PlayfabManager._nameLeaderboard</qualifiedname>
+        <initializer>= &quot;Score&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="49" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_playfab_manager_1ab5b1549834b77c9df54274cb2b697d2b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayfabManager._leaderboardCount</definition>
+        <argsstring></argsstring>
+        <name>_leaderboardCount</name>
+        <qualifiedname>PlayfabManager._leaderboardCount</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="50" column="19" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.Login</definition>
+        <argsstring>()</argsstring>
+        <name>Login</name>
+        <qualifiedname>PlayfabManager.Login</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="53" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="53" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.SendLeaderboard</definition>
+        <argsstring>()</argsstring>
+        <name>SendLeaderboard</name>
+        <qualifiedname>PlayfabManager.SendLeaderboard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="82" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="82" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.GetLeaderboard</definition>
+        <argsstring>()</argsstring>
+        <name>GetLeaderboard</name>
+        <qualifiedname>PlayfabManager.GetLeaderboard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="105" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.UpdateDisplayName</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateDisplayName</name>
+        <qualifiedname>PlayfabManager.UpdateDisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="132" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="132" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_playfab_manager_1abd39151f80cd84a39b945d13d9a42dd6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.OnSuccess</definition>
+        <argsstring>(LoginResult result)</argsstring>
+        <name>OnSuccess</name>
+        <qualifiedname>PlayfabManager.OnSuccess</qualifiedname>
+        <param>
+          <type>LoginResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="66" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1a7fc35d79ab02ef59d2cffedb6a6ede5a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.OnError</definition>
+        <argsstring>(PlayFabError error)</argsstring>
+        <name>OnError</name>
+        <qualifiedname>PlayfabManager.OnError</qualifiedname>
+        <param>
+          <type>PlayFabError</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="73" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1a5047cc768360ee48918a84e9a2602461" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.OnLeaderboardUpdate</definition>
+        <argsstring>(UpdatePlayerStatisticsResult result)</argsstring>
+        <name>OnLeaderboardUpdate</name>
+        <qualifiedname>PlayfabManager.OnLeaderboardUpdate</qualifiedname>
+        <param>
+          <type>UpdatePlayerStatisticsResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="98" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1a077b4fadf41725e28f386376ced91753" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.OnLeaderboardGet</definition>
+        <argsstring>(GetLeaderboardResult result)</argsstring>
+        <name>OnLeaderboardGet</name>
+        <qualifiedname>PlayfabManager.OnLeaderboardGet</qualifiedname>
+        <param>
+          <type>GetLeaderboardResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="116" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="116" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_playfab_manager_1ad1d72fa70da6e39e92a38b79aa8a67a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayfabManager.OnDisplayNameUpdate</definition>
+        <argsstring>(UpdateUserTitleDisplayNameResult result)</argsstring>
+        <name>OnDisplayNameUpdate</name>
+        <qualifiedname>PlayfabManager.OnDisplayNameUpdate</qualifiedname>
+        <param>
+          <type>UpdateUserTitleDisplayNameResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="141" column="18" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="141" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayfabManager</label>
+        <link refid="class_playfab_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayfabManager</label>
+        <link refid="class_playfab_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" line="8" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/PlayfabManager.cs" bodystart="9" bodyend="147"/>
+    <listofallmembers>
+      <member refid="class_playfab_manager_1ab5b1549834b77c9df54274cb2b697d2b" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>_leaderboardCount</name></member>
+      <member refid="class_playfab_manager_1a8f9e28ceb04095720ad5b4c3622835ea" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>_nameLeaderboard</name></member>
+      <member refid="class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9" prot="public" virt="non-virtual"><scope>PlayfabManager</scope><name>GetLeaderboard</name></member>
+      <member refid="class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f" prot="public" virt="non-virtual"><scope>PlayfabManager</scope><name>Login</name></member>
+      <member refid="class_playfab_manager_1ad1d72fa70da6e39e92a38b79aa8a67a8" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>OnDisplayNameUpdate</name></member>
+      <member refid="class_playfab_manager_1a7fc35d79ab02ef59d2cffedb6a6ede5a" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>OnError</name></member>
+      <member refid="class_playfab_manager_1a077b4fadf41725e28f386376ced91753" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>OnLeaderboardGet</name></member>
+      <member refid="class_playfab_manager_1a5047cc768360ee48918a84e9a2602461" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>OnLeaderboardUpdate</name></member>
+      <member refid="class_playfab_manager_1abd39151f80cd84a39b945d13d9a42dd6" prot="private" virt="non-virtual"><scope>PlayfabManager</scope><name>OnSuccess</name></member>
+      <member refid="class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d" prot="public" virt="non-virtual"><scope>PlayfabManager</scope><name>SendLeaderboard</name></member>
+      <member refid="class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac" prot="public" virt="non-virtual"><scope>PlayfabManager</scope><name>UpdateDisplayName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

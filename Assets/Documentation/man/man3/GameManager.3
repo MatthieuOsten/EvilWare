@@ -1,0 +1,135 @@
+.TH "GameManager" 3 "Jeudi 24 Novembre 2022" "Version 0.1.0" "EvilWare" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GameManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de MonoBehaviour\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBHightScore\fP"
+.br
+.ti -1c
+.RI "class \fBPlayer\fP"
+.br
+.in -1c
+.SS "Types publics"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGameState\fP "
+.br
+.ti -1c
+.RI "enum \fBDifficulty\fP "
+.br
+.in -1c
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBEnableInputManager\fP ()"
+.br
+.RI "Active l'input manager  "
+.ti -1c
+.RI "void \fBDisableInputManager\fP ()"
+.br
+.RI "Desactive l'input manager  "
+.in -1c
+.SS "Propriétés"
+
+.in +1c
+.ti -1c
+.RI "static \fBGameManager\fP \fBInstance\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "List< \fBHightScore\fP > \fBLeaderboard\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBInputThree\fP \fBInputs\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBPlayfabManager\fP \fBPlayfabManager\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBPlayer\fP \fBThePlayer\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBGameState\fP \fBState\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBDifficulty\fP \fBGetDifficulty\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "int \fBScore\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne \fB6\fP du fichier \fBGameManager\&.cs\fP\&.
+.SH "Documentation des énumérations membres"
+.PP 
+.SS "enum \fBGameManager\&.Difficulty\fP"
+
+.PP
+Définition à la ligne \fB25\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "enum \fBGameManager\&.GameState\fP"
+
+.PP
+Définition à la ligne \fB10\fP du fichier \fBGameManager\&.cs\fP\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void GameManager\&.DisableInputManager ()"
+
+.PP
+Desactive l'input manager  
+.PP
+Définition à la ligne \fB233\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "void GameManager\&.EnableInputManager ()"
+
+.PP
+Active l'input manager  
+.PP
+Définition à la ligne \fB218\fP du fichier \fBGameManager\&.cs\fP\&.
+.SH "Documentation des propriétés"
+.PP 
+.SS "\fBDifficulty\fP GameManager\&.GetDifficulty\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB182\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "\fBInputThree\fP GameManager\&.Inputs\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB165\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "\fBGameManager\fP GameManager\&.Instance\fC [static]\fP, \fC [get]\fP"
+
+.PP
+Définition à la ligne \fB42\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "List<\fBHightScore\fP> GameManager\&.Leaderboard\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB163\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "\fBPlayfabManager\fP GameManager\&.PlayfabManager\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB166\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "int GameManager\&.Score\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB183\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "\fBGameState\fP GameManager\&.State\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Définition à la ligne \fB172\fP du fichier \fBGameManager\&.cs\fP\&.
+.SS "\fBPlayer\fP GameManager\&.ThePlayer\fC [get]\fP"
+
+.PP
+Définition à la ligne \fB168\fP du fichier \fBGameManager\&.cs\fP\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour EvilWare à partir du code source\&.

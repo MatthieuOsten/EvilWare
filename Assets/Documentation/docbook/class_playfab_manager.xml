@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_playfab_manager" xml:lang="fr">
+<title>Référence de la classe PlayfabManager</title>
+<indexterm><primary>PlayfabManager</primary></indexterm>
+<para>Graphe d&apos;héritage de PlayfabManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_playfab_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f">Login</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d">SendLeaderboard</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9">GetLeaderboard</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac">UpdateDisplayName</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+<para>
+Définition à la ligne <link linkend="__playfab_manager_8cs_source_1l00008">8</link> du fichier <link linkend="__playfab_manager_8cs_source">PlayfabManager.cs</link>.</para>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_class_playfab_manager_1ab8623b917a75eb6b0c3a46af1c1cc9f9"/><section>
+    <title>GetLeaderboard()</title>
+<indexterm><primary>GetLeaderboard</primary><secondary>PlayfabManager</secondary></indexterm>
+<indexterm><primary>PlayfabManager</primary><secondary>GetLeaderboard</secondary></indexterm>
+<para><computeroutput>void PlayfabManager.GetLeaderboard ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__playfab_manager_8cs_source_1l00105">105</link> du fichier <link linkend="__playfab_manager_8cs_source">PlayfabManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_playfab_manager_1a318312f7eacc4a05116e45cb74e19e0f"/><section>
+    <title>Login()</title>
+<indexterm><primary>Login</primary><secondary>PlayfabManager</secondary></indexterm>
+<indexterm><primary>PlayfabManager</primary><secondary>Login</secondary></indexterm>
+<para><computeroutput>void PlayfabManager.Login ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__playfab_manager_8cs_source_1l00053">53</link> du fichier <link linkend="__playfab_manager_8cs_source">PlayfabManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_playfab_manager_1ad0444d73d67a23acdf4b9f344eef601d"/><section>
+    <title>SendLeaderboard()</title>
+<indexterm><primary>SendLeaderboard</primary><secondary>PlayfabManager</secondary></indexterm>
+<indexterm><primary>PlayfabManager</primary><secondary>SendLeaderboard</secondary></indexterm>
+<para><computeroutput>void PlayfabManager.SendLeaderboard ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__playfab_manager_8cs_source_1l00082">82</link> du fichier <link linkend="__playfab_manager_8cs_source">PlayfabManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_playfab_manager_1aa252d3e6bf365a27a9b9eefd189a54ac"/><section>
+    <title>UpdateDisplayName()</title>
+<indexterm><primary>UpdateDisplayName</primary><secondary>PlayfabManager</secondary></indexterm>
+<indexterm><primary>PlayfabManager</primary><secondary>UpdateDisplayName</secondary></indexterm>
+<para><computeroutput>void PlayfabManager.UpdateDisplayName ( )</computeroutput></para><para>
+Définition à la ligne <link linkend="__playfab_manager_8cs_source_1l00132">132</link> du fichier <link linkend="__playfab_manager_8cs_source">PlayfabManager.cs</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/<link linkend="__playfab_manager_8cs">PlayfabManager.cs</link></section>
+</section>

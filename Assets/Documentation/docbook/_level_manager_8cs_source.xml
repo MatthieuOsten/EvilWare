@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__level_manager_8cs_source" xml:lang="fr">
+<title>LevelManager.cs</title>
+<indexterm><primary>C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs</primary></indexterm>
+Aller à la documentation de ce fichier.<programlisting linenumbering="unnumbered"><anchor xml:id="__level_manager_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Collections;
+<anchor xml:id="__level_manager_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__level_manager_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>UnityEngine;
+<anchor xml:id="__level_manager_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>UnityEngine.SceneManagement;
+<anchor xml:id="__level_manager_8cs_source_1l00005"/>00005 
+<anchor xml:id="__level_manager_8cs_source_1l00006"/><link linkend="_class_level_manager">00006</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_level_manager">LevelManager</link>&#32;:&#32;MonoBehaviour
+<anchor xml:id="__level_manager_8cs_source_1l00007"/>00007 {
+<anchor xml:id="__level_manager_8cs_source_1l00008"/>00008 
+<anchor xml:id="__level_manager_8cs_source_1l00009"/>00009 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;SINGLETON</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00010"/>00010 
+<anchor xml:id="__level_manager_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_level_manager">LevelManager</link>&#32;_instance&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__level_manager_8cs_source_1l00015"/>00015 
+<anchor xml:id="__level_manager_8cs_source_1l00016"/><link linkend="_class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_level_manager">LevelManager</link>&#32;<link linkend="_class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b">Instance</link>
+<anchor xml:id="__level_manager_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_instance&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__level_manager_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_instance&#32;=&#32;GameObject.FindObjectOfType&lt;<link linkend="_class_level_manager">LevelManager</link>&gt;();
+<anchor xml:id="__level_manager_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Si&#32;vrai,&#32;l&apos;instance&#32;va&#32;etre&#32;cree</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(_instance&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__level_manager_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;newObjectInstance&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;GameObject();
+<anchor xml:id="__level_manager_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;newObjectInstance.name&#32;=&#32;typeof(<link linkend="_class_level_manager">LevelManager</link>).ToString();
+<anchor xml:id="__level_manager_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_instance&#32;=&#32;newObjectInstance.AddComponent&lt;<link linkend="_class_level_manager">LevelManager</link>&gt;();
+<anchor xml:id="__level_manager_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;_instance;
+<anchor xml:id="__level_manager_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00034"/>00034 
+<anchor xml:id="__level_manager_8cs_source_1l00035"/>00035 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00036"/>00036 
+<anchor xml:id="__level_manager_8cs_source_1l00037"/>00037 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;ASCESSEUR</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00038"/>00038 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00039"/>00039 
+<anchor xml:id="__level_manager_8cs_source_1l00040"/>00040 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;VARIABLE</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00041"/>00041 
+<anchor xml:id="__level_manager_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;INPUT&quot;</emphasis>)]
+<anchor xml:id="__level_manager_8cs_source_1l00043"/><link linkend="_class_level_manager_1a92f70689bfdf38b86d3af94a95d56306">00043</link> &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">protected</emphasis>&#32;<link linkend="_class_input_three">InputThree</link>&#32;<link linkend="_class_level_manager_1a92f70689bfdf38b86d3af94a95d56306">_inputs</link>;
+<anchor xml:id="__level_manager_8cs_source_1l00044"/>00044 
+<anchor xml:id="__level_manager_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;SCENE&quot;</emphasis>)]
+<anchor xml:id="__level_manager_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_sceneIntro;
+<anchor xml:id="__level_manager_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_sceneChrono;
+<anchor xml:id="__level_manager_8cs_source_1l00048"/>00048 
+<anchor xml:id="__level_manager_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;Intro&quot;</emphasis>)]
+<anchor xml:id="__level_manager_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;_objective;
+<anchor xml:id="__level_manager_8cs_source_1l00052"/>00052 
+<anchor xml:id="__level_manager_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;[Header(<emphasis role="stringliteral">&quot;CHRONO&quot;</emphasis>)]
+<anchor xml:id="__level_manager_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;_timerChrono;
+<anchor xml:id="__level_manager_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;[SerializeField]&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;_timeToChrono;
+<anchor xml:id="__level_manager_8cs_source_1l00056"/>00056 
+<anchor xml:id="__level_manager_8cs_source_1l00057"/>00057 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00058"/>00058 
+<anchor xml:id="__level_manager_8cs_source_1l00059"/>00059 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#region&#32;FUNCTION</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00060"/>00060 
+<anchor xml:id="__level_manager_8cs_source_1l00061"/><link linkend="_class_level_manager_1a73c737d14d450af89d36714cf84689d6">00061</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_level_manager_1a73c737d14d450af89d36714cf84689d6">StartLevel</link>()
+<anchor xml:id="__level_manager_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SceneManager.LoadScene(_sceneIntro,&#32;LoadSceneMode.Additive);
+<anchor xml:id="__level_manager_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GameManager.Instance.State&#32;=&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link>.Cinematic;
+<anchor xml:id="__level_manager_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00066"/>00066 
+<anchor xml:id="__level_manager_8cs_source_1l00067"/><link linkend="_class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7">00067</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7">UpdateLevel</link>()
+<anchor xml:id="__level_manager_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SceneManager.LoadScene(_sceneChrono,&#32;LoadSceneMode.Additive);
+<anchor xml:id="__level_manager_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00071"/>00071 
+<anchor xml:id="__level_manager_8cs_source_1l00072"/><link linkend="_class_level_manager_1a6282e12f4cfcd93c89c9662435860982">00072</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_level_manager_1a6282e12f4cfcd93c89c9662435860982">FinishIntro</link>()
+<anchor xml:id="__level_manager_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__level_manager_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SceneManager.UnloadSceneAsync(_sceneIntro);
+<anchor xml:id="__level_manager_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GameManager.Instance.State&#32;=&#32;<link linkend="_class_game_manager">GameManager</link>.<link linkend="_class_game_manager_1a809dec58b5681fc1ebcc22eb428a914c">GameState</link>.Ingame;
+<anchor xml:id="__level_manager_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__level_manager_8cs_source_1l00077"/>00077 
+<anchor xml:id="__level_manager_8cs_source_1l00078"/>00078 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endregion</emphasis>
+<anchor xml:id="__level_manager_8cs_source_1l00079"/>00079 
+<anchor xml:id="__level_manager_8cs_source_1l00080"/>00080 }
+</programlisting></section>

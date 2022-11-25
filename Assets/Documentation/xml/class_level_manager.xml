@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="fr">
+  <compounddef id="class_level_manager" kind="class" language="C#" prot="public">
+    <compoundname>LevelManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_level_gladia_jump" prot="public" virt="non-virtual">LevelGladiaJump</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_level_manager_1a1e68760b81bfe11cd32185f5c45051fc" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_level_manager" kindref="compound">LevelManager</ref></type>
+        <definition>LevelManager LevelManager._instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>LevelManager._instance</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Force a avoir qu&apos;un seul <ref refid="class_level_manager" kindref="compound">LevelManager</ref>  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="14" column="34" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_level_manager" kindref="compound">LevelManager</ref></type>
+        <definition>LevelManager LevelManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>LevelManager.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="16" column="32" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="17" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_level_manager_1a92f70689bfdf38b86d3af94a95d56306" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_input_three" kindref="compound">InputThree</ref></type>
+        <definition>InputThree LevelManager._inputs</definition>
+        <argsstring></argsstring>
+        <name>_inputs</name>
+        <qualifiedname>LevelManager._inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="43" column="27" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_level_manager_1ab0fa04347c7c87d13ff819f85c15f871" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LevelManager._sceneIntro</definition>
+        <argsstring></argsstring>
+        <name>_sceneIntro</name>
+        <qualifiedname>LevelManager._sceneIntro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="46" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_manager_1a311705da6c8619fa3984791187509c8a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LevelManager._sceneChrono</definition>
+        <argsstring></argsstring>
+        <name>_sceneChrono</name>
+        <qualifiedname>LevelManager._sceneChrono</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="47" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_manager_1a767d744c03f8441e8d022d1e14787e41" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LevelManager._objective</definition>
+        <argsstring></argsstring>
+        <name>_objective</name>
+        <qualifiedname>LevelManager._objective</qualifiedname>
+        <briefdescription>
+<para>Create TextBeautiful class for fun and beautiful display  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="51" column="21" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_manager_1a8716f007ec74ff86196883e4cc747972" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LevelManager._timerChrono</definition>
+        <argsstring></argsstring>
+        <name>_timerChrono</name>
+        <qualifiedname>LevelManager._timerChrono</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="54" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_manager_1a7cfef3bd9d486c2e21a65a9e16ed8d9a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LevelManager._timeToChrono</definition>
+        <argsstring></argsstring>
+        <name>_timeToChrono</name>
+        <qualifiedname>LevelManager._timeToChrono</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="55" column="20" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_level_manager_1a73c737d14d450af89d36714cf84689d6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LevelManager.StartLevel</definition>
+        <argsstring>()</argsstring>
+        <name>StartLevel</name>
+        <qualifiedname>LevelManager.StartLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="61" column="28" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LevelManager.UpdateLevel</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateLevel</name>
+        <qualifiedname>LevelManager.UpdateLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="67" column="28" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_level_manager_1a6282e12f4cfcd93c89c9662435860982" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LevelManager.FinishIntro</definition>
+        <argsstring>()</argsstring>
+        <name>FinishIntro</name>
+        <qualifiedname>LevelManager.FinishIntro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="72" column="17" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="72" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>LevelGladiaJump</label>
+        <link refid="class_level_gladia_jump"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LevelManager</label>
+        <link refid="class_level_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>IDisposable</label>
+      </node>
+      <node id="4">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="3">
+        <label>InputThree</label>
+        <link refid="class_input_three"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LevelManager</label>
+        <link refid="class_level_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_inputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" line="6" column="7" bodyfile="C:/Users/mat20/Desktop/GameJam_MiniJam#112/UnityProject_EvilWare/Assets/Scripts/Level/LevelManager.cs" bodystart="7" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_level_manager_1a92f70689bfdf38b86d3af94a95d56306" prot="protected" virt="non-virtual"><scope>LevelManager</scope><name>_inputs</name></member>
+      <member refid="class_level_manager_1a1e68760b81bfe11cd32185f5c45051fc" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_instance</name></member>
+      <member refid="class_level_manager_1a767d744c03f8441e8d022d1e14787e41" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_objective</name></member>
+      <member refid="class_level_manager_1a311705da6c8619fa3984791187509c8a" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_sceneChrono</name></member>
+      <member refid="class_level_manager_1ab0fa04347c7c87d13ff819f85c15f871" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_sceneIntro</name></member>
+      <member refid="class_level_manager_1a8716f007ec74ff86196883e4cc747972" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_timerChrono</name></member>
+      <member refid="class_level_manager_1a7cfef3bd9d486c2e21a65a9e16ed8d9a" prot="private" virt="non-virtual"><scope>LevelManager</scope><name>_timeToChrono</name></member>
+      <member refid="class_level_manager_1a6282e12f4cfcd93c89c9662435860982" prot="public" virt="non-virtual"><scope>LevelManager</scope><name>FinishIntro</name></member>
+      <member refid="class_level_manager_1a4e58c52b52fc7486c8f6ede86867be7b" prot="public" virt="non-virtual"><scope>LevelManager</scope><name>Instance</name></member>
+      <member refid="class_level_manager_1a73c737d14d450af89d36714cf84689d6" prot="protected" virt="virtual"><scope>LevelManager</scope><name>StartLevel</name></member>
+      <member refid="class_level_manager_1a9a80f6c208370ee20e04a695cf2a96a7" prot="protected" virt="virtual"><scope>LevelManager</scope><name>UpdateLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

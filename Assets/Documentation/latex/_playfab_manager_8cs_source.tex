@@ -1,0 +1,153 @@
+\hypertarget{_playfab_manager_8cs_source}{}\doxysection{Playfab\+Manager.\+cs}
+\label{_playfab_manager_8cs_source}\index{C:/Users/mat20/Desktop/GameJam\_MiniJam\#112/UnityProject\_EvilWare/Assets/Scripts/PlayfabManager.cs@{C:/Users/mat20/Desktop/GameJam\_MiniJam\#112/UnityProject\_EvilWare/Assets/Scripts/PlayfabManager.cs}}
+\mbox{\hyperlink{_playfab_manager_8cs}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00004}00004 \textcolor{keyword}{using }PlayFab;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00005}00005 \textcolor{keyword}{using }PlayFab.ClientModels;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00007}00007 [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00008}\mbox{\hyperlink{class_playfab_manager}{00008}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_playfab_manager}{PlayfabManager}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00011}00011 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00013}00013     [Header(\textcolor{stringliteral}{"{}DEBUG"{}})]}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00014}00014     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{bool} \_debugLogin;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00015}00015     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{bool} \_debugUpdateName;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00016}00016     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{bool} \_debugAddHigscore;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00017}00017     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{bool} \_debugUpdateLeaderboard;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00019}00019     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnValidate()}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00020}00020     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00021}00021         \textcolor{keywordflow}{if} (\_debugLogin)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00022}00022         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00023}00023             \_debugLogin = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00024}00024             \mbox{\hyperlink{class_playfab_manager_a318312f7eacc4a05116e45cb74e19e0f}{Login}}();}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00027}00027         \textcolor{keywordflow}{if} (\_debugUpdateName)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00028}00028         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00029}00029             \_debugUpdateName = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00030}00030             \mbox{\hyperlink{class_playfab_manager_aa252d3e6bf365a27a9b9eefd189a54ac}{UpdateDisplayName}}();}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00031}00031         \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00033}00033         \textcolor{keywordflow}{if} (\_debugAddHigscore)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00034}00034         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00035}00035             \_debugAddHigscore = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00036}00036             \mbox{\hyperlink{class_playfab_manager_ad0444d73d67a23acdf4b9f344eef601d}{SendLeaderboard}}();}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00037}00037         \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00039}00039         \textcolor{keywordflow}{if} (\_debugUpdateLeaderboard)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00040}00040         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00041}00041             \_debugUpdateLeaderboard = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00042}00042             \mbox{\hyperlink{class_playfab_manager_ab8623b917a75eb6b0c3a46af1c1cc9f9}{GetLeaderboard}}();}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00043}00043         \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00047}00047 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00049}00049     [SerializeField] \textcolor{keyword}{private} \textcolor{keywordtype}{string} \_nameLeaderboard = \textcolor{stringliteral}{"{}Score"{}};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00050}00050     [SerializeField] [Range(1,100)] \textcolor{keyword}{private} \textcolor{keywordtype}{int} \_leaderboardCount = 20;}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00052}00052     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/ LOGIN -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00053}\mbox{\hyperlink{class_playfab_manager_a318312f7eacc4a05116e45cb74e19e0f}{00053}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_playfab_manager_a318312f7eacc4a05116e45cb74e19e0f}{Login}}()}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00054}00054     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00055}00055         var request = \textcolor{keyword}{new} LoginWithCustomIDRequest}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00056}00056         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00057}00057             CustomId = SystemInfo.deviceUniqueIdentifier,}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00058}00058             CreateAccount = \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00059}00059         \};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00061}00061         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_abdb2ab752368677ea68753b273561649}{SetID}}(request.CustomId);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00063}00063         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00066}00066     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnSuccess(LoginResult result)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00067}00067     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00068}00068         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_a291f4ca12accaf6fb6025d429c50e19b}{SetConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00070}00070         Debug.Log(\textcolor{stringliteral}{"{}Successful login/account create !"{}});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00071}00071     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00073}00073     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnError(PlayFabError error)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00074}00074     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00075}00075         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_a291f4ca12accaf6fb6025d429c50e19b}{SetConnected}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00077}00077         Debug.LogWarning(\textcolor{stringliteral}{"{}Error while logging in/creating account!"{}});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00078}00078         Debug.Log(error.GenerateErrorReport());}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00079}00079     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00081}00081     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/ LEADERBOARD -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00082}\mbox{\hyperlink{class_playfab_manager_ad0444d73d67a23acdf4b9f344eef601d}{00082}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_playfab_manager_ad0444d73d67a23acdf4b9f344eef601d}{SendLeaderboard}}()}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00083}00083     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00084}00084         var request = \textcolor{keyword}{new} UpdatePlayerStatisticsRequest}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00085}00085         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00086}00086             Statistics = \textcolor{keyword}{new} List<StatisticUpdate>}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00087}00087             \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00088}00088                 \textcolor{keyword}{new} StatisticUpdate}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00089}00089                 \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00090}00090                     StatisticName = \_nameLeaderboard,}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00091}00091                     Value = GameManager.Instance.ThePlayer.Score}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00092}00092                 \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00093}00093             \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00094}00094         \};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00095}00095         PlayFabClientAPI.UpdatePlayerStatistics(request, OnLeaderboardUpdate, OnError);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00098}00098     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnLeaderboardUpdate(UpdatePlayerStatisticsResult result)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00099}00099     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00100}00100         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_a291f4ca12accaf6fb6025d429c50e19b}{SetConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00102}00102         Debug.Log(\textcolor{stringliteral}{"{}Successfull leaderboard sent"{}});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00105}\mbox{\hyperlink{class_playfab_manager_ab8623b917a75eb6b0c3a46af1c1cc9f9}{00105}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_playfab_manager_ab8623b917a75eb6b0c3a46af1c1cc9f9}{GetLeaderboard}}()}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00106}00106     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00107}00107         var request = \textcolor{keyword}{new} GetLeaderboardRequest}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00108}00108         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00109}00109             StatisticName = \_nameLeaderboard,}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00110}00110             StartPosition = 0,}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00111}00111             MaxResultsCount = \_leaderboardCount}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00112}00112         \};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00113}00113         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00116}00116     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnLeaderboardGet(GetLeaderboardResult result)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00117}00117     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00118}00118         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_a291f4ca12accaf6fb6025d429c50e19b}{SetConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00120}00120         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a6159631ccb4b92badcb34e47e965c912}{Leaderboard}}.Clear();}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00122}00122         \textcolor{keywordflow}{foreach} (var item \textcolor{keywordflow}{in} result.Leaderboard)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00123}00123         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00124}00124             Debug.Log( \textcolor{charliteral}{'|'} + item.Position + \textcolor{stringliteral}{"{}| "{}} + item.PlayFabId + \textcolor{stringliteral}{"{} | Score : "{}} + item.StatValue);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00126}00126             \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a6159631ccb4b92badcb34e47e965c912}{Leaderboard}}.Add(\textcolor{keyword}{new} \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{struct_game_manager_1_1_hight_score}{HightScore}}(item.Position,item.DisplayName,item.StatValue));}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00128}00128         \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00129}00129     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00131}00131     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/ NAME -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00132}\mbox{\hyperlink{class_playfab_manager_aa252d3e6bf365a27a9b9eefd189a54ac}{00132}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_playfab_manager_aa252d3e6bf365a27a9b9eefd189a54ac}{UpdateDisplayName}}()}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00133}00133     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00134}00134         var request = \textcolor{keyword}{new} UpdateUserTitleDisplayNameRequest}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00135}00135         \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00136}00136             DisplayName = GameManager.Instance.ThePlayer.Name}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00137}00137         \};}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00138}00138         PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnDisplayNameUpdate, OnError);}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00139}00139     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00141}00141     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult result)}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00142}00142     \{}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00143}00143         \mbox{\hyperlink{class_game_manager}{GameManager}}.\mbox{\hyperlink{class_game_manager_ad3e717f4fb0f378b969f4457de81f23e}{Instance}}.\mbox{\hyperlink{class_game_manager_a1566326d0df184b9d381da94f72ec77a}{ThePlayer}}.\mbox{\hyperlink{class_game_manager_1_1_player_a291f4ca12accaf6fb6025d429c50e19b}{SetConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00145}00145         Debug.Log(\textcolor{stringliteral}{"{}Successfull display name updated"{}});}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00146}00146     \}}
+\DoxyCodeLine{\Hypertarget{_playfab_manager_8cs_source_l00147}00147 \}}
+
+\end{DoxyCode}
